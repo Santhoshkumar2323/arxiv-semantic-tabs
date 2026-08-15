@@ -1,0 +1,69 @@
+embedding_model: "BAAI/bge-base-en-v1.5"   
+cycle_hours: 48
+default_top_k: 10                          
+max_pull_per_sector: 30                   
+window_buffer_hours: 24                   
+near_duplicate_threshold: 0.92             
+relevance_min_score: 0.0                   
+zero_paper_policy: strict_empty          
+
+sectors:
+  - name: AI
+    arxiv_categories: [cs.AI]
+    profile: >
+      symbolic reasoning, multi-agent planning, knowledge representation, automated theorem proving,
+      heuristic search, cognitive architectures, expert systems, and logical foundational AI theory.
+    top_k: 10
+
+  - name: ML
+    arxiv_categories: [cs.LG, stat.ML]
+    profile: >
+      supervised learning, unsupervised learning, optimization algorithms, convex optimization,
+      generalization bounds, PAC learning, empirical risk minimization, classical algorithms,
+      support vector machines, and ensemble methods.
+    top_k: 10
+
+  - name: DL
+    arxiv_categories: [cs.LG, cs.CV, cs.NE]
+    profile: >
+      deep neural networks, vision transformers, ViT, CNN architectures, representation learning,
+      self-supervised learning, diffusion models, large language models, LLM pre-training,
+      gradient descent variants, and backpropagation optimization.
+    top_k: 10
+
+  - name: RL
+    arxiv_categories: [cs.LG, cs.AI]
+    profile: >
+      reinforcement learning, Markov Decision Processes, MDP, policy gradient, PPO, Q-learning,
+      actor-critic, reward shaping, multi-agent RL, MARL, exploration-exploitation tradeoff,
+      and continuous control.
+    top_k: 10
+
+  - name: Robotics
+    arxiv_categories: [cs.RO]
+    profile: >
+      robotic manipulation, kinematic chains, end-effectors, legged locomotion, quadrupedal robots,
+      sim-to-real transfer, motion planning networks, SLAM, robot vision, perception, human-robot interaction,
+      HRI, and actuation systems.
+    top_k: 10
+
+  - name: Radiotherapy
+    arxiv_categories: [physics.med-ph]
+    profile: >
+      medical physics, radiotherapy dose planning, brachytherapy, proton therapy, linear accelerators,
+      LINAC, radiation treatment delivery, CBCT, image-guided radiotherapy, IGRT, and oncological computational physics.
+    top_k: 8
+
+  - name: Semiconductors
+    arxiv_categories: [cond-mat.mes-hall]
+    profile: >
+      semiconductor device physics, mesoscale nanoscale electronics, quantum hall effect, heterostructures,
+      transition metal dichalcogenides, TMDs, bandgap engineering, MOSFET, lithography, and condensed matter transport.
+    top_k: 8
+
+  - name: Embedded Systems
+    arxiv_categories: [cs.ES, cs.AR]
+    profile: >
+      embedded system architecture, real-time operating systems, RTOS, low-power computing, hardware-software co-design,
+      FPGA acceleration, ASIC design, microcontroller firmware, edge AI inference, and memory-constrained devices.
+    top_k: 8

@@ -1,0 +1,1 @@
+python tests/run_local.py
