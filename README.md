@@ -5,6 +5,8 @@ An automated pipeline that pulls new arXiv papers across 8 research areas every
 area, and surfaces only the top matches through a dashboard. Runs entirely
 unattended once deployed — no manual filtering, no checking arXiv by hand.
 
+**Live dashboard:** https://arxiv-semantic-tabs-of-8-sectors.streamlit.app/
+
 ## The problem this solves
 
 arXiv publishes far more papers per day than anyone can realistically read, spread
