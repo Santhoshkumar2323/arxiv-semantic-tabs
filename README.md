@@ -137,6 +137,9 @@ cycle — only when the model itself actually changes.
 ## Running it locally
 
 pip install -r requirements.txt
+
 python -m tests.run_local --quick # fast smoke test, isolated output
+
 python -m pipeline.run_pipeline # full run, all sectors
+
 streamlit run app/streamlit_app.py # view the dashboard
