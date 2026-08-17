@@ -1,13 +1,13 @@
 {
-  "run_timestamp": "2026-08-15T08:39:13.836265+00:00",
+  "run_timestamp": "2026-08-17T03:46:42.130140+00:00",
   "cycle_hours": 48,
-  "duration_seconds": 209.93,
+  "duration_seconds": 79.75,
   "sectors": {
     "AI": {
       "name": "AI",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 28.94,
+      "duration_seconds": 13.5,
       "ok": true,
       "error": null
     },
@@ -15,7 +15,7 @@
       "name": "ML",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 35.23,
+      "duration_seconds": 15.79,
       "ok": true,
       "error": null
     },
@@ -23,7 +23,7 @@
       "name": "DL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 33.17,
+      "duration_seconds": 15.75,
       "ok": true,
       "error": null
     },
@@ -31,46 +31,46 @@
       "name": "RL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 35.45,
+      "duration_seconds": 15.73,
       "ok": true,
       "error": null
     },
     "Robotics": {
       "name": "Robotics",
-      "pulled": 30,
+      "pulled": 22,
       "retained": 10,
-      "duration_seconds": 30.53,
+      "duration_seconds": 10.04,
       "ok": true,
       "error": null
     },
     "Radiotherapy": {
       "name": "Radiotherapy",
-      "pulled": 5,
-      "retained": 5,
-      "duration_seconds": 6.46,
+      "pulled": 3,
+      "retained": 3,
+      "duration_seconds": 1.59,
       "ok": true,
       "error": null
     },
     "Semiconductors": {
       "name": "Semiconductors",
-      "pulled": 30,
-      "retained": 8,
-      "duration_seconds": 26.67,
+      "pulled": 6,
+      "retained": 6,
+      "duration_seconds": 3.69,
       "ok": true,
       "error": null
     },
     "Embedded Systems": {
       "name": "Embedded Systems",
-      "pulled": 12,
-      "retained": 8,
-      "duration_seconds": 13.48,
+      "pulled": 6,
+      "retained": 6,
+      "duration_seconds": 3.66,
       "ok": true,
       "error": null
     }
   },
   "totals": {
-    "pulled": 197,
-    "retained": 71,
+    "pulled": 157,
+    "retained": 65,
     "failed_sectors": 0
   }
 }
