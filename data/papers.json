@@ -632,7 +632,7 @@
     ]
   },
   "Robotics": {
-    "pulled": 30,
+    "pulled": 22,
     "retained": 10,
     "papers": [
       {
@@ -756,22 +756,6 @@
         "score": 0.6163
       },
       {
-        "arxiv_id": "2608.19574",
-        "title": "HiTac-WAM: A Hierarchical Tactile World Action Model for Contact-Rich Robot Manipulation",
-        "abstract": "World action models jointly predict future visual observations and actions, whereas existing tactile-aware variants typically represent future touch as an image or latent stream without modeling the physical dependencies that organize tactile states hierarchically. We present HiTac-WAM, a hierarchical tactile world action model that forecasts a sequence of future tactile states for each candidate action chunk before execution. The forecast factorizes into contact state, a 3D deformation field, and slip risk, organized as a directed hierarchy in which each downstream stage is conditioned on stop-gradient signals from preceding stages. A directed attention mask allows tactile queries to attend to the video-action context of each candidate while preventing video and action queries from attending to tactile tokens. For planning, HiTac-WAM ranks candidate action chunks using tactile forecasts and task-progress estimates. For execution, the selected tactile forecast is retained as a reference; persistent discrepancies between predicted and observed tactile states trigger corrective replanning. HiTac-WAM achieves a mean contact F1 of 0.921; under matched training budgets, the directed hierarchy reduces 3D displacement L2 error by 17.6% relative to the deformation-only predictor and improves slip AUPRC by 60.4% relative to the slip-only predictor. Across chip grasping, blackboard erasing, and USB insertion, selection guided by the hierarchical forecasts increases the average real-robot success rate from 31.1% to 61.1%, while the full system attains 72.2%.",
-        "authors": [
-          "Chao Xue",
-          "Chaofan Zhang",
-          "Wenxuan Ma",
-          "Guocai Yao",
-          "Shaowei Cui",
-          "Shuo Wang"
-        ],
-        "published": "2026-08-20T02:28:25Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.19574v1",
-        "score": 0.6154
-      },
-      {
         "arxiv_id": "2608.20251",
         "title": "Video2DoorTraversal: Push Door Traversal via Simulated Door Twins",
         "abstract": "Door opening and traversal is a long-horizon loco-manipulation task that requires precise handle interaction and coordinated base-arm control. We present Video2DoorTraversal, a single-video real-to-sim-to-real framework for wheel-legged mobile manipulators. Given one RGB video of a real door, DoorTwin reconstructs an instance-aligned, articulated, and simulation-ready door twin with realistic geometry and appearance. A simulation-in-the-loop agent converts the recovered articulation into a parameterized skill program and iteratively refines failed rollouts to generate physically executable demonstrations. These demonstrations are used to train ArticuACT, a dual-depth policy that predicts coordinated base, arm, and gripper commands using robot-centric camera conditioning and interaction-aware supervision. With all perception and policy inference running onboard, the system achieves a 96.57% average success rate across five real doors and an 80.95% zero-shot success rate on structurally similar unseen doors, while completing the full approach, opening, and traversal sequence in approximately 13s on average. Project Page: https://video2doortraversal.github.io/.",
@@ -807,34 +791,39 @@
         "published": "2026-08-20T07:29:07Z",
         "pdf_url": "https://arxiv.org/pdf/2608.19729v1",
         "score": 0.6012
+      },
+      {
+        "arxiv_id": "2608.19613",
+        "title": "What Matters for Latent Actions in Robot Learning",
+        "abstract": "Latent Action Models (LAMs) have emerged as a promising paradigm for enabling robot learning to leverage large-scale unlabeled videos through latent actions that serve as compact surrogates for physical actions. Despite rapid progress, research on LAM remains highly fragmented, with existing methods evaluating different design choices in isolation under inconsistent experimental settings, making it difficult to identify the factors that truly determine downstream robotic manipulation performance. In this work, we present the first comprehensive empirical study of latent action learning for robotic manipulation. We unify representative LAM methods within a common autoencoding framework and systematically investigate 41 LAM design choices across three dimensions, including latent action modeling paradigms, learning objectives and regularization methods, and latent action integration strategies. We further examine four proxy metrics for evaluating latent action quality and assess their ability to reliably predict downstream robotic manipulation performance. Extensive experiments on three widely used benchmarks provide strong empirical evidence that fine-tuning vision-language model (VLM) backbones with latent actions provides a stronger initialization for downstream policy learning, with further validation on real-world robot manipulation tasks.",
+        "authors": [
+          "Xizhou Bu",
+          "Qingda Hu",
+          "Lei Zhou",
+          "Lingfeng Zhang",
+          "Yingbo Tang",
+          "Zihao Liu",
+          "Xinyi Tao",
+          "Zhiqiang Ma",
+          "Qingqiu Huang",
+          "Chufeng Tang",
+          "Hongbo Wang",
+          "Jing Zhang",
+          "Jiayi Ma",
+          "Hangjun Ye",
+          "Wei Li",
+          "Xiaoshuai Hao"
+        ],
+        "published": "2026-08-20T03:54:51Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.19613v1",
+        "score": 0.5966
       }
     ]
   },
   "Radiotherapy": {
-    "pulled": 9,
-    "retained": 8,
+    "pulled": 2,
+    "retained": 2,
     "papers": [
-      {
-        "arxiv_id": "2608.19062",
-        "title": "A Reference System for Open Source Portable Low-Field MRI",
-        "abstract": "Despite its renewed attention, the pathway to point-of-care portable low-field MRI systems remains challenging, limiting adoption across research groups. Incomplete documentation limits reproducibility, causing redesign and complicating cross-system comparison. Moreover, non-standardized testing and characterization complicates ethical approval for clinical studies. We present an open-source reference system for portable low-field MRI designed to support replication, reproducibility, benchmarking, and quantitative comparison. The system is fully open source, based on a ~50 mT permanent magnet, and integrated with a cloud-native acquisition platform. Pulseq-based calibration, characterization, and imaging sequences assessed noise level, eddy currents, image-based SNR, and geometric accuracy. Quantitative T1, T2, and B0 mapping sequences were developed and evaluated against reference values. Initial results from independent replications at two sites were compared. The system reached a noise level of 1.4 relative to the thermal noise floor and short eddy-current decay constants of 27-32 us across all gradient channels. Geometric deviations were below 2 mm over the field of view. Image-based SNR were consistent between the independent replications. Measured T1 values closely matched specified values, with an average absolute error of 3.1(1.8)%, while T2 values were overestimated by 10.4(5.8)%. Simulations showed only marginal errors for both quantities, suggesting experimental error sources for T2 mapping. The reference system combines openly documented hardware, software, calibration procedures, phantoms, quantitative MRI, and simulation tools in a reproducible ecosystem, aiming to support cross-site comparability, reproducible research, and collaborative development of future portable low-field MRI technologies.",
-        "authors": [
-          "David Schote",
-          "Helge Herthum",
-          "Umberto Zanovello",
-          "Julia Pfitzer",
-          "Ivo Jutte",
-          "Jan Gregor Frintz",
-          "Ilia Kulikov",
-          "Sebastian Littin",
-          "Frank Seifert",
-          "Christoph Kolbitsch",
-          "Lukas Winter"
-        ],
-        "published": "2026-08-19T16:02:59Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.19062v2",
-        "score": 0.5558
-      },
       {
         "arxiv_id": "2608.20112",
         "title": "Flow Matching-Based PET Image Reconstruction",
@@ -848,73 +837,6 @@
         "published": "2026-08-20T14:42:44Z",
         "pdf_url": "https://arxiv.org/pdf/2608.20112v1",
         "score": 0.5402
-      },
-      {
-        "arxiv_id": "2608.18867",
-        "title": "Ultra-wideband MRE of the human liver and spleen for viscoelastic model identification in hepatic inflammation",
-        "abstract": "Magnetic resonance elastography (MRE) is established for noninvasive assessment of liver fibrosis. Conventional abdominal MRE is typically limited to 40-60 Hz. Lower frequencies remain largely unexplored, particularly with regard to hepatic inflammation. We developed ultra-wideband MRE covering 5-80 Hz to investigate frequency-resolved viscoelastic dispersion of the liver and spleen and to identify biomechanical markers of hepatic inflammation. Following phantom validation, nine healthy volunteers and nine patients with inflammatory liver disease were examined at 12 frequencies. Spatiotemporal phase unwrapping and frequency-adaptive wavefield preprocessing enabled reconstruction of shear wave speed (SWS), penetration rate (PR), and loss angle ($\u03c6$). Six rheological models were evaluated. The largest inflammation-associated changes were observed at frequencies below 20 Hz: $\u03c6$ increased by 63% (p<0.001), PR decreased by 37% (p=0.003), and SWS increased by 8% (p=0.008), indicating predominantly dissipative, rather than stiffness-related, changes and a shift toward fluid-like behavior with minor stiffness changes in the lower frequency regime. The rheological springpot model with serial dashpot provided the best fit and revealed distinct dispersion functions for liver and spleen. In patients, springpot elastic modulus increased (101%, p=0.001), while viscosity and springpot power-law exponent decreased (52%, p=0.002 and 58%, p<0.001) suggesting a shift from soft-fluid to stiff-solid liver properties. Ultra-wideband MRE revealed that inflammatory liver disease is associated with property shifts toward stronger dissipation and fluid-like behavior at low frequencies while displaying solid-like behavior at higher frequencies. Ultra-low frequency MRE may provide a diagnostic window into inflammation-associated liver viscoelasticity without full rheological modeling.",
-        "authors": [
-          "Jakob Schattenfroh",
-          "Michael Fedders",
-          "Steffen P. H\u00e4seli",
-          "Tobias Puengel",
-          "Yanglei Wu",
-          "Tom Meyer",
-          "Hossein S. Aghamiry",
-          "Tim Ricken",
-          "M\u00fcnevver Demir",
-          "Frank Tacke",
-          "Jing Guo",
-          "Rolf Reiter",
-          "Ingolf Sack"
-        ],
-        "published": "2026-08-19T12:37:01Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.18867v1",
-        "score": 0.5358
-      },
-      {
-        "arxiv_id": "2608.17357",
-        "title": "LV-CARE-Diff: A Conditional Anatomy-Aware Diffusion Model for Left Ventricular Shape Reconstruction and Function Quantification from Ultra-Sparse Cine Slices",
-        "abstract": "Left ventricular functional quantification is an essential examination and is routinely performed using cardiovascular magnetic resonance (CMR) cine imaging. However, conventional CMR cine protocols require the acquisition of multiple short-axis (SAX) slices to cover the entire left ventricle (LV) along with two long-axis (LAX) slices, which is time-consuming and places a considerable burden on patients who are unable to sustain repeated breath-holds, limiting its suitability for large-scale early screening. In this study, a Conditional Anatomy-Aware Diffusion Model (LV-CARE-Diff) was developed using a coarse-to-fine strategy to reconstruct the complete LV shape from ultra-sparse cine slices, namely three short-axis and two long-axis slices, with the aim of accelerating CMR cine examination. LV-CARE-Diff employs a 3DUNet to generate a coarse initial shape, which is subsequently refined through a residual diffusion model. A condition-guided input incorporating imaging plane orientation and positional metadata was constructed to enable spatial awareness, and a multi-objective training strategy jointly supervising shape, function, and anatomy was incorporated to guide high-fidelity reconstruction. LV-CARE-Diff was compared against a standalone 3DUNet, a standalone diffusion model, and a 3D UNet with diffusion-based refinement. Testing results indicated that complete LV shape could be robustly reconstructed by all deep learning models, with the highest reconstruction performance achieved by the proposed LV-CARE-Diff. Deep learning models reconstructing LV shape from sparse cine slices preserved 96% of functional quantification accuracy while reducing imaging time by 73%. The LV-CARE-Diff framework established in this study enables ultra-sparse cine acquisition to shorten CMR examination duration without sacrificing quantitative functional accuracy.",
-        "authors": [
-          "Xinwang Li",
-          "Yu Lian",
-          "Bowei Liu",
-          "Yifei Jiang",
-          "Jingjing Xiao",
-          "Haiyan Ding",
-          "Xiangchuang Kong",
-          "Rui Guo"
-        ],
-        "published": "2026-08-18T04:24:49Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.17357v1",
-        "score": 0.5288
-      },
-      {
-        "arxiv_id": "2608.18036",
-        "title": "Harnessing Magnitude-Only and Complex Measurements for Improved Dynamic MRI Reconstruction with Learned Priors",
-        "abstract": "MRI reconstruction methods for undersampled k-space data naturally utilize complex-valued measurements. Parallel developments in sparse phase retrieval have shown that magnitude-only measurements may provide complementary information for signal recovery. However, their use in MRI reconstruction remains largely unexplored, due to lack of practical settings where informative magnitude measurements can be obtained without additional scan time. In this work, we investigate the use of auxiliary k-space magnitude information for accelerated steady-state dynamic MRI reconstruction, and demonstrate strong consistency of k-space magnitudes across time-frames. Building on this observation, we propose $\\mathbb{C}+\\text{Mag}$, a magnitude-informed physics-driven deep learning reconstruction method. The proposed method employs an ADMM-based unrolling framework with a novel magnitude-aware data-fidelity formulation, where quadratically smoothed optimization and momentum-based updates are introduced to address the non-differentiability and non-convexity of the magnitude constraints. Experiments on retrospectively undersampled cine MRI and phase-contrast flow MRI datasets, as well as prospectively undersampled real-time cine MRI acquisitions, demonstrate improved artifact suppression, sharper anatomical recovery, and better preservation of phase information compared to conventional PD-DL methods, which is further supported through blinded expert reader evaluations.",
-        "authors": [
-          "Mahdi Saberi",
-          "Ya\u015far Utku Al\u00e7alar",
-          "Merve G\u00fclle",
-          "Chetan Shenoy",
-          "Mehmet Ak\u00e7akaya"
-        ],
-        "published": "2026-08-18T17:31:07Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.18036v1",
-        "score": 0.5262
-      },
-      {
-        "arxiv_id": "2608.18252",
-        "title": "Angle-domain null subtraction imaging from beamformed plane-wave data",
-        "abstract": "Null subtraction imaging (NSI) narrows the apparent lateral response by combining fields produced with a zero-mean apodization and two DC-offset variants. Conventional NSI applies these weights across receive elements and therefore requires access to channel data and flexible beamformers, while increasing the computation time. We investigate an angle-domain analogue, termed angular NSI, that instead operates on the per-angle images produced during coherent plane-wave compounding. A matrix formulation was used to distinguish receive-domain and angle-domain null subtraction expressions and to identify their independent computational components. The method was evaluated using a simulated point target, an open microbubble (MB) traces dataset and two in vivo carotid acquisitions. Angle sampling, noise, phase jitter and target position were swept in simulation. A synchronized GPU benchmark compared the complete reconstructions. Conventional receive-domain NSI and standard delay-and-sum (DAS) imaging were references. Angle-domain NSI reduced the simulated -6dB lateral width from 0.226 mm for DAS to 0.116 mm, compared to 0.009mm for conventional receive-domain NSI, while the axial width was 0.721 mm for all methods. Median reconstruction times on an RTX A2000 GPU were 23.92, 30.19 and 24.74 ms for DAS, conventional NSI and angle-domain NSI. In power Doppler, the apparent width of the MB traces were reduced by 50.2% for conventional NSI and 30.9% for angular NSI compared to DAS. In vivo, both NSI variants reduced generalized contrast-to-noise ratio relative to DAS. Angle-domain NSI can be simply implemented as a post-processing step for all plane-wave sequences after beamforming. The technique is compatible with most of the usual beamformer implementations. It effectively reduces apparent lateral width, and its computation time is close to DAS and faster than conventional NSI.",
-        "authors": [
-          "Henri Leroy"
-        ],
-        "published": "2026-08-18T19:04:06Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.18252v1",
-        "score": 0.52
       },
       {
         "arxiv_id": "2608.19823",
@@ -934,95 +856,13 @@
         "published": "2026-08-20T09:21:13Z",
         "pdf_url": "https://arxiv.org/pdf/2608.19823v1",
         "score": 0.5197
-      },
-      {
-        "arxiv_id": "2608.18055",
-        "title": "Primitive Representation Learning for Unsupervised Dynamic Contrast Enhanced MRI Reconstruction",
-        "abstract": "Reliable quantitative analysis of dynamic contrast-enhanced MRI requires high-quality spatiotemporal reconstructions at high undersampling rates. Scan-specific reconstructions using Gaussian and Gabor primitives have shown promising results without the need for large training datasets, but have not addressed the additional dimension of dynamic contrast. We propose a multi-dimensional, primitive based framework for dynamic contrast-enhanced MRI reconstruction that disentangles the underlying anatomy, the dynamic contrast enhancement, and residual motion into separate temporal basis functions, thereby enabling a geometrical interpretation of the representation. We show that this architecture achieves performance competitive with conventional reconstruction methods, both in reconstruction quality and in the accuracy of extracted aorta and kidney enhancement curves. The modular tier design extends naturally to additional dynamic factors and higher acceleration rates. Code available at https://github.com/compai-lab/2026-GaborDCE-spieker.",
-        "authors": [
-          "Veronika Spieker",
-          "Wenqi Huang",
-          "Cemre Ariyurek",
-          "Liam Timms",
-          "Daniel Rueckert",
-          "Onur Afacan",
-          "Julia A. Schnabel",
-          "Sila Kurugol"
-        ],
-        "published": "2026-08-18T17:48:22Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.18055v2",
-        "score": 0.5196
       }
     ]
   },
   "Semiconductors": {
-    "pulled": 30,
+    "pulled": 15,
     "retained": 8,
     "papers": [
-      {
-        "arxiv_id": "2608.19099",
-        "title": "Large Field-Free Superconducting Diode Effect with Nonmonotonic Polarity Reversals in NbSe$_2$/CrBr$_3$ Heterostructures",
-        "abstract": "The superconducting diode effect (SDE), characterized by nonreciprocal dissipationless supercurrent, offers a promising route toward ultralow-power superconducting electronics. Yet most realizations require an external magnetic field, and achieving a large, controllable SDE at zero field remains challenging. Here we report a field-free SDE with an efficiency reaching 35.7% in a van der Waals NbSe$_2$/CrBr$_3$ heterostructure, whose polarity is programmable by magnetic-field history. Unlike conventional mechanisms based on finite-momentum pairing, the SDE originates from the leading symmetry-allowed cubic term odd in Cooper-pair momentum, which yields unequal critical currents while leaving the equilibrium condensate at zero momentum. Remarkably, upon sweeping a perpendicular magnetic field, the diode polarity undergoes nonmonotonic and hysteretic reversals that cannot be explained by Meissner screening or conventional ferromagnetic proximity. Combining transport measurements, micromagnetic simulations, and a generalized Ginzbur-Landau theory, we attribute these unconventional behaviors to layered ferrimagnetism in CrBr$_3$, where coexisting ferromagnetic and antiferromagnetic interlayer couplings produce a history-dependent interfacial exchange field acting on NbSe$_2$. Our results reveal a distinct mechanism for nonreciprocal superconductivity and establish layered van der Waals magnetism as a versatile platform for high-efficiency, programmable, field-free superconducting diodes.",
-        "authors": [
-          "Shengbiao Sun",
-          "Lang Xiao",
-          "Chenghao Shen",
-          "Bowen Hao",
-          "Jia-Peng Peng",
-          "Ziye Zhu",
-          "Feiyue Wang",
-          "Qilin Han",
-          "Ya-Qing Bie",
-          "Shuo Wang",
-          "Tong Zhou",
-          "Dapeng Yu",
-          "Ben-Chuan Lin"
-        ],
-        "published": "2026-08-19T16:51:23Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.19099v1",
-        "score": 0.6505
-      },
-      {
-        "arxiv_id": "2608.18925",
-        "title": "Ultrafast order-selective electron imaging and spectroscopy",
-        "abstract": "Ultrafast pump-probe spectroscopies in energy and momentum have become indispensable for probing non-equilibrium dynamics in quantum materials, revealing pathways in ultrafast energy conversion and light-induced phase transitions. Different modalities uniquely access the coupled lattice, charge, and spin degrees of freedom that underpin the functionality of these materials. However, investigating technologically relevant nanoscale devices also requires high spatial resolution. Although electron microscopy provides nanometer-scale imaging, it frequently lacks the simultaneous ultrafast temporal resolution and spectroscopic specificity needed for such studies. In this perspective, we review recent advances in dark-field electron and photoelectron microscopy, focusing on two complementary techniques: femtosecond photoelectron momentum microscopy and ultrafast transmission electron microscopy. Their application enables comprehensive insights into the ultrafast dynamics of the electron, lattice, and spin subsystems. These order-selective electron imaging and spectroscopy techniques open broad scientific opportunities for a microscopic understanding of non-equilibrium phenomena in quantum materials, nanostructures and devices.",
-        "authors": [
-          "Jan Philipp Bange",
-          "Till Domr\u00f6se",
-          "Claus Ropers",
-          "Stefan Mathias",
-          "Marcel Reutzel",
-          "."
-        ],
-        "published": "2026-08-19T13:53:58Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.18925v1",
-        "score": 0.6452
-      },
-      {
-        "arxiv_id": "2608.19284",
-        "title": "Extension of the Shockley-Queisser Limit for Nanostructured Solar Cells",
-        "abstract": "This article extends the Shockley-Queisser limit to nanostructured solar cells using the quantum phase space formalism. The parameter B_ll represents the momentum variance in each confinement direction and acts as a variance-covariance matrix linking the nanostructure geometry to thermodynamic properties. Electron-electron interactions are included via an exchange-correlation energy with an adjustable coefficient theta. The authors derive an analytical expression for the maximum efficiency as a function of size, shape, temperature, and doping. For the cylindrical geometry, the exact confinement energy uses the first zero of the Bessel function j_0,1. Numerical simulations are performed with Python 3.8.1, NumPy, and Matplotlib for PbS quantum dots in four geometries: cube, square parallelepiped, cylinder, and sphere. The integral is evaluated using an exact convergent series expansion. Results show that the maximum efficiency reaches 48.7 percent for a 5 nanometre cube, 49.0 percent for flattened parallelepiped and cylinder shapes, and 49.1 percent for a 3 nanometre sphere. These values greatly exceed the bulk PbS efficiency of 15.8 percent and surpass classical Shockley-Queisser limits. For constant-volume shapes, two efficiency peaks appear corresponding to different aspect ratios. The model correctly returns to classical values for large sizes. This approach provides a theoretical framework for optimising nanostructured solar cells and demonstrates that quantum confinement offers a promising route to surpass traditional photovoltaic limits.",
-        "authors": [
-          "Rivo Herivola Manjakamanana Ravelonjato",
-          "Jean Patrice Rakotoniaina",
-          "Ravo Tokiniaina Ranaivoson",
-          "Wilfrid Chrysante Solofoarisina"
-        ],
-        "published": "2026-08-19T10:18:21Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.19284v1",
-        "score": 0.645
-      },
-      {
-        "arxiv_id": "2608.19113",
-        "title": "Ultra-low energy (20 - 300 eV) electron imaging and diffraction",
-        "abstract": "The lecture discusses the properties of low-energy electrons compared to the electrons of conventional energies employed in commercial transmission electron microscopes. Low-energy electron diffraction and low-energy electron holography principles and experimental schemes are presented and discussed.",
-        "authors": [
-          "Tatiana Latychevskaia"
-        ],
-        "published": "2026-08-19T17:06:39Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.19113v1",
-        "score": 0.6313
-      },
       {
         "arxiv_id": "2608.20245",
         "title": "Coulomb blockade-like transport and enhanced memory in organic transistors embedded with sub-nm Pt nanoparticles for neuromorphic computing",
@@ -1042,83 +882,124 @@
         "score": 0.6266
       },
       {
-        "arxiv_id": "2608.18741",
-        "title": "A miniature evaporator for in-operando deposition of isolated atoms in a low-temperature scanning tunneling microscope",
-        "abstract": "Depositing dilute atomic ensembles onto cold samples is challenging in low-temperature scanning tunneling microscopes (STM) because radiation shields and restricted internal geometries often preclude a direct deposition path, particularly in instruments designed for millikelvin operation. We present a compact, milliwatt-range evaporation source fabricated from a commercial miniature incandescent lamp and integrated directly into a millikelvin STM head. The exposed tungsten filament is coated with a micrometre-thick Fe film and positioned about 1 cm from the sample. We deposit isolated Fe atoms onto MgO/Ag(100) while operating the microscope near 5 K. Evaporation increases the STM-body temperature by only about 2 K, and the same nanoscopic surface region can be readily scanned after deposition with a lateral displacement of less than 5 nm. Differential-conductance spectra displaying symmetric inelastic steps near $\\pm$14 mV identify the deposited atoms on MgO as Fe. From STM images, we estimate a local deposition flux of $1.5\\times10^{-5}~\\mathrm{nm^{-2}\\,s^{-1}}$, corresponding to a nominal evaporator lifetime of ~150 h. The fixed evaporator enables repeated low-flux deposition without a room-temperature line of sight, the need for movable radiation shields, or mechanical evaporator access after cooldown, while preserving access to the same atomic-scale surface region before and after deposition.",
+        "arxiv_id": "2608.20115",
+        "title": "Effects of the surface on double surface Fermi arcs in a realistic tight-binding model of Na$_3$Bi (100)",
+        "abstract": "Na$_3$Bi is a topological Dirac semimetal (TDSM) that can support double surface Fermi arcs (DSFAs), which are important for its material classification and their potential use in spintronic devices. However, it is unclear how the surfaces affect realistic Na$_3$Bi (100) systems. To investigate the effects of diverse surfaces on DSFAs, we consider first principles derived tight-binding models of two Na$_3$Bi (100) terminations. On the stoichiometric termination, we find DSFAs as expected. On the non-stoichiometric structure there are DSFAs on one termination and two loops that retain many of the properties of DSFAs. Thus, the local properties such as spin momentum locking and hybridization with the Dirac points appear to be more robust than their global connectivity. That is, the surface can reshape the arc fingerprint without destroying the arc-like physics.",
         "authors": [
-          "Jeongmin Oh",
-          "Hermann Osterhage",
-          "Vasily Cherepanov",
-          "Sven Just",
-          "Denis Krylov",
-          "F. Stefan Tautz",
-          "Taner Esat",
-          "Ruslan Temirov"
+          "Vasilios K. Passias",
+          "Lucas K. Wagner"
         ],
-        "published": "2026-08-19T09:50:25Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.18741v1",
-        "score": 0.6266
+        "published": "2026-08-20T14:46:13Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.20115v1",
+        "score": 0.6255
       },
       {
-        "arxiv_id": "2608.19476",
-        "title": "Altermagnetic memcapacitors",
-        "abstract": "We propose a spintronic memcapacitance effect based upon altermagnetic multiferroic materials. We identify the rare-earth vanadates RVO$_3$ as a concrete platform, with all key parameters tied to measured properties. Under an oscillating electric field, the resulting charge and spin currents trace pinched hysteresis loops that close tangentially at zero field -- the hallmark of memcapacitive, type-2 memdevice behavior -- with charge current densities exceeding, by a factor of about 3.6, the lowest deterministic switching current density reported for optimized spin-transfer-torque magnetic tunnel junctions. We model the system theoretically as a dimerized two-orbital $d$-wave altermagnetic lattice via a Su--Schrieffer--Heeger-type bond modulation, in the spirit of the spin-dependent Rice--Mele model, thereby coupling the altermagnetic order to field-switchable charge and spin polarizations. The associated polarization loops close tangentially at zero field and yield a sign-changing, history-dependent ``butterfly'' differential capacitance, identifying the device as a genuine memcapacitor. Both responses are protected by the same inversion symmetry, so charge and spin channels switch simultaneously with no separate control needed. These results establish altermagnetic multiferroics, realized concretely in RVO$_3$, as an efficient, non-volatile platform for combined electric and spintronic memory.",
+        "arxiv_id": "2608.19648",
+        "title": "Giant orbital Hall effect from cubic Dresselhaus orbital coupling",
+        "abstract": "The orbital Berry curvature (OBC) governs the intrinsic orbital Hall conductivity (OHC), a central quantity in orbitronics. Previous approaches for enhancing the OHC have primarily relied on a linearin-momentum, Rashba-type orbital coupling. Here, we show that cubic Dresselhaus orbital coupling offers a new route to enhancing the OHC. Using an effective two-orbital band model, we show that the cubic coupling generates momentum-space hot spots, absent in the purely linear case, at which the OBC is strongly enhanced. This local enhancement, together with the multiplicity of the hot spots, boosts the OHC by more than an order of magnitude relative to the linear-coupling value. We further find that the OHC diverges inversely with the level splitting in the small-splitting limit, with a divergence coefficient universally seventeen times larger than that of the linear case. These results establish cubic Dresselhaus coupling as a route to giant orbital Hall responses, opening new avenues for orbitronic device applications.",
         "authors": [
-          "Martin Latorre",
-          "Alvaro S. Nunez"
+          "Gwen Sevilen",
+          "Kyoung-Min Kim"
         ],
-        "published": "2026-08-19T22:23:01Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.19476v1",
-        "score": 0.6261
+        "published": "2026-08-20T05:33:42Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.19648v1",
+        "score": 0.6158
       },
       {
-        "arxiv_id": "2608.19362",
-        "title": "Channel-selective magnetic filtering in a nodal-line semimetal",
-        "abstract": "We study quantum transport through a magnetic barrier in a nodal-line semimetal. When the Fermi energy lies near the nodal ring, the Fermi surface has toroidal geometry. Each cross-section in a plane parallel to the nodal ring consists of two concentric contours, inner and outer, carrying distinct transport channels. We show that a magnetic barrier resolves these two channels: because the contours enclose different momentum-space areas, they accommodate the field-induced transverse-momentum shift unequally, and the inner channel is cut off at a weaker barrier strength than the outer. Using a two-band effective Hamiltonian and a wave-function matching approach, we obtain closed-form, channel-resolved transmission amplitudes. Over a finite window of barrier strength the inner contour is fully blocked while the outer still transmits, so the barrier acts as a channel-selective filter. This sequential quenching shapes the two-terminal conductance, which decreases with barrier strength as the two channels close in turn and terminates once the outer channel is cut off, providing experimentally accessible fingerprints of the toroidal Fermi surface of a nodal-line semimetal.",
+        "arxiv_id": "2608.20021",
+        "title": "Amorphous and Nanocrystalline Topological Semimetal YPtBi/W/CoFeB Heterostructures for BEOL-Compatible Spin-Orbit Torque Devices",
+        "abstract": "Spin-orbit torque (SOT) devices require spin-source materials that combine efficient charge-to-spin conversion with back-end-of-line (BEOL) thermal compatibility. Here, we show that YPtBi/W/CoFeB heterostructures deposited directly on Si/SiOx remain predominantly amorphous or weakly nanocrystalline from room temperature to 400 \u00b0C while preserving a large effective damping-like SOT response. Anomalous Hall and harmonic Hall measurements, together with X-ray diffraction, cross-sectional transmission electron microscopy, X-ray reflectivity, and electron energy-loss spectroscopy, show that the response does not correlate with bulk crystallization of YPtBi. Instead, the interfacial analysis indicates that the strongest trend of the spin Hall angle is associated with the chemistry of the upper YPtBi/W boundary: the effective SOT response tracks the integrated W concentration at that YPtBi surface. Meanwhile, a two-spin source analysis shows that the Pt-W-rich interlayer provides only a small positive correction, insufficient to explain the large negative effective spin Hall angle by itself. The dominant control variable is therefore inferred to be the incorporation of W into the upper YPtBi interface, which plausibly modifies the local electronic structure of YPtBi and amplifies the stack-level response. These results provide a more physically constrained interpretation of the stack behavior and identify a BEOL-compatible route to disordered topological spin-source layers for scaled SOT memory and compute-in-memory hardware.",
         "authors": [
-          "Hironmoy Pratihar",
-          "Alessandro De Martino",
-          "Arijit Kundu"
+          "Quang Le",
+          "Brian R. York",
+          "Cherngye Hwang",
+          "Xiaoyong Liu",
+          "Tsann Lin",
+          "Xiaoyu Xu",
+          "Yudi Wang",
+          "Jia Li",
+          "Mazin Osman",
+          "Katherine Le",
+          "Maher Osman",
+          "Son Le",
+          "Lei Xu",
+          "Maki Maeda",
+          "Tuo Fan",
+          "Yu Tao",
+          "Hisashi Takano",
+          "Sho Kagami",
+          "Ohiro Fujie",
+          "Pham Nam Hai"
         ],
-        "published": "2026-08-19T18:31:26Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.19362v1",
-        "score": 0.6256
+        "published": "2026-08-20T13:31:50Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.20021v1",
+        "score": 0.6119
+      },
+      {
+        "arxiv_id": "2608.19911",
+        "title": "Search for Majorana Bound States in Short Chains of Proxmitised Quantum Dots",
+        "abstract": "Majorana zero modes (MZM) appearing at the ends of artificially created one-dimensional p-wave superconductors have been intensively studied recently both theoretically and experimentally. Among possible platforms, proximitised semiconducting wires, and short chains of quantum dots with a superconductor in between were investigated. Here, we propose a different platform consisting of a chain of quantum dots (QDs) sandwiched between an s-wave superconductor and a strong spin-orbit semiconductor, subject to a Zeeman magnetic field. Neglecting spin-conserving hopping processes between QDs and local on-dot superconducting correlations induced by the superconducting proximity effect, reduces the Hamiltonian to the sum of two equivalent Hamiltonians with two independent Hilbert spaces. The resulting model has a staggered structure due to spin-flipping processes $t_{so}$ and cross-Andreev reflections $\u0394_{CAR}$ between neighbouring dots. Our central result is the phase diagram of a short chain consisting of four QDs and coupled to two external reservoirs, obtained by means of the Green function in chiral Majorana representation. The modulus of the retarded Green function, probing the whole chain and calculated for zero energy, is shown to contain information on topology and spatial character of Majorana zero modes. The features observed in the Green function nicely agree with those obtained from the transfer matrix approach. In particular the region in parameter space in which Majorana zero modes display oscillatory wave functions are well reproduced. Likewise the borders of the fermion parity changes obtained by the Green function agree with those obtained by other means.",
+        "authors": [
+          "Bogdan R. Bu\u0142ka",
+          "Karol I. Wysoki\u0144ski"
+        ],
+        "published": "2026-08-20T11:27:33Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.19911v1",
+        "score": 0.6097
+      },
+      {
+        "arxiv_id": "2608.19696",
+        "title": "Coherence protection of a silicon hole spin qubit with phase-modulated microwave driving",
+        "abstract": "Hole spins in silicon quantum dots are a promising platform for quantum computing due to their strong intrinsic spin-orbit coupling (SOC), which enables fast, all-electrical control. However, this coupling also increases their susceptibility to charge noise, thereby limiting coherence times. Moreover, holes in silicon are also affected by hyperfine interactions with residual nuclear spins in the silicon substrate, introducing a non-negligible source of low-frequency noise. Here, we implement a phase-modulated concatenated continuous driving (CCD) technique for hole spin qubits to suppress low-frequency noise through microwave phase modulation. This approach stabilizes Rabi oscillations and extends the oscillation decay time compared to the conventional method. Furthermore, by defining a qubit in the CCD frame, we achieve coherent control while simultaneously protecting the qubit from noise, confirming coherence protection during gate operations. These results demonstrate a viable route toward noise-robust hole spin qubits.",
+        "authors": [
+          "Sayyid I. Ibad",
+          "Yusuke Sato",
+          "Takuma Kuno",
+          "Itaru Yanagi",
+          "Toshiyuki Mine",
+          "Ryuta Tsuchiya",
+          "Digh Hisamoto",
+          "Hiroyuki Mizuno",
+          "Raisei Mizokuchi",
+          "Jun Yoneda",
+          "Tetsuo Kodera"
+        ],
+        "published": "2026-08-20T06:38:52Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.19696v1",
+        "score": 0.6023
+      },
+      {
+        "arxiv_id": "2608.19712",
+        "title": "Internal cyclotron probe of the vertical polarizability of a surface-state electron on helium",
+        "abstract": "We study a surface-state electron on liquid helium in a tilted magnetic field. The tilt couples the cyclotron ladder to the vertical Rydberg-like subbands of the same electron and thereby realizes a self-coupled Landau-subband Hamiltonian. In the far-detuned regime, the cyclotron line acquires a state-dependent shift described by standard second-order perturbation theory. The resulting expression identifies the cyclotron resonance as a direct probe of the dynamical polarizability of the vertical ladder. The theory is intrinsically multilevel. Exact diagonalization confirms a broad microwave window in which sizable state-dependent cyclotron shifts are expected while the system remains dispersive.",
+        "authors": [
+          "Kirill Shulga"
+        ],
+        "published": "2026-08-20T07:11:41Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.19712v1",
+        "score": 0.5943
+      },
+      {
+        "arxiv_id": "2608.19681",
+        "title": "Cavity-Enhanced Activation of Radiatively Suppressed Light-Hole Exciton Emission in Colloidal Nanoplatelets",
+        "abstract": "Light-hole (LH) excitons provide access to well-defined polarization and spin degrees of freedom that are central to quantum photonics and chiral light-matter interactions. Achieving LH emission is challenging because LH states are energetically unfavoured and typically relax non-radiatively. Existing strategies to access LH excitons rely on modifying the electronic band structure through strain, shape anisotropy, or piezoelectric fields, approaches that are material-specific and offer limited post-synthesis tunability. Here we demonstrate an all-photonic route to activate LH exciton emission in colloidal CdSe-CdS nanoplatelets (NPLs) using a distributed Bragg reflector (DBR) cavity, without altering the underlying band structure. In the absence of a cavity mode, the system exhibits amplified spontaneous emission from heavy-hole (HH) states without detectable LH emission at low excitation powers. By spectrally matching a cavity resonance to the LH exciton, cavity-coupled LH emission emerges at significantly lower excitation powers. Temperature-dependent spectroscopy reveals reversible switching between LH- and HH-coupled emission through exciton-cavity detuning, while polarization-resolved and spectrally resolved time-resolved photoluminescence measurements provide independent evidence distinguishing the cavity-coupled LH and HH emission channels. These findings establish cavity engineering as a general materials-level approach for accessing radiatively suppressed optical states.",
+        "authors": [
+          "Komal Sharma",
+          "Riya Dutta",
+          "Prathmesh Deshmukh",
+          "Vinod M. Menon",
+          "Jaydeep K. Basu"
+        ],
+        "published": "2026-08-20T06:15:50Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.19681v1",
+        "score": 0.5869
       }
     ]
   },
   "Embedded Systems": {
-    "pulled": 17,
+    "pulled": 8,
     "retained": 8,
     "papers": [
-      {
-        "arxiv_id": "2608.19300",
-        "title": "Performance Verification of the AmpereOne CPU Core",
-        "abstract": "As process technology scaling slows, microarchitectural innovation has become the primary driver of performance gains, making pre-silicon Performance Verification (PV) more critical than ever. This paper presents the industrial-scale PV methodology applied across four generations of the AmpereOne custom CPU core, centered on the cycle-accurate correlation of the RTL design against a trace-driven performance model. The methodology integrates data-driven workload curation, a high-frequency daily regression system, and a unified event-stream framework for analysis. We demonstrate this methodology through case studies of the Branch Prediction Unit and L2 Prefetcher, highlighting a hierarchical strategy that first isolates individual units for focused correlation before proceeding to full-core verification. The results demonstrate that this disciplined, iterative process is indispensable for avoiding costly post-silicon bugs and ensuring complex processors meet their performance targets. We end with a look towards the future of PV in the microprocessor industry.",
-        "authors": [
-          "Doa'a Al-Otoom",
-          "Nicholas Kelly",
-          "Aaron Lindsay",
-          "Agreen Ahmadi",
-          "Ananth Kumar",
-          "Anthony Faubert",
-          "Benjamin Chaffin",
-          "Bret Toll",
-          "Eric Wallace",
-          "Lucas Crowthers",
-          "Mark Charney",
-          "Michael Chin",
-          "Michael Spradling",
-          "Scott Witscher",
-          "Sriyash Caculo",
-          "Syed Fakhri",
-          "Vivek Kothapalli",
-          "William Freelove",
-          "Mahesh Madhav"
-        ],
-        "published": "2026-08-19T16:50:02Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.19300v1",
-        "score": 0.628
-      },
       {
         "arxiv_id": "2608.20198",
         "title": "A Resource-Efficient CNN-Based EEG Auditory Attention Decoding ASIC",
@@ -1167,63 +1048,85 @@
         "score": 0.6029
       },
       {
-        "arxiv_id": "2608.19046",
-        "title": "APEX: A Dual-Sparsity Accelerator for Precise and Efficient SNN Inference",
-        "abstract": "Spiking Neural Networks (SNNs) have emerged as an energy-efficient alternative to Artificial Neural Networks (ANNs), leveraging sparse accumulate operations in the place of power-hungry multiply-and-accumulate operations. ANN-SNN conversion is a widely adopted approach to realize deep SNNs with accuracy comparable to that of ANNs. The Quantization-Clip-Floor-Shift (QCFS) activation minimizes conversion error, yet requires a large number of inference timesteps to match the source ANN accuracy on real-world vision datasets. PASCAL addresses this by proposing the Precise ANN-SNN Conversion Integrate-and-Fire (PASC-IF) neuron, which guarantees mathematical equivalence between the converted SNN and the source ANN, thereby achieving ANN-equivalent accuracy at significantly reduced timesteps. Despite this algorithmic advancement, the hardware implications of deploying the PASC-IF neuron remain unexplored. In this work, we present APEX, a dual-sparsity SNN inference accelerator that integrates the PASC-IF neuron into the LoAS hardware framework. The three-stage PASC-IF datapath is realized as a fully combinational circuit with no additional latency cost. APEX exploits dual sparsity in both input spikes and weights through a fully temporal-parallel dataflow, enabling efficient sparse computation and reduced memory traffic. Across all evaluated models, the PASC-IF neuron on average achieves up to 3% higher accuracy than the standard IF neuron, with a power overhead of only 1.3%-5.4%, an area overhead of 2.1%-2.7%, and 40% energy reduction for best accuracy configurations.",
+        "arxiv_id": "2608.20110",
+        "title": "ODEONN: A Digital ODE Solver Architecture for Oscillatory Neural Networks",
+        "abstract": "Oscillatory Neural Networks (ONNs) are an alternative computing paradigm for AI and combinatorial optimization problems. However, digital architectures are often designed for specific applications of ONNs. This work introduces a modular and scalable architecture called ODEONN that is generic to multiple applications of ONNs, and to the best of our knowledge, is the first fully digital ONN to also support complex-valued coupling. Additionally, an approximation of the sine function is introduced that uses half of the hardware resources compared to standard methods. The performance of ODEONN is compared with a full-precision software simulation, where a performance degradation of less than $2\\%$ is shown. Therefore, we conclude that the fixed-point quantization and the approximated waveform affect the accuracy of computation by only a small amount. Furthermore, ODEONN shows a 45$\\times$ reduction in energy-delay product over the software simulation running on conventional hardware.",
         "authors": [
-          "Devgokul Bawa Venkatesh",
-          "Sreeram Radhakrishnan",
-          "Rajshekhar Rakshit",
-          "Gopalakrishnan Srinivasan"
+          "Bram F. Haverkort",
+          "Aida Todri-Sanial"
         ],
-        "published": "2026-08-19T15:38:16Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.19046v1",
-        "score": 0.5884
+        "published": "2026-08-20T14:39:55Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.20110v1",
+        "score": 0.5643
       },
       {
-        "arxiv_id": "2608.18482",
-        "title": "Coverage-Driven RTL Assertion Generation with Formal Exploration and Neuro-Symbolic Refinement",
-        "abstract": "Hardware functional verification relies on high-quality assertions to expose design bugs and establish confidence in Register Transfer Level (RTL) designs. Yet existing assertion mining methods still struggle to produce complete and reliable assertion sets: random or limited traces fail to cover hard-to-reach behaviors, and one-shot generation provides little feedback about what remains unverified or how the assertion set should be improved. As a result, critical design behaviors can remain uncovered even when many assertions are generated. We present NeuroAssertion, a coverage-driven assertion generation framework that combines formal trace generation, syntax-guided synthesis (SyGuS), and an agent-inspired refinement process within a unified framework. Our framework first converts hard-to-reach control-flow conditions into formal reachability objectives, uses model checking to generate behaviorally diverse traces, and mines initial assertions from these traces with SyGuS. It then performs targeted agent-inspired refinement under verification feedback: one LLM first proposes candidate assertions for uncovered regions, and if a candidate fails formal checking, a second LLM generates a repair grammar that guides constrained symbolic synthesis in a neuro-symbolic repair procedure. Experimental results show that this framework delivers around 2X more assertions and about 2X higher mutation coverage than traditional assertion mining methods.",
+        "arxiv_id": "2608.19954",
+        "title": "Experimental Verification of Fast Voltage Droop Correction Circuits",
+        "abstract": "Due to the trend towards minimizing guard bands for energy saving purposes, voltage droops are a key limiting factor for the operational frequency of today's VLSI circuits. Adapting clock frequencies dynamically presents the challenge of metastability in the device that detects and stores the existence of voltage droops. We present an implementation of a fast all-digital circuit for adaptive response to droops using the IHP 130 nm process. The description of the design is presented in an accompanying paper. We experimentally validate the functionality of the design on a test chip.",
         "authors": [
-          "Zhiyuan Yan",
-          "Ziyue Zheng",
-          "Hongce Zhang"
+          "Shreyas Srinivas",
+          "Ian W. Jones",
+          "Carsten Schulze",
+          "Milos Krstic",
+          "Christoph Lenzen"
         ],
-        "published": "2026-08-19T03:14:14Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.18482v1",
-        "score": 0.5864
+        "published": "2026-08-20T12:23:40Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.19954v1",
+        "score": 0.5557
       },
       {
-        "arxiv_id": "2608.19395",
-        "title": "HYDRA: A Heterogeneous Chiplet DSE Framework for Serving Dynamic Hybrid LLM Workloads",
-        "abstract": "Hybrid Transformer-Mamba large language models (LLMs) enhance long-context efficiency, but their heterogeneous computation and communication patterns complicate efficient hardware acceleration. Chiplet-based architectures offer a scalable solution by integrating specialized compute and memory units. However, the design space spanning static architectural configurations and dynamic runtime policies is prohibitively large to explore exhaustively. To address this challenge, we present HYDRA, a comprehensive design space exploration framework for hybrid LLM serving on heterogeneous chiplet systems. HYDRA jointly explores chiplet composition, placement, inter-chiplet bandwidth provisioning, dynamic batching, and runtime scheduling. It integrates communication-aware placement, dynamic batching, elastic task scheduling, and a fast Markov-based performance estimator that captures multi-tenant runtime dynamics for efficient and accurate exploration. Across all workloads, HYDRA delivers 1.55x the throughput and 43.7 percent lower time-to-first-token on average, with throughput gains reaching up to 2.3x compared to state-of-the-art baselines. These results highlight that co-designing architecture and runtime policies is critical for efficient large-scale LLM serving on heterogeneous chiplet systems.",
+        "arxiv_id": "2608.20164",
+        "title": "Architecture and Compilation Co-Design for High-Rate Quantum Product Codes on Neutral Atom Arrays",
+        "abstract": "Achieving fault-tolerant quantum computing at a practical scale demands quantum error correction (QEC) codes with high encoding rates. Quantum low-density parity-check (qLDPC) codes emerge as a promising candidate, especially given the rise of neutral atom arrays that provide dynamic long-range connectivity via atom movements. In general, synthesizing valid and efficient physical execution plans for QEC is a provably hard combinatorial problem, forming a critical compilation bottleneck that worsens as code sizes grow. To overcome this complexity, we focus on an important product family of qLDPC codes with dimension-reduction properties, and propose ONEX. This framework decomposes complex 2D physical execution planning into independent 1D subproblems, each solved to optimal execution depth within practical compilation time. First, we formulate the 1D execution plan with an explicit satisfiability modulo theories (SMT) encoding. This protocol produces provably depth-optimal solutions with substantial duration reduction. Second, we develop a multi-stage compilation pipeline featuring anytime optimization, movement compaction, and iterative feedback. This pipeline maintains practical wall-clock times while providing progressive refinement and on-demand retrieval of quality solutions. Third, we evaluate ONEX in the application of hypergraph product (HGP) code memory mapped onto neutral atom arrays, achieving 3.7x to 6.1x and 29.8x to 42.1x higher clock rates than the constructive 1D algorithm and the general 2D compiler, respectively, while scaling efficiently to codes with 2,500 data qubits. Finally, we extend ONEX to zoned layouts, revealing architectural insights into the associated trade-offs, and demonstrate its applicability to the broader lifted-product (LP) code family through a representative example.",
         "authors": [
-          "Jiahao Lin",
-          "Alish Kanani",
-          "Sangwan Lee",
-          "Jaehyun Park",
-          "Umit Ogras"
+          "Adrian Liu",
+          "Wan-Hsuan Lin",
+          "Daniel Bochen Tan",
+          "Qian Xu",
+          "Jason Cong"
         ],
-        "published": "2026-08-19T19:26:21Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.19395v1",
-        "score": 0.5862
+        "published": "2026-08-20T15:20:53Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.20164v1",
+        "score": 0.5547
       },
       {
-        "arxiv_id": "2608.17787",
-        "title": "ETHEREAL: A 25.6-$\u03bc$s/inf. Low-latency Event-driven Graph-neural-network Processor for High-resolution Vision at the Edge",
-        "abstract": "Dynamic vision sensors (DVS) are enticing candidates to reach the low-latency, sub-ms target of edge-vision applications, as they generate events with a $\u03bc$s-level time resolution. However, using DVS front ends also calls for novel algorithm/hardware back ends capable of efficiently handling streams of sparse spatiotemporal events. While event-driven graph neural networks (EV-GNNs) have emerged as a solution on the algorithmic side that is both accurate and efficient, there is no dedicated hardware to date capable of efficiently supporting their mixed requirements of dense-regular compute operations and sparse-irregular memory accesses. We therefore introduce ETHEREAL, the first EV-GNN processor chip, capable of bridging this gap by means of a neighbor-parallel spline-convolution engine combined with a split-2D/3D memory hierarchy that introduces a novel spatiotemporal event-caching mechanism. Measurement results demonstrate a 25.6$\u03bc$s latency and a 1.6$\u03bc$J energy per end-to-end event-wise inference on the state-of-the art DAGr-GNN workload and VGA-resolution (640x480 pixels) DSEC dataset.",
+        "arxiv_id": "2608.19628",
+        "title": "A Thread-Register Decoupled GPU Execution Model for Efficient Tensor Computation",
+        "abstract": "Modern GPUs increasingly integrate Tensor Cores into the execution pipeline. Although aggregate tensor throughput continues to grow, aided by an operand supply that has evolved from register-based in Ampere to redundancy-free, memory-based in Hopper and Blackwell, efficiently orchestrating the complete tensor compute pipeline for the modern AI workloads remains challenging. We identify the fundamental bottlenecks as fixed parallelism and coarse-grained scheduling, both of which are exposed by modern AI workloads that interleave diverse non-GEMM operations with GEMM. To orchestrate tensor computation efficiently, we propose FIBER, a new architecture that extends the GPU SIMT (single instruction, multiple thread) model. Its basic execution instance, the \\emph{fiber}, is decoupled from private register ownership, carrying only minimal control state while accessing an SM's registers through a shared view. This enables dynamic parallelism scaling, fine-grained register-level dataflow scheduling, and offers a redundancy-free alternative for matrix operand supply. We extend the ISA, microarchitecture, and compiler to realize shared-register addressing, conflict-free operand delivery, and fiber-based program mapping. Under a typical mixed-precision LLM serving scenario, FIBER achieves a 2.25x end-to-end speedup on Ampere (1.15x for the original FP16 computation), with 1.8x and 2.09x on Hopper and Blackwell respectively, and kernel-level gains up to 2.49x.",
         "authors": [
-          "Adrian Kneip",
-          "Martin Lefebvre",
-          "Daniel Gehrig",
-          "Victoria Catal\u00e1n Pastor",
-          "Davide Scaramuzza",
-          "Marian Verhelst",
-          "Charlotte Frenkel"
+          "Zihan Liu",
+          "Jingwen Leng",
+          "Yangjie Zhou",
+          "Yitong Ding",
+          "Guanlin Zhu",
+          "Yilu Huang",
+          "Chiheng Jin",
+          "Chen Zhang",
+          "Shixuan Sun",
+          "Yu Feng",
+          "Anbang Wu",
+          "Minyi Guo",
+          "Jian Weng",
+          "Jiajin Tu",
+          "Junsong Wang"
         ],
-        "published": "2026-08-18T13:49:50Z",
-        "pdf_url": "https://arxiv.org/pdf/2608.17787v1",
-        "score": 0.5858
+        "published": "2026-08-20T04:35:13Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.19628v1",
+        "score": 0.5482
+      },
+      {
+        "arxiv_id": "2608.19865",
+        "title": "A 39pJ/b 7.3Gbps 1.3mm$^2$ Multi-Subcarrier Massive MU-MIMO-OFDM Detector Exploiting Beamspace Sparsity and Frequency-Domain Correlation in 22FDX",
+        "abstract": "We present the first multi-subcarrier massive multi-user (MU) multiple-input multiple-output (MIMO) orthogonal frequency-division multiplexing (OFDM) data detector reported in the open literature. By exploiting the channel's beamspace sparsity and frequency-domain (FD) correlation, we achieve up to 3x area and power reduction. Our design supports U=8 user equipments and B=64 basestation antennas, computes soft outputs for QPSK to 256-QAM, and processes 16 subcarriers in parallel. The fabricated 22FDX ASIC has a core cell area of 1.3mm$^2$, consumes 286mW, and delivers a throughput of 7.3Gbps at 0.8V core voltage, achieving best-in-class energy efficiency of 39pJ/b.",
+        "authors": [
+          "Abhishek Kumar",
+          "Seyed Hadi Mirfarshbafan",
+          "Oscar Casta\u00f1eda",
+          "Christoph Studer"
+        ],
+        "published": "2026-08-20T10:20:27Z",
+        "pdf_url": "https://arxiv.org/pdf/2608.19865v1",
+        "score": 0.4884
       }
     ]
   }
