@@ -1,13 +1,13 @@
 {
-  "run_timestamp": "2026-08-25T03:46:00.280359+00:00",
+  "run_timestamp": "2026-08-27T13:32:04.507124+00:00",
   "cycle_hours": 48,
-  "duration_seconds": 100.5,
+  "duration_seconds": 110.16,
   "sectors": {
     "AI": {
       "name": "AI",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 14.13,
+      "duration_seconds": 16.12,
       "ok": true,
       "error": null
     },
@@ -15,7 +15,7 @@
       "name": "ML",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 16.14,
+      "duration_seconds": 16.16,
       "ok": true,
       "error": null
     },
@@ -23,7 +23,7 @@
       "name": "DL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 16.25,
+      "duration_seconds": 16.11,
       "ok": true,
       "error": null
     },
@@ -31,7 +31,7 @@
       "name": "RL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 14.53,
+      "duration_seconds": 16.16,
       "ok": true,
       "error": null
     },
@@ -39,38 +39,38 @@
       "name": "Robotics",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 13.16,
+      "duration_seconds": 14.28,
       "ok": true,
       "error": null
     },
     "Radiotherapy": {
       "name": "Radiotherapy",
-      "pulled": 5,
-      "retained": 5,
-      "duration_seconds": 2.19,
+      "pulled": 8,
+      "retained": 8,
+      "duration_seconds": 4.68,
       "ok": true,
       "error": null
     },
     "Semiconductors": {
       "name": "Semiconductors",
-      "pulled": 27,
+      "pulled": 30,
       "retained": 8,
-      "duration_seconds": 16.4,
+      "duration_seconds": 16.81,
       "ok": true,
       "error": null
     },
     "Embedded Systems": {
       "name": "Embedded Systems",
-      "pulled": 14,
+      "pulled": 18,
       "retained": 8,
-      "duration_seconds": 7.7,
+      "duration_seconds": 9.85,
       "ok": true,
       "error": null
     }
   },
   "totals": {
-    "pulled": 196,
-    "retained": 71,
+    "pulled": 206,
+    "retained": 74,
     "failed_sectors": 0
   }
 }
