@@ -1,13 +1,13 @@
 {
-  "run_timestamp": "2026-08-27T13:32:04.507124+00:00",
+  "run_timestamp": "2026-08-29T09:41:51.202012+00:00",
   "cycle_hours": 48,
-  "duration_seconds": 110.16,
+  "duration_seconds": 116.26,
   "sectors": {
     "AI": {
       "name": "AI",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 16.12,
+      "duration_seconds": 17.57,
       "ok": true,
       "error": null
     },
@@ -15,7 +15,7 @@
       "name": "ML",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 16.16,
+      "duration_seconds": 19.2,
       "ok": true,
       "error": null
     },
@@ -23,7 +23,7 @@
       "name": "DL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 16.11,
+      "duration_seconds": 19.16,
       "ok": true,
       "error": null
     },
@@ -31,7 +31,7 @@
       "name": "RL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 16.16,
+      "duration_seconds": 19.01,
       "ok": true,
       "error": null
     },
@@ -39,15 +39,15 @@
       "name": "Robotics",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 14.28,
+      "duration_seconds": 16.73,
       "ok": true,
       "error": null
     },
     "Radiotherapy": {
       "name": "Radiotherapy",
-      "pulled": 8,
-      "retained": 8,
-      "duration_seconds": 4.68,
+      "pulled": 4,
+      "retained": 4,
+      "duration_seconds": 2.45,
       "ok": true,
       "error": null
     },
@@ -55,22 +55,22 @@
       "name": "Semiconductors",
       "pulled": 30,
       "retained": 8,
-      "duration_seconds": 16.81,
+      "duration_seconds": 15.42,
       "ok": true,
       "error": null
     },
     "Embedded Systems": {
       "name": "Embedded Systems",
-      "pulled": 18,
+      "pulled": 11,
       "retained": 8,
-      "duration_seconds": 9.85,
+      "duration_seconds": 6.72,
       "ok": true,
       "error": null
     }
   },
   "totals": {
-    "pulled": 206,
-    "retained": 74,
+    "pulled": 195,
+    "retained": 70,
     "failed_sectors": 0
   }
 }
