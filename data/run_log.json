@@ -1,13 +1,13 @@
 {
-  "run_timestamp": "2026-09-01T08:17:10.247448+00:00",
+  "run_timestamp": "2026-09-03T07:40:35.931353+00:00",
   "cycle_hours": 48,
-  "duration_seconds": 102.59,
+  "duration_seconds": 103.09,
   "sectors": {
     "AI": {
       "name": "AI",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 15.92,
+      "duration_seconds": 12.82,
       "ok": true,
       "error": null
     },
@@ -15,7 +15,7 @@
       "name": "ML",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 15.77,
+      "duration_seconds": 15.32,
       "ok": true,
       "error": null
     },
@@ -23,7 +23,7 @@
       "name": "DL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 15.91,
+      "duration_seconds": 14.1,
       "ok": true,
       "error": null
     },
@@ -31,7 +31,7 @@
       "name": "RL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 15.88,
+      "duration_seconds": 13.17,
       "ok": true,
       "error": null
     },
@@ -39,15 +39,15 @@
       "name": "Robotics",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 13.38,
+      "duration_seconds": 14.37,
       "ok": true,
       "error": null
     },
     "Radiotherapy": {
       "name": "Radiotherapy",
-      "pulled": 4,
-      "retained": 4,
-      "duration_seconds": 2.11,
+      "pulled": 7,
+      "retained": 6,
+      "duration_seconds": 3.89,
       "ok": true,
       "error": null
     },
@@ -55,22 +55,22 @@
       "name": "Semiconductors",
       "pulled": 30,
       "retained": 8,
-      "duration_seconds": 18.08,
+      "duration_seconds": 14.16,
       "ok": true,
       "error": null
     },
     "Embedded Systems": {
       "name": "Embedded Systems",
-      "pulled": 10,
+      "pulled": 28,
       "retained": 8,
-      "duration_seconds": 5.53,
+      "duration_seconds": 15.25,
       "ok": true,
       "error": null
     }
   },
   "totals": {
-    "pulled": 194,
-    "retained": 70,
+    "pulled": 215,
+    "retained": 72,
     "failed_sectors": 0
   }
 }
