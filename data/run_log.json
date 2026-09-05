@@ -1,13 +1,13 @@
 {
-  "run_timestamp": "2026-09-03T07:40:35.931353+00:00",
+  "run_timestamp": "2026-09-05T07:20:45.123804+00:00",
   "cycle_hours": 48,
-  "duration_seconds": 103.09,
+  "duration_seconds": 103.23,
   "sectors": {
     "AI": {
       "name": "AI",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 12.82,
+      "duration_seconds": 17.33,
       "ok": true,
       "error": null
     },
@@ -15,7 +15,7 @@
       "name": "ML",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 15.32,
+      "duration_seconds": 15.34,
       "ok": true,
       "error": null
     },
@@ -23,7 +23,7 @@
       "name": "DL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 14.1,
+      "duration_seconds": 14.54,
       "ok": true,
       "error": null
     },
@@ -31,7 +31,7 @@
       "name": "RL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 13.17,
+      "duration_seconds": 17.08,
       "ok": true,
       "error": null
     },
@@ -39,15 +39,15 @@
       "name": "Robotics",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 14.37,
+      "duration_seconds": 14.77,
       "ok": true,
       "error": null
     },
     "Radiotherapy": {
       "name": "Radiotherapy",
-      "pulled": 7,
+      "pulled": 6,
       "retained": 6,
-      "duration_seconds": 3.89,
+      "duration_seconds": 3.12,
       "ok": true,
       "error": null
     },
@@ -55,21 +55,21 @@
       "name": "Semiconductors",
       "pulled": 30,
       "retained": 8,
-      "duration_seconds": 14.16,
+      "duration_seconds": 14.73,
       "ok": true,
       "error": null
     },
     "Embedded Systems": {
       "name": "Embedded Systems",
-      "pulled": 28,
+      "pulled": 13,
       "retained": 8,
-      "duration_seconds": 15.25,
+      "duration_seconds": 6.32,
       "ok": true,
       "error": null
     }
   },
   "totals": {
-    "pulled": 215,
+    "pulled": 199,
     "retained": 72,
     "failed_sectors": 0
   }
