@@ -1,76 +1,76 @@
 {
-  "run_timestamp": "2026-09-11T07:44:05.589873+00:00",
+  "run_timestamp": "2026-09-13T08:02:16.420846+00:00",
   "cycle_hours": 48,
-  "duration_seconds": 143.47,
+  "duration_seconds": 387.09,
   "sectors": {
     "AI": {
       "name": "AI",
-      "pulled": 30,
-      "retained": 10,
-      "duration_seconds": 18.78,
-      "ok": true,
-      "error": null
+      "pulled": 0,
+      "retained": 0,
+      "duration_seconds": 60.83,
+      "ok": false,
+      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI%29+AND+submittedDate%3A%5B202609100755+TO+202609130755%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
     },
     "ML": {
       "name": "ML",
-      "pulled": 30,
-      "retained": 10,
-      "duration_seconds": 16.38,
-      "ok": true,
-      "error": null
+      "pulled": 0,
+      "retained": 0,
+      "duration_seconds": 48.66,
+      "ok": false,
+      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.LG+OR+cat%3Astat.ML%29+AND+submittedDate%3A%5B202609100756+TO+202609130756%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
     },
     "DL": {
       "name": "DL",
-      "pulled": 30,
-      "retained": 10,
-      "duration_seconds": 16.17,
-      "ok": true,
-      "error": null
+      "pulled": 0,
+      "retained": 0,
+      "duration_seconds": 18.46,
+      "ok": false,
+      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.LG+OR+cat%3Acs.CV+OR+cat%3Acs.NE%29+AND+submittedDate%3A%5B202609100757+TO+202609130757%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
     },
     "RL": {
       "name": "RL",
-      "pulled": 30,
-      "retained": 10,
-      "duration_seconds": 18.68,
-      "ok": true,
-      "error": null
+      "pulled": 0,
+      "retained": 0,
+      "duration_seconds": 34.02,
+      "ok": false,
+      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202609100757+TO+202609130757%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
     },
     "Robotics": {
       "name": "Robotics",
-      "pulled": 30,
-      "retained": 10,
-      "duration_seconds": 15.44,
-      "ok": true,
-      "error": null
+      "pulled": 0,
+      "retained": 0,
+      "duration_seconds": 79.2,
+      "ok": false,
+      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.RO%29+AND+submittedDate%3A%5B202609100758+TO+202609130758%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
     },
     "Radiotherapy": {
       "name": "Radiotherapy",
-      "pulled": 4,
-      "retained": 4,
-      "duration_seconds": 2.21,
-      "ok": true,
-      "error": null
+      "pulled": 0,
+      "retained": 0,
+      "duration_seconds": 45.5,
+      "ok": false,
+      "error": "RuntimeError: arXiv API failed after 3 attempts: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
     },
     "Semiconductors": {
       "name": "Semiconductors",
-      "pulled": 30,
-      "retained": 8,
-      "duration_seconds": 19.74,
-      "ok": true,
-      "error": null
+      "pulled": 0,
+      "retained": 0,
+      "duration_seconds": 55.74,
+      "ok": false,
+      "error": "RuntimeError: arXiv API failed after 3 attempts: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
     },
     "Embedded Systems": {
       "name": "Embedded Systems",
-      "pulled": 30,
+      "pulled": 8,
       "retained": 8,
-      "duration_seconds": 36.06,
+      "duration_seconds": 44.68,
       "ok": true,
       "error": null
     }
   },
   "totals": {
-    "pulled": 214,
-    "retained": 70,
-    "failed_sectors": 0
+    "pulled": 8,
+    "retained": 8,
+    "failed_sectors": 7
   }
 }
