@@ -1,76 +1,76 @@
 {
-  "run_timestamp": "2026-09-13T08:02:16.420846+00:00",
+  "run_timestamp": "2026-09-15T08:28:20.410197+00:00",
   "cycle_hours": 48,
-  "duration_seconds": 387.09,
+  "duration_seconds": 564.66,
   "sectors": {
     "AI": {
       "name": "AI",
       "pulled": 0,
       "retained": 0,
-      "duration_seconds": 60.83,
+      "duration_seconds": 75.53,
       "ok": false,
-      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI%29+AND+submittedDate%3A%5B202609100755+TO+202609130755%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
+      "error": "RuntimeError: arXiv API failed after 3 attempts: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
     },
     "ML": {
       "name": "ML",
       "pulled": 0,
       "retained": 0,
-      "duration_seconds": 48.66,
+      "duration_seconds": 90.65,
       "ok": false,
-      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.LG+OR+cat%3Astat.ML%29+AND+submittedDate%3A%5B202609100756+TO+202609130756%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
+      "error": "RuntimeError: arXiv API failed after 3 attempts: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
     },
     "DL": {
       "name": "DL",
       "pulled": 0,
       "retained": 0,
-      "duration_seconds": 18.46,
+      "duration_seconds": 105.16,
       "ok": false,
-      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.LG+OR+cat%3Acs.CV+OR+cat%3Acs.NE%29+AND+submittedDate%3A%5B202609100757+TO+202609130757%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
+      "error": "RuntimeError: arXiv API failed after 3 attempts: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
     },
     "RL": {
       "name": "RL",
       "pulled": 0,
       "retained": 0,
-      "duration_seconds": 34.02,
+      "duration_seconds": 45.53,
       "ok": false,
-      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202609100757+TO+202609130757%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
+      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.LG+OR+cat%3Acs.AI%29+AND+submittedDate%3A%5B202609120823+TO+202609150823%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
     },
     "Robotics": {
       "name": "Robotics",
       "pulled": 0,
       "retained": 0,
-      "duration_seconds": 79.2,
+      "duration_seconds": 93.35,
       "ok": false,
-      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Acs.RO%29+AND+submittedDate%3A%5B202609100758+TO+202609130758%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
+      "error": "RuntimeError: arXiv API failed after 3 attempts: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
     },
     "Radiotherapy": {
       "name": "Radiotherapy",
       "pulled": 0,
       "retained": 0,
-      "duration_seconds": 45.5,
+      "duration_seconds": 15.41,
       "ok": false,
-      "error": "RuntimeError: arXiv API failed after 3 attempts: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
+      "error": "RuntimeError: arXiv API failed after 3 attempts: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=%28cat%3Aphysics.med-ph%29+AND+submittedDate%3A%5B202609120825+TO+202609150825%5D&start=0&max_results=30&sortBy=submittedDate&sortOrder=descending"
     },
     "Semiconductors": {
       "name": "Semiconductors",
       "pulled": 0,
       "retained": 0,
-      "duration_seconds": 55.74,
+      "duration_seconds": 63.79,
       "ok": false,
       "error": "RuntimeError: arXiv API failed after 3 attempts: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
     },
     "Embedded Systems": {
       "name": "Embedded Systems",
-      "pulled": 8,
-      "retained": 8,
-      "duration_seconds": 44.68,
-      "ok": true,
-      "error": null
+      "pulled": 0,
+      "retained": 0,
+      "duration_seconds": 75.24,
+      "ok": false,
+      "error": "RuntimeError: arXiv API failed after 3 attempts: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
     }
   },
   "totals": {
-    "pulled": 8,
-    "retained": 8,
-    "failed_sectors": 7
+    "pulled": 0,
+    "retained": 0,
+    "failed_sectors": 8
   }
 }
