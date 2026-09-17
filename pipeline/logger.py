@@ -51,6 +51,9 @@ class SectorStatus:
     duration_seconds: float = 0.0
     ok: bool = True
     error: Optional[str] = None
+    score_min: Optional[float] = None
+    score_max: Optional[float] = None
+    score_mean: Optional[float] = None
 
     def as_status_line(self, name_width: int) -> str:
         mark = _MARK_OK if self.ok else _MARK_FAIL

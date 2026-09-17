@@ -14,9 +14,22 @@ _model_cache: Dict[str, SentenceTransformer] = {}
 def load_model(model_name: str) -> SentenceTransformer:
     if model_name not in _model_cache:
         logger.debug(f"Loading embedding model: {model_name}")
-        _model_cache[model_name] = SentenceTransformer(model_name)
+        model = SentenceTransformer(model_name)
+        _sanity_check(model)
+        _model_cache[model_name] = model
     return _model_cache[model_name]
 
+
+def _sanity_check(model: SentenceTransformer) -> None:
+    a = model.encode_document(["a cat sat on the mat"], normalize_embeddings=True)[0]
+    b = model.encode_document(["a kitten rested on the rug"], normalize_embeddings=True)[0]
+    sim = float(np.dot(a, b))
+    logger.debug(f"Model sanity check (known-similar pair) similarity: {sim:.4f}")
+    if sim < 0.5:
+        logger.warning(
+            f"Sanity check similarity is unexpectedly low ({sim:.4f}) — "
+            f"embeddings may be corrupted or pretrained weights failed to load."
+        )
 
 def _batch_token_counts(model: SentenceTransformer, texts: List[str], prompt: str = "") -> List[int]:
     if not texts:

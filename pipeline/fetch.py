@@ -162,7 +162,7 @@ def fetch_sector(
     sector_name = sector_cfg["name"]
     categories = sector_cfg["arxiv_categories"]
     query = build_search_query(categories, cycle_hours, buffer_hours=buffer_hours)
-
+    logger.debug(f"[{sector_name}] search query: {query}")
     collected: List[PaperRecord] = []
     start = 0
 

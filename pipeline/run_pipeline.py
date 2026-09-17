@@ -77,7 +77,7 @@ def _process_sector(
 
     profile_vector = encode_profile(model, sector_cfg["profile"], sector_name)
     top_k = sector_cfg.get("top_k", config.get("default_top_k", 10))
-    ranked = rank_sector(
+    ranked, score_stats = rank_sector(
         profile_vector,
         near_dup_kept,
         final_vectors,
@@ -85,6 +85,10 @@ def _process_sector(
         min_score=config.get("relevance_min_score", 0.0),
     )
     status.retained = len(ranked)
+    if score_stats:
+        status.score_min = score_stats.min
+        status.score_max = score_stats.max
+        status.score_mean = score_stats.mean
 
     papers_out = [
         {
