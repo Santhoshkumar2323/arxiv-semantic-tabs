@@ -4,7 +4,7 @@ default_top_k: 10
 max_pull_per_sector: 30                   
 window_buffer_hours: 24                   
 near_duplicate_threshold: 0.88             
-relevance_min_score: 0.72                   
+relevance_min_score: 0.35                   
 zero_paper_policy: strict_empty          
 
 sectors:
