@@ -3,67 +3,78 @@ cycle_hours: 48
 default_top_k: 10                          
 max_pull_per_sector: 30                   
 window_buffer_hours: 24                   
-near_duplicate_threshold: 0.92             
-relevance_min_score: 0.0                   
+near_duplicate_threshold: 0.88             
+relevance_min_score: 0.72                   
 zero_paper_policy: strict_empty          
 
 sectors:
   - name: AI
     arxiv_categories: [cs.AI]
     profile: >
-      symbolic reasoning, multi-agent planning, knowledge representation, automated theorem proving,
-      heuristic search, cognitive architectures, expert systems, and logical foundational AI theory.
+      Theoretical foundations and frameworks of artificial intelligence. Research involving 
+      autonomous agent architectures, agentic AI, multi-agent planning, reasoning workflows, and tool-use loop systems. 
+      Includes symbolic reasoning, knowledge representation frameworks, automated theorem proving, heuristic search 
+      algorithms, cognitive architectures, and logical AI methods.
     top_k: 10
 
   - name: ML
     arxiv_categories: [cs.LG, stat.ML]
     profile: >
-      supervised learning, unsupervised learning, optimization algorithms, convex optimization,
-      generalization bounds, PAC learning, empirical risk minimization, classical algorithms,
-      support vector machines, and ensemble methods.
+      Mathematical and algorithmic foundations of statistical machine learning. Covers newly proposed optimization 
+      algorithms, novel optimization paradigms, convex and non-convex optimization, generalization bounds, PAC learning 
+      theory, and empirical risk minimization. Focuses on statistical learning models, support vector machines, 
+      and ensemble methods.
     top_k: 10
 
   - name: DL
     arxiv_categories: [cs.LG, cs.CV, cs.NE]
     profile: >
-      deep neural networks, vision transformers, ViT, CNN architectures, representation learning,
-      self-supervised learning, diffusion models, large language models, LLM pre-training,
-      gradient descent variants, and backpropagation optimization.
+      Deep learning architectures, novel neural network layers, state space models (SSM), and advanced scaling methodologies. 
+      Focuses on vision transformers (ViT), convolutional neural networks (CNN), representation learning, self-supervised learning 
+      paradigms, diffusion models, and generative large language models (LLM pre-training, test-time compute, and reasoning tokens). 
     top_k: 10
 
   - name: RL
     arxiv_categories: [cs.LG, cs.AI]
     profile: >
-      reinforcement learning, Markov Decision Processes, MDP, policy gradient, PPO, Q-learning,
-      actor-critic, reward shaping, multi-agent RL, MARL, exploration-exploitation tradeoff,
-      and continuous control.
+      Sequential decision-making frameworks, control optimization, and reinforcement learning paradigms. 
+      Covers Markov Decision Processes (MDP), policy gradient methods, proximal policy optimization (PPO), 
+      Q-learning, and actor-critic frameworks. Focuses on reward shaping strategies, multi-agent reinforcement learning (MARL), 
+      the exploration-exploitation tradeoff, and continuous control algorithms.
     top_k: 10
 
   - name: Robotics
     arxiv_categories: [cs.RO]
     profile: >
-      robotic manipulation, kinematic chains, end-effectors, legged locomotion, quadrupedal robots,
-      sim-to-real transfer, motion planning networks, SLAM, robot vision, perception, human-robot interaction,
-      HRI, and actuation systems.
+      Autonomous robotics systems, physical manipulation, and locomotion engineering. Research focusing on 
+      robotic manipulation, kinematic chains, advanced end-effectors, legged or quadrupedal locomotion, 
+      and sim-to-real transfer techniques. Includes motion planning networks, simultaneous localization and mapping (SLAM), 
+      robot vision, perception algorithms, human-robot interaction (HRI), and physical actuation systems.
     top_k: 10
 
   - name: Radiotherapy
     arxiv_categories: [physics.med-ph]
     profile: >
-      medical physics, radiotherapy dose planning, brachytherapy, proton therapy, linear accelerators,
-      LINAC, radiation treatment delivery, CBCT, image-guided radiotherapy, IGRT, and oncological computational physics.
+      Clinical medical physics and advanced radiation therapy treatment technologies. Studies focus on 
+      radiotherapy dose planning algorithms, brachytherapy techniques, proton beam therapy, and linear accelerators (LINAC). 
+      Includes radiation treatment delivery protocols, cone-beam computed tomography (CBCT), image-guided radiotherapy (IGRT), 
+      and oncological computational physics modeling.
     top_k: 8
 
   - name: Semiconductors
     arxiv_categories: [cond-mat.mes-hall]
     profile: >
-      semiconductor device physics, mesoscale nanoscale electronics, quantum hall effect, heterostructures,
-      transition metal dichalcogenides, TMDs, bandgap engineering, MOSFET, lithography, and condensed matter transport.
+      Solid-state device physics and nanoscale electronic material transport phenomena. Research involving 
+      semiconductor device physics, mesoscale and nanoscale electronics, the quantum Hall effect, heterostructures, 
+      and transition metal dichalcogenides (TMDs). Covers advanced bandgap engineering, MOSFET design optimization, 
+      photolithography techniques, and condensed matter electron transport.
     top_k: 8
 
   - name: Embedded Systems
     arxiv_categories: [cs.ES, cs.AR]
     profile: >
-      embedded system architecture, real-time operating systems, RTOS, low-power computing, hardware-software co-design,
-      FPGA acceleration, ASIC design, microcontroller firmware, edge AI inference, and memory-constrained devices.
+      Hardware-software co-design, real-time architectures, and resource-constrained execution environments. 
+      Focuses on embedded system architecture, real-time operating systems (RTOS), low-power edge computing, 
+      FPGA acceleration, and custom ASIC design. Includes microcontroller firmware optimization, edge AI inference models, 
+      and computing paradigms for strictly memory-constrained hardware devices.
     top_k: 8

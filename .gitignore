@@ -6,4 +6,6 @@ venv/
 .DS_Store
 .vscode/
 .idea/
+note.txt
+test.py
 
