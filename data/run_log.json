@@ -1,13 +1,13 @@
 {
-  "run_timestamp": "2026-08-15T08:39:13.836265+00:00",
+  "run_timestamp": "2026-09-17T08:20:39.440674+00:00",
   "cycle_hours": 48,
-  "duration_seconds": 209.93,
+  "duration_seconds": 58.1,
   "sectors": {
     "AI": {
       "name": "AI",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 28.94,
+      "duration_seconds": 7.87,
       "ok": true,
       "error": null
     },
@@ -15,7 +15,7 @@
       "name": "ML",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 35.23,
+      "duration_seconds": 8.25,
       "ok": true,
       "error": null
     },
@@ -23,7 +23,7 @@
       "name": "DL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 33.17,
+      "duration_seconds": 8.17,
       "ok": true,
       "error": null
     },
@@ -31,7 +31,7 @@
       "name": "RL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 35.45,
+      "duration_seconds": 7.79,
       "ok": true,
       "error": null
     },
@@ -39,15 +39,15 @@
       "name": "Robotics",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 30.53,
+      "duration_seconds": 8.05,
       "ok": true,
       "error": null
     },
     "Radiotherapy": {
       "name": "Radiotherapy",
-      "pulled": 5,
-      "retained": 5,
-      "duration_seconds": 6.46,
+      "pulled": 6,
+      "retained": 6,
+      "duration_seconds": 1.74,
       "ok": true,
       "error": null
     },
@@ -55,22 +55,22 @@
       "name": "Semiconductors",
       "pulled": 30,
       "retained": 8,
-      "duration_seconds": 26.67,
+      "duration_seconds": 8.76,
       "ok": true,
       "error": null
     },
     "Embedded Systems": {
       "name": "Embedded Systems",
-      "pulled": 12,
+      "pulled": 30,
       "retained": 8,
-      "duration_seconds": 13.48,
+      "duration_seconds": 7.47,
       "ok": true,
       "error": null
     }
   },
   "totals": {
-    "pulled": 197,
-    "retained": 71,
+    "pulled": 216,
+    "retained": 72,
     "failed_sectors": 0
   }
 }
