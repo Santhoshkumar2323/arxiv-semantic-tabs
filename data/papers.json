@@ -784,43 +784,9 @@
     ]
   },
   "Radiotherapy": {
-    "pulled": 11,
-    "retained": 8,
+    "pulled": 3,
+    "retained": 3,
     "papers": [
-      {
-        "arxiv_id": "2609.26294",
-        "title": "4D Pencil Beam Treatment Plan with Conditional Weight Predictions",
-        "abstract": "Objective. This work aims to accelerate our four-dimensional (4D) proton pencil beam delivery strategy, which incorporates respiratory motion into a dynamic treatment plan, to improve dose conformity and treatment efficiency for gantry-less and magnet-free scanner designs. Approach. To accelerate the generation and adaptation of 4D treatment plans, we propose a conditional hybrid ResNet18-Transformer model for predicting pencil beam weights. The model predicts either the full set of pencil beam weights or a subset thereof. Main Results. The conditional model can successfully predict the remaining beam weights of a treatment, and the results suggest that extending this approach to full treatment prediction is feasible but requires further investigation. Significance. The acceleration of 4D treatment generation via pencil beam weight prediction takes us one step closer to the feasibility of treating mobile targets with simplified, gantry-less, and magnet-free scanner designs. Reducing system complexity while preserving dosimetric conformity may offer a pathway toward more accessible and cost-effective proton beam therapy for motion-affected tumours. Our code is available here: https://github.com/NairVonMuehlenen/Pencil-Beam-Weight-Prediction",
-        "authors": [
-          "Nair N von Muehlenen",
-          "Florentin Bieder",
-          "Philippe C Cattin"
-        ],
-        "published": "2026-09-22T12:08:43Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.26294v1",
-        "score": 0.7175
-      },
-      {
-        "arxiv_id": "2609.25993",
-        "title": "Towards real-time ion range verification via hybrid Compton-PET 3D imaging at isochronous cyclotrons",
-        "abstract": "Range uncertainties remain a major limitation to the full clinical exploitation of proton therapy, motivating reliable in-vivo range-verification techniques. This work presents an experimental investigation of a hybrid Prompt-Gamma Imaging (PGI)--Positron-Emission Tomography (PET) concept at the isochronous cyclotron of the West German Proton Therapy Centre under clinically representative pencil-beam-scanning conditions. Because this accelerator delivers a quasi-continuous beam, a pulsed shoot-and-step structure was imposed to mimic the interruptions associated with clinical energy-layer switching. This enabled PGI during irradiation and PET and delayed Compton imaging during beam-off intervals within the same sequence. Four two-plane Compton cameras were arranged in a co-planar cross-shaped geometry around the beam isocenter. Polyethylene phantoms were irradiated with 100~MeV protons at known positions along the beam axis. Their positions were estimated from reconstructed one-dimensional profiles using supervised machine-learning models trained exclusively on Monte Carlo simulations. PET achieved the best performance, with a root-mean-square deviation of 0.8~mm, followed by PGI with 1.6~mm. Delayed Compton imaging based on e$^{+}$ annihilation photons and $^{10}$C$^{*}$ decays yielded 2.4~mm and 3.8~mm, respectively. PET retained good performance down to 1% of the original event statistics, whereas PGI became increasingly statistics-limited. These results demonstrate the complementary strengths of hybrid PGI--PET and support its development towards millimetre-scale proton-range verification under clinically relevant irradiation conditions.",
-        "authors": [
-          "Javier Balibrea-Correa",
-          "V. Babiano-Suarez",
-          "J. Lerendegui-Marco",
-          "P. Torres-S\u00e1nchez",
-          "I. Ladarescu",
-          "M. Pall\u00e0s",
-          "B. Brusasco",
-          "J. Wulff",
-          "C. B\u00e4umer",
-          "A. Tarife\u00f1o-Saldivia",
-          "C. Domingo-Pardo"
-        ],
-        "published": "2026-09-22T10:46:24Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.25993v1",
-        "score": 0.6766
-      },
       {
         "arxiv_id": "2609.30169",
         "title": "Cone-beam artifact reduction in Gamma Knife CBCT images using a line-arc-line scan trajectory",
@@ -836,82 +802,36 @@
         "score": 0.673
       },
       {
-        "arxiv_id": "2609.27398",
-        "title": "Integration of Spectral CT with PET and SPECT: Bringing Tissue Composition Information to Molecular Imaging",
-        "abstract": "Molecular imaging has been transformed by integrating positron emission tomography (PET) or single-photon emission computed tomography (SPECT) with x-ray computed tomography (CT). However, x-ray CT in hybrid imaging is used primarily for anatomical localization and for attenuation and scatter correction of emission data. Its ability to characterize tissue composition remains underutilized. Spectral CT, including dual-energy CT (DECT) and photon-counting CT (PCCT), can provide material-specific information, such as images of iodine concentration, bone or calcium fractions, electron-density, effective atomic number and other spatially-varying material properties. These capabilities create an opportunity to bring tissue-composition information into molecular imaging. In addition, spectral CT can also reduce CT artifacts and provide more accurate corrections for emission data. In this review, we discuss the technical basis, integration pathways, and translational opportunities for combining spectral CT with molecular imaging. We review sequential and integrated PET/DECT approaches, emerging PET/PCCT concepts, PET-enabled spectral CT, and extensions to SPECT/CT. We then examine how spectral CT information may improve attenuation correction, scatter correction, tissue-fraction correction, positron range correction, reconstruction priors, and dosimetry. Clinical and translational applications include contrast-enhanced molecular imaging, vascular and perfusion imaging, quantitative bone marrow imaging, musculoskeletal imaging, and theranostics. Overall, spectral CT integration may move hybrid molecular imaging toward tissue-composition-informed molecular imaging, in which radiotracer signals are interpreted within their material context.",
+        "arxiv_id": "2609.29972",
+        "title": "Mathematical Modelling of Within-Host HIV Dynamics with Cytotoxic Immune Response and Antiretroviral Therapy",
+        "abstract": "We develop and analyse a mechanistic ODE model of within-host HIV dynamics that includes uninfected CD4$^+$ T cells, latently and productively infected cells, free virions, and cytotoxic immune effectors. Antiretroviral therapy is described by two time-dependent efficacy functions that separately reduce new infections and virion production. We show that solutions remain non-negative and bounded, identify the infection-free and endemic equilibria, and derive the basic reproduction number together with the local stability condition for the infection-free state. We also obtain treatment-dependent suppression thresholds and an analytical estimate of when this threshold is crossed as treatment efficacy declines. Numerical simulations consider untreated infection, ART initiation, periodic variation in efficacy, and progressive loss of treatment effect. Without therapy, the model approaches a state of persistent infection. ART reduces viral load and promotes recovery of the CD4$^+$ T-cell population, while the latent reservoir persists under the parameter set considered. Periodic changes in treatment efficacy produce sustained forced oscillations. These results connect the analytical threshold conditions with the treatment-dependent dynamics of the model and provide a basis for future calibration, sensitivity analysis, uncertainty quantification, and extensions informed by clinical data.",
         "authors": [
-          "Guobao Wang",
-          "Kris Thielemans",
-          "Peter B. No\u00ebl",
-          "Joel S. Karp",
-          "Paul E. Kinahan"
+          "Maxim Polyakov",
+          "Yulia Chernikova"
         ],
-        "published": "2026-09-23T05:57:59Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.27398v1",
-        "score": 0.6474
+        "published": "2026-09-24T15:23:24Z",
+        "pdf_url": "https://arxiv.org/pdf/2609.29972v1",
+        "score": 0.5369
       },
       {
-        "arxiv_id": "2609.27224",
-        "title": "Explicit pixel-value correction of lateral response artifacts in radiochromic film dosimetry: Evaluation of single-, double-, and triple-channel methods",
-        "abstract": "Background:Flatbed scanners introduce a lateral response artifact (LRA) perpendicular to lamp motion. Because LRA varies with position, pixel value (PV), color channel, and film model, it may violate the channel-common perturbation assumption of multichannel dosimetry. Purpose:To characterize PV-domain LRA in EBT4 and EBT-XD films, compare Lewis and Full corrections, and evaluate their effects on single-, double-, and triple-channel dosimetry. Methods:Seven films were scanned at seven lateral positions using a cyclic-shift design. For each position and RGB channel, center-equivalent response was modeled as PVc = A + B * PV. Lewis correction used two films with linear interpolation of A and B; Full correction used all center-local pairs with PCHIP interpolation of PVc - PV. Performance was assessed by portrait-landscape profile consistency and dose accuracy. Results: LRA was affine in PV, asymmetric about scanner center, and dependent on film model and channel. Both corrections reduced profile differences. Mean absolute profile differences across MU levels ranged from 1.4%-5.3% for EBT4 and 2.4%-6.8% for EBT-XD. The methods performed similarly for EBT4, while Full correction reduced discrepancies for several EBT-XD double- and triple-channel methods. Residual blue-channel errors limited blue, red-blue, and triple-channel performance. At 500 MU and above, red showed the best dose agreement; at 100 MU, both corrections increased deviations for several single-channel estimates. Full correction produced smaller deviations than Lewis in several EBT-XD conditions. Conclusions:LRA should be corrected in the raw-PV domain before dose reconstruction. Full correction better preserved profile consistency and dose accuracy, particularly for EBT-XD. Because improved profile consistency did not always improve central-dose agreement, both should be evaluated separately in commissioning.",
+        "arxiv_id": "2609.30122",
+        "title": "Melanin- and linewidth-corrected pulse-oximetry",
+        "abstract": "Current pulse oximeters tend to overestimate arterial saturation in darkly pigmented patients, increasing occult hypoxemia rates. One proposed mechanism is spectral coloring: melanin contributes to reshaping the detected spectrum of a broad-linewidth source, making the wavelength-dependent parameters behind calibration skin-tone-dependent. Diffuse optics theory allows for a melanin- and linewidth-corrected calibration equation, which to our knowledge has never been tested in vivo. In this work, we fit the empirical linear equation, the diffuse optics theoretical equation, and its corrected form to the public OpenOximetry Repository---considering 98 patients with paired arterial blood-draws, raw photoplethysmograms, and skin reflectance spectra. Accuracy is practically indistinguishable between the three approaches, yet the saturation error's dependence on melanin falls from +2.8 to +1.2 to +0.1 percentage points per unit melanin volume fraction---consistent with the spectral-coloring theory. None of these dependencies on melanin are statistically resolved here---a cohort roughly ten times larger is needed---so the correction is backed by theory and its expected direction. All three calibration approaches carry two degrees of freedom: the theoretical equation drops into existing calibration procedures, and its melanin-aware form needs a per-patient skin-tone measurement. This work demonstrates how the theoretical pulse oximetry model can be applied in calibration.",
         "authors": [
-          "Lixiang Guo",
-          "Ken Kang-Hsin Wang"
+          "Giles Blaney",
+          "Jodee Frias",
+          "Ravi Durbha",
+          "Sergio Fantini",
+          "Valencia Koomson"
         ],
-        "published": "2026-09-23T01:44:20Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.27224v1",
-        "score": 0.6159
-      },
-      {
-        "arxiv_id": "2609.28261",
-        "title": "GenMC: Real-Time Generative Monte Carlo Surrogate for Quantitative Photoacoustic Imaging",
-        "abstract": "Photoacoustic (PA) imaging provides molecular and functional information about tissue, such as blood oxygen saturation (sO2), yet its clinical translation is hindered by inaccurate quantification. A major source of error is the spectral colouring effect, in which wavelength-dependent optical attenuation distorts the local optical fluence. Monte Carlo (MC) simulation is the gold standard for modelling light transport, but its computational demand precludes real-time use. Here, GenMC is presented, a deep generative framework based on a conditional generative adversarial network that estimates optical fluence distributions from tissue anatomy and literature-derived optical properties, with anatomical priors obtained from co-registered ultrasound images. Trained on MC-generated synthetic datasets, GenMC produces high-fidelity fluence maps in under 30 ms per frame, a four-orders-of-magnitude speed-up over conventional MC simulation, and reaches peak signal-to-noise ratios of up to 36.24 dB in vivo, outperforming UNet and Pix2Pix baselines. Validation in blood-mimicking phantoms and in 37 human volunteers spanning Fitzpatrick skin types III-V demonstrates improved accuracy, robustness, and physiological consistency of sO2 estimation. By enabling real-time, accurate, and reproducible quantification of tissue oxygenation, GenMC addresses a critical barrier to quantitative PA imaging and offers a general strategy for rapid, high-fidelity approximation of light transport in tissue.",
-        "authors": [
-          "Mengjie Shi",
-          "Feng He",
-          "Tom Vercauteren",
-          "Wenfeng Xia"
-        ],
-        "published": "2026-09-23T15:22:11Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.28261v1",
-        "score": 0.5859
-      },
-      {
-        "arxiv_id": "2609.26939",
-        "title": "Towards Modeling the Hemodynamic Impact of Mitral and Aortic Valve Repair in Patients with Left Ventricular Assist Devices",
-        "abstract": "Valve dysfunction is a major threat to long-term success in left ventricle assist device (LVAD) therapy, with direct implications for right heart performance. In this study, we apply a patient-specific, image-based computational modeling framework to evaluate the hemodynamic impact of simulated mitral and aortic valve repair in five LVAD-supported patients. Each patient was modeled under four conditions: (patient-specific LVAD-supported state), simulated mitral valve (MV) repair, simulated aortic valve (AV) repair, and simulated combined MV&AV repair. Because validation data for valve repair were unavailable, the simulated repair scenarios are exploratory in silico interventions based on clinically validated patient-specific models. The models integrate dynamic CT imaging, echocardiography, catheterization data, and device-specific LVAD parameters into a coupled 3D-0D simulation pipeline. Valve dynamics are governed by transvalvular pressure and flow, allowing physiological modeling of regurgitant lesions and surgical repair. The right ventricular (RV) was assessed using a combination of model-derived metrics, including right ventricular ejection fraction (RVEF), pulmonary artery pulsatility index (PAPi), and RV-PA coupling. In addition, we performed blood residence time (RT) analysis to evaluate blood stasis within the left heart and aorta. The simulations suggest that valve repair improved cardiac output, reduced pulmonary congestion, and enhanced right ventricular loading conditions. Notably, mitral valve repair restored aortic valve opening during the cardiac cycle, which improved sinus washout and reduced blood residence time within the aortic root-factors associated with lower thrombotic risk. Overall, these findings suggest a potential role for valve repair in LVAD-supported hearts, though larger, validated patient cohorts are needed to confirm these results.",
-        "authors": [
-          "Mia Bonini",
-          "Michael Ferguson",
-          "Marc Hirshvogel",
-          "Maximilian Balmus",
-          "Paul C. Tang",
-          "Francis Pagani",
-          "David Nordsletten"
-        ],
-        "published": "2026-09-22T18:27:35Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.26939v1",
-        "score": 0.5615
-      },
-      {
-        "arxiv_id": "2609.26871",
-        "title": "Experimental Characterization of the Passive Mechanical Behavior of Rat Pelvic Floor Muscles: Effects of Test Conditions and Pregnancy",
-        "abstract": "Purpose: Pelvic floor muscles undergo large deformations during vaginal delivery, yet the passive tensile behavior of pregnant and non-pregnant pelvic floor muscle and the influence of testing protocols remain incompletely characterized. This study evaluated how pregnancy, loading rate, preconditioning, and storage affect passive tensile mechanics of rat pelvic floor muscle. Methods: Levator ani samples from pregnant and non-pregnant rats were tested in uniaxial tension to failure across multiple preconditioning amplitudes, two loading rates, and fresh or frozen storage conditions. Peak and transition metrics, strain energy density, toe-region stiffness, and high-strain stiffness were extracted using automated region-detection methods. Rat properties were also compared with digitized human cadaver levator ani data. Results: Pregnant rat samples reached greater peak strains than controls, although the difference was not significant. Preconditioning affected peak strain in a loading-rate-dependent manner: responses tapered near 2% preconditioning strain at 0.5% strain/s, whereas no comparable tapering occurred through 15% at 1% strain/s. Compared with human cadaver data, rat samples reached substantially larger peak strains and lower high-strain stiffness. Conclusion: This study provides one of the first direct experimental comparisons of passive pelvic floor muscle mechanics between pregnant and non-pregnant tissue, while systematically evaluating how multiple testing-protocol variables influence the measured response. Distinguishing protocol-dependent variability from biological differences provides a more reproducible basis for cross-study comparison and constitutive model calibration. Rat pelvic floor muscle is a useful model for pregnancy-associated adaptation, but absolute mechanical values should be translated to human tissue cautiously.",
-        "authors": [
-          "Jose L. Monclova",
-          "Matthew Shankel",
-          "Ava M. English",
-          "Mona Eskandari",
-          "Heidi P. Feigenbaum"
-        ],
-        "published": "2026-09-22T17:27:45Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.26871v1",
-        "score": 0.5439
+        "published": "2026-09-24T16:57:21Z",
+        "pdf_url": "https://arxiv.org/pdf/2609.30122v1",
+        "score": 0.498
       }
     ]
   },
   "Semiconductors": {
-    "pulled": 30,
+    "pulled": 14,
     "retained": 8,
     "papers": [
       {
@@ -969,35 +889,6 @@
         "score": 0.6791
       },
       {
-        "arxiv_id": "2609.28795",
-        "title": "Realization of Very High Mobility InAs Quantum Wells on InP Substrates Through Convex InAlAs Graded Buffer Optimization",
-        "abstract": "Due to strong spin-orbit coupling, large Land\u00e9 $g$-factor, and a highly transparent interface, the two-dimensional electron gas (2DEG) in InAs quantum wells provides an ideal platform for the exploration of topological superconductivity in hybrid semiconductor-superconductor heterostructures. Reduction of disorder in the semiconductor remains a primary challenge to the disambiguation of subtle interaction effects. Here we demonstrate very high mobility InAs 2DEGs grown on insulating InP substrates. Utilizing a convex compositional grading profile in an InAlAs metamorphic buffer we demonstrate InAs quantum wells with thickness greater than 10 nm without need of Ga-containing cladding layers. We examine structural and electrical transport properties of these heterostructures. Advances in the design of the metamorphic InAlAs buffer result in low-temperature electron mobility exceeding $1.7\\times10^6$ cm$^2$ V$^{-1}$ s$^{-1}$ at 2DEG density $\\leq3.2\\times10^{11}$ cm$^{-2}$, the highest value yet reported for this material system.",
-        "authors": [
-          "Tyler Lindemann",
-          "Rojila Ghimire",
-          "Alejandro Alcaraz Ramirez",
-          "Ahmad Azizimanesh",
-          "Sergei Gronin",
-          "Ray Kallaher",
-          "Michael J. Manfra"
-        ],
-        "published": "2026-09-23T21:19:06Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.28795v1",
-        "score": 0.6772
-      },
-      {
-        "arxiv_id": "2609.28628",
-        "title": "Theory of extrinsic contributions to the full orbital current",
-        "abstract": "The orbital Hall effect (OHE) underpins the emerging field of orbitronics. A complete quantum-mechanical evaluation of the usual orbital-current operator must retain all matrix elements of the position operator, including its band-diagonal differential part; intrinsic calculations based on this full evaluation can differ by orders of magnitude from the conventional truncation. A relaxation-time estimate of disorder effects on the full current has been reported, but a microscopic treatment of extrinsic scattering has remained unavailable because the position operator requires wavevector-off-diagonal density-matrix elements. Here we develop such a theory by solving the quantum kinetic equation for the wavevector-off-diagonal density matrix, including band-structure, field-corrected side-jump, and skew-scattering terms within the non-crossing approximation. We apply the theory to a massive Dirac cone and to the same model with a particle-hole-symmetry-breaking quadratic term. Disorder-generated contributions of order $\u03c4^0$ are generically comparable to the intrinsic current in the metallic regime and cannot be separated from it by simple disorder-strength scaling. For the bare massive Dirac cone the surviving non-crossing extrinsic correction cancels the conventional intrinsic value and leaves a total current exactly twice the quantum correction, whereas particle-hole asymmetry activates conventional skew scattering for disorder with a non-zero third moment, which dominates in sufficiently clean samples. The wavevector-off-diagonal construction is independent of the two-band model and provides a general route to disorder corrections for position-dependent observables in multiband solids.",
-        "authors": [
-          "James H Cullen",
-          "Dimitrie Culcer"
-        ],
-        "published": "2026-09-23T18:00:02Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.28628v1",
-        "score": 0.6645
-      },
-      {
         "arxiv_id": "2609.30128",
         "title": "Pomeranchuk-like electronic localization above 100 K in twisted MoS$_{2}$",
         "abstract": "Twisted transition-metal dichalcogenides (TMDs) have manifested a rich variety of emerging physical phenomena, yet experimental studies have so far been largely limited in their valence bands (p-doped). Here, we show correlated electronic states in the conduction bands (n-doped) of near-AA-twisted bilayer MoS$_2$ with twist angles ranging from $\\sim2.3^\\circ$ to $\\sim3.5^\\circ$, down to the mK temperature regime. A strongly reconstructed correlated phase diagram as a function of twist-angle has been observed - correlated gaps persist to temperatures approaching $160$ K at small twist angles, but collapse to only $\\sim20$ K at intermediate angles, where a richer landscape of interaction-driven states emerges. At the largest twist-angle $\\sim 3.5\\,^{\\circ}$, correlated resistance at 1 electron per moir\u00e9 unit cell is enhanced upon heating, consistent with thermally assisted localization, or, a Pomeranchuk-like behaviour. Its magnetic-field response, however, is highly anisotropic, which differs markedly from that of canonical isospin moir\u00e9 Pomeranchuk effect in graphene systems. Strikingly, such signature can persist even above 100 K around a filling of 2 electrons per moir\u00e9, despite of its weak resistive nature. Our results establish the twisted MoS$_2$ as a platform for studying the complexity of charge localization, internal flavour degrees of freedom, and band topology in conduction bands of semiconducting moir\u00e9 systems.",
@@ -1021,39 +912,6 @@
         "score": 0.6639
       },
       {
-        "arxiv_id": "2609.29226",
-        "title": "Valley Berry curvature dipole induced nonlinear valley Hall effect",
-        "abstract": "Valley Hall effect is a signature effect in the field of valleytronics, and recent studies have pushed this effect into the nonlinear regime. Here, we reveal a previously unexplored type of nonlinear valley Hall effect which arises from a valley Berry curvature dipole (vBCD) mechanism. We show this nonlinear valley Hall effect is forbidden for conventional time-reversal-connected valleys, but is supported in the class of valleytronic systems featuring time-reversal-invariant valleys. The candidate layer groups and detailed symmetry constraints on vBCD are obtained. It shows the nonlinear valley Hall response, as well as the nonlinear charge Hall response, can be well controlled by tuning the driving field direction. We demonstrate our proposal in an effective model study and in a concrete material example, strained Nb$_{3}$SBr$_{7}$, by first-principles calculations. The nonlocal transport signature of this vBCD induced nonlinear valley Hall effect is also discussed.",
-        "authors": [
-          "Lulu Xiong",
-          "Xue-Jin Zhang",
-          "Zeying Zhang",
-          "Yinning Zhou",
-          "Jin Cao",
-          "Cong Xiao",
-          "Shengyuan A. Yang"
-        ],
-        "published": "2026-09-24T08:33:48Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.29226v1",
-        "score": 0.6491
-      },
-      {
-        "arxiv_id": "2609.29089",
-        "title": "Light-induced rectified orbital magnetization in electron-hole bilayers",
-        "abstract": "Circularly polarized light can rectify orbital motion into a static magnetization through the inverse Faraday effect (IFE), but in electron-hole bilayers the electron and hole contributions cancel exactly when their properties are equivalent. We show that electron-hole bilayers in transition-metal dichalcogenide platforms avoid this cancellation through effective-mass asymmetry alone, and that the surviving orbital IFE is sensitive to interlayer coupling. In the weak-coupling regime, a two-component Drude description yields an induced magnetization of order one Bohr magneton per carrier for representative terahertz driving. In the strong-coupling regime, where the carriers bind into interlayer excitons, we treat the relative motion using a hydrogenic model with a Rytova-Keldysh interaction and obtain a reduced but finite response. We give closed-form expressions that allow estimates across a broad parameter range and identify where the response is largest.",
-        "authors": [
-          "Erlend Sylju\u00e5sen",
-          "Gabriel Cardoso",
-          "Esra Ilke Albar",
-          "Patrick J. Wong",
-          "Angel Rubio",
-          "Alexander V. Balatsky"
-        ],
-        "published": "2026-09-24T06:18:05Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.29089v1",
-        "score": 0.6474
-      },
-      {
         "arxiv_id": "2609.29857",
         "title": "Spin-Polarized Magnetic Metal Electrodes for Magnetic Tunnel Junctions",
         "abstract": "Magnetic tunnel junctions are foundational components of spintronic memory, sensing, and computing, and their performance depends critically on the magnetic metallic electrodes. This Perspective examines electrode materials through the lens of magnetic order and the distinct microscopic mechanisms that generate spin-selective tunneling. Conventional ferromagnets, including CoFeB and half-metallic Heusler alloys, support exchange-split electronic states and symmetry-filtered tunneling, whereas compensated collinear and noncollinear antiferromagnets exploit sublattice selectivity, spin-orbit anisotropy, vector spin textures, and magnetic multipoles. Altermagnets provide a collinear, zero-net-moment route based on symmetry-allowed momentum-dependent spin splitting. Across these material classes, we compare the origins of tunneling polarization, the roles of barrier evanescent states and interface termination, and strategies for electrically writing and reading the relevant magnetic order. This comparison reveals a broader design principle: effective electrode polarization is not a scalar bulk quantity, but a momentum-, orbital-, symmetry-, and interface-resolved transport property. Beyond the pursuit of ever larger tunneling magnetoresistance, future progress will depend on converting the unconventional spin polarization of emerging magnetic metals into electrically addressable, thermally robust, and reproducible tunneling functionality at realistic interfaces.",
@@ -1072,12 +930,80 @@
         "published": "2026-09-24T14:19:58Z",
         "pdf_url": "https://arxiv.org/pdf/2609.29857v1",
         "score": 0.6423
+      },
+      {
+        "arxiv_id": "2609.29971",
+        "title": "Subnanometer thermodynamic overlayers on bimetallic nanoparticles",
+        "abstract": "Nanoparticle properties are governed by their surfaces, yet their atomic-scale surface structures remain challenging to predict. Here, we report that bimetallic nanoparticles can form a thermodynamically controlled \"shell-dimer\" architecture in which one metal forms an overlayer only a few atomic layers thick on another. Using Au-Rh as a model system, atomic-resolution imaging and molecular dynamics show that an ultrathin Au overlayer forms on Rh, stabilized by competition among surface, interfacial, and strain energies. Anisotropic strain limits its growth to the subnanometer scale, and changes in surface chemistry can destabilize the overlayer altogether. Across a range of bimetallic nanoparticles, we found that overlayer formation is associated with elemental immiscibility and lattice mismatch. These findings provide a basis for understanding and controlling surface structures in multimetallic nanoparticles.",
+        "authors": [
+          "Caitlin A. McCandler",
+          "Xianzhuo Lao",
+          "Jie Liu",
+          "Huipu Liu",
+          "Kristin A. Persson",
+          "Peng-Cheng Chen"
+        ],
+        "published": "2026-09-24T15:22:28Z",
+        "pdf_url": "https://arxiv.org/pdf/2609.29971v1",
+        "score": 0.6306
+      },
+      {
+        "arxiv_id": "2609.29430",
+        "title": "Quantum heat transport and effects of quantum thermal devices in noncommuting coupled spins",
+        "abstract": "Quantum heat transport governs energy exchange processes and statistical laws in non-equilibrium quantum systems, and plays a pivotal role in quantum thermodynamics. We investigate the steady-state thermal transport of a noncommuting coupled spin system. We employ the quantum dressed master equation approach within the framework of open quantum system theory to accurately analyze the non-equilibrium dynamics, ensuring the validity of transport results in the strong coupling regime. Our results demonstrate that noncommuting spin coupling serves as a significant resource for modulating the nonlinearity of the heat current. Specifically, in the weak spin-coupling regime, the system exhibits robust negative differential thermal conductance (NDTC) across various spin numbers. By deriving analytical expressions for the heat current in both the single-spin and large-spin limits, we reveal that this NDTC behavior is governed by microscopic cycle fluxes. Physically, this arises because spin excitation channels induced by the cold reservoir are suppressed under a large temperature bias, thereby blocking energy exchange cycles. Conversely, in the strong spin-coupling and large temperature bias regime, the quantum system demonstrates pronounced thermal rectification. This high rectification efficiency originates from the unidirectional saturation of the heat current, rendering the system a promising candidate for high-performance thermal diodes. Furthermore, we extend the model to a three-terminal configuration to construct a quantum thermal transistor. By manipulating the temperature of the gate reservoir, we achieve efficient modulation and amplification of heat flow between the source and drain. The heat amplification factor is shown to far exceed unity in specific operating regions, confirming significant thermal amplification.",
+        "authors": [
+          "Yitian Chen",
+          "Junran Kong",
+          "Huan Liu",
+          "Chen Wang"
+        ],
+        "published": "2026-09-24T11:49:50Z",
+        "pdf_url": "https://arxiv.org/pdf/2609.29430v1",
+        "score": 0.6306
+      },
+      {
+        "arxiv_id": "2609.29722",
+        "title": "Cavity-waveguide coupling in phononic crystals",
+        "abstract": "Phononic crystal platforms provide a promising route toward scalable on-chip quantum networks, where mechanical excitations mediate interactions between solid-state qubits. A key building block of such architectures is the cavity-waveguide system, in which localized mechanical modes couple to propagating phononic modes. However, a quantitative understanding of the mechanisms governing this coupling remains incomplete. In this work, we investigate the interaction between localized modes of snowflake-type phononic crystal cavities and a phononic crystal waveguide using finite-element simulations and experimental measurements. We show that the coupling strength is primarily governed by the spatial overlap between the displacement fields of the corresponding isolated cavity and waveguide modes. After accounting for the effective-mass dependence of the normalized cavity displacement amplitude, we establish a strong correlation between the spatial overlap and the interaction strength across a wide range of mode combinations. Deviations from this leading-order behavior are associated with Bloch-phase effects, variations in waveguide group velocity, and intrinsic hybridization of waveguide modes. Furthermore, we provide experimental evidence for cavity-waveguide coupling in a GaAs phononic crystal membrane by observing a clear resonance in the spectral broadening of the photoluminescence emission from an embedded quantum dot, which serves as a local probe of the mechanical field. The observed resonance at approximately 398 MHz is in good agreement with the corresponding cavity resonance near 395 MHz predicted by finite-element simulations. Our results identify spatial mode overlap as a leading-order design parameter for cavity-waveguide coupling and provide practical guidelines for controlling interactions between localized and propagating modes in phononic crystal structures.",
+        "authors": [
+          "Jakub Rosi\u0144\u0144ski",
+          "Benjamin Mayer",
+          "Hubert J. Krenner",
+          "Pawe\u0142 Machnikowski"
+        ],
+        "published": "2026-09-24T12:40:23Z",
+        "pdf_url": "https://arxiv.org/pdf/2609.29722v1",
+        "score": 0.6204
+      },
+      {
+        "arxiv_id": "2609.29472",
+        "title": "Selective strain tuning of nonequilibrium multiferroic dynamics in BiFeO$_\\text3$",
+        "abstract": "Quantum materials are characterized by intertwined orders, and a fundamental goal in condensed matter physics is to achieve their selective control in such a way that one order parameter can be tuned while leaving others largely unaffected. Although significant progress has been made in thermal equilibrium, realizing such control out of equilibrium remains highly challenging. Here we employed \\textit{in situ} tensile strain to selectively manipulate the photoinduced lattice dynamics associated with ferroelectric and magnetic orders in multiferroic BiFeO$_3$. By applying MeV ultrafast electron diffraction to freestanding BiFeO$_3$ membranes under tunable strain, we showed that tensile strain markedly suppresses the ultrafast photoinduced reduction of the ferroelectric displacement. By contrast, the photoinduced dynamics of the antiferrodistortive rotation of the oxygen octahedra, which modulates the magnetic order, remains insensitive to strain. Not only do these findings reveal distinct microscopic pathways underlying nonequilibrium multiferroic dynamics, they also establish tunable strain as an effective route for engineering ultrafast phase control in correlated materials.",
+        "authors": [
+          "Chenhang Xu",
+          "Patrick Liu",
+          "Bo Zhang",
+          "Minyong Han",
+          "Henry G. Bell",
+          "Cameron J. R. Duncan",
+          "Yusong Liu",
+          "Patrick L. Kramer",
+          "Randy Lemons",
+          "Jake D. Koralek",
+          "Alexander H. Reid",
+          "Dong Qian",
+          "Harold Y. Hwang",
+          "Alfred Zong"
+        ],
+        "published": "2026-09-24T12:29:41Z",
+        "pdf_url": "https://arxiv.org/pdf/2609.29472v1",
+        "score": 0.6168
       }
     ]
   },
   "Embedded Systems": {
-    "pulled": 24,
-    "retained": 8,
+    "pulled": 5,
+    "retained": 5,
     "papers": [
       {
         "arxiv_id": "2609.30099",
@@ -1091,70 +1017,6 @@
         "published": "2026-09-24T16:44:09Z",
         "pdf_url": "https://arxiv.org/pdf/2609.30099v1",
         "score": 0.6799
-      },
-      {
-        "arxiv_id": "2609.28717",
-        "title": "HeteroReason: Heterogeneous FPGA-GPU Acceleration for Disaggregated Speculative Reasoning",
-        "abstract": "Large Reasoning Models (LRMs) have achieved state-of-the-art performance in reasoning tasks by utilizing Chain-of-Thought (CoT) reasoning. To achieve fast execution speed, speculative reasoning techniques adopt a lightweight draft model for candidate token generation followed by process reward models (PRMs) for verification and a strong target model for refinements. This paper identifies that the existing speculative reasoning paradigm follows a strictly forward-only reasoning trajectory, which lacks robustness and can lead to severe error propagation if early reasoning steps are suboptimal. Furthermore, executing these disparate inference schemes, including sequential drafting and parallel verification on homogeneous GPU platforms, can lead to severe resource underutilization. To address this, we propose HeteroReason, an algorithm-hardware co-designed heterogeneous FPGA-GPU inference paradigm specifically tailored for LRM speculative reasoning. At the algorithmic level, we introduce a backtracking-enhanced workflow that enables the system to recover from low-quality states and explore alternative reasoning trajectories, significantly improving reasoning robustness. At the system level, the draft model is offloaded to the FPGA while deploying the PRM and target models on GPUs. A specialized workflow is optimized to achieve prefill-decode disaggregation, which exploits shadow synchronization to overlap GPU-side refinements with FPGA-side token updates to effectively hide synchronization latency. To mitigate inherent sequential constraints, we propose a step-ahead speculation and refinement scheduling scheme, transitioning the system from a sequential execution scheme to a parallel pipeline. Experimental evaluations show an average 4.2% accuracy improvement, with 1.01x-1.42x latency speedups and 1.25x-1.57x improvements in energy efficiency compared to homogeneous GPU baselines.",
-        "authors": [
-          "Zehuan Zhang",
-          "Quan Deng",
-          "Zibo Ren",
-          "Hao Mark Chen",
-          "Guoyu Li",
-          "Xuchun Hu",
-          "Jose G. F. Coutinho",
-          "Ce Guo",
-          "Wayne Luk",
-          "Zhiqiang Que",
-          "Hongxiang Fan"
-        ],
-        "published": "2026-09-23T18:57:38Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.28717v1",
-        "score": 0.6629
-      },
-      {
-        "arxiv_id": "2609.26551",
-        "title": "Toki: Profiling HBM Performance on FPGA Systems with RISC-V Soft Cores and PCIe Host DMA Traffic",
-        "abstract": "Programmable RISC-V soft cores are becoming more widespread in data-center scenarios, making it crucial to design efficient systems that deploy them on FPGA chips with HBM memory. Toki, released as open source, is the first hardware-software framework that enables profiling the performance of HBM on FPGA accelerator cards by jointly considering (i) the execution of workloads on RISC-V soft cores instantiated on the FPGA and (ii) the injection of memory traffic from the host system via DMA over PCIe, providing insights that cannot be obtained with synthetic traffic generators alone. Extensive experiments target an AMD Alveo U55C card, deploying up to 60 RISC-V compute cores and stressing its HBM2 memory through real-world applications and microbenchmarks with user-defined access patterns. Results showcase how Toki can effectively profile the impact on HBM performance of the compute cores' organization, the workload's memory access patterns, data locality, contention over the memory controllers, and host traffic.",
-        "authors": [
-          "Andrea Galimberti",
-          "Andrea Motta",
-          "Gianni Antichi",
-          "Davide Zoni"
-        ],
-        "published": "2026-09-22T15:06:43Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.26551v1",
-        "score": 0.653
-      },
-      {
-        "arxiv_id": "2609.27438",
-        "title": "Energy-Oriented CGLA Mapping of a Memory-Polynomial Digital Predistortion Kernel",
-        "abstract": "Memory-polynomial digital predistortion (DPD) evaluates a small fixed coefficient set over a sliding input history, so its reduction step is a complex-MAC workload with local reuse. We map this DPD reduction kernel onto In-Memory Accelerator eXtension (IMAX), a programmable CPU-Grounded Linear Array (CGLA) composed of a one-dimensional processing-element/local-memory pipeline. For a (P,M)=(5,5) odd-order memory-polynomial instance, the mapping keeps the 120 B coefficient set in local memory, advances the five-tap history over 1024-sample tiles, and realizes the 15 order-delay terms as a 33-stage streaming complex-MAC reduction. The evaluation measures kernel latency and modeled energy. All measured paths use the same single-precision complex workload of 32 sequences, each with 2048 complex samples, across an IMAX FPGA prototype, a CUDA implementation on an RTX 4090 system, and an ARM-NEON implementation on Jetson AGX Orin. With this 1024-sample tile configuration, the IMAX FPGA prototype reports 20.201 ms end-to-end latency and 1.948 ms kernel-only latency. Using the previously reported 28 nm IMAX frequency and power model, the projected IMAX configuration gives 3.14 ms end-to-end latency and 0.34 ms kernel-only latency. The RTX 4090 baseline has the lowest end-to-end latency at 0.484 ms. Under model-based platform power accounting and the stated power assumptions, the projected IMAX configuration gives 169.1 times smaller modeled end-to-end energy per batch than the RTX 4090 baseline. This value uses platform power assumptions rather than workload-dependent runtime power or a direct silicon power measurement. A controlled synthetic PA-model validation checks that the same 15-term form improves test-set NMSE by 26.1 dB and ACLR by 26.0 dB. These results characterize the mapped memory-polynomial DPD reduction on IMAX for the evaluated tile configuration and power model.",
-        "authors": [
-          "Takuto Ando",
-          "Yasuhiko Nakashima"
-        ],
-        "published": "2026-09-23T07:01:49Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.27438v1",
-        "score": 0.6381
-      },
-      {
-        "arxiv_id": "2609.27300",
-        "title": "SoK: You Find What You Seek: Rethinking Oracles, Guidance, and Input Generation in Hardware Fuzzing",
-        "abstract": "Hardware fuzzing is an active area in security verification research, yet its industrial adoption remains in its early stages. This SoK examines which lessons from software fuzzing carry over to hardware and where unique approaches are needed. By analyzing 52 fuzzers across RTL/IP, CPU, NoC, and SoC designs, we introduce an analytical framework that frames verification as a bounded search. This search is defined by its objective, oracle, guidance, input generation, target abstraction, and budget. Consequently, a campaign only uncovers failures it can effectively reach, recognize, and prioritize before exhausting its resources. We distinguish two roles for hardware fuzzing: (1) augmenting constrained-random verification (CRV) via feedback-guided coverage and (2) directed adversarial testing based on threat models and security specifications. Through our framework, we identify what each campaign can observe and generate, providing a basis for assessing the evidence behind reported results. Our analysis suggests that mainstream adoption of hardware fuzzing will require reusable interfaces, target-specific verification assets, reproducible evaluations, and transparent reporting of cost and user effort.",
-        "authors": [
-          "G Abarajithan",
-          "Zhenghua Ma",
-          "Cristian Tirelli",
-          "Andres Meza",
-          "Francesco Restuccia",
-          "Cynthia Sturton",
-          "Ryan Kastner"
-        ],
-        "published": "2026-09-23T03:34:56Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.27300v1",
-        "score": 0.624
       },
       {
         "arxiv_id": "2609.30131",
@@ -1171,20 +1033,6 @@
         "published": "2026-09-24T17:04:24Z",
         "pdf_url": "https://arxiv.org/pdf/2609.30131v1",
         "score": 0.6201
-      },
-      {
-        "arxiv_id": "2609.27162",
-        "title": "Agentic-IC3: Enabling Semantic Proof Search in IC3 Model Checking",
-        "abstract": "IC3 is a state-of-the-art algorithm for hardware model checking that proves safety properties by incrementally constructing an inductive invariant consisting of a set of lemmas. Its effectiveness depends on generalization heuristics that identify useful lemmas and guide proof search. However, many leading IC3 hardware model checkers operate on lowered, bit-level representations, where high-level design relationships are difficult to exploit for generalization. Those operating at a higher level remain limited in exploiting high-level design structure and semantics. We present Agentic-IC3, built on Pono's word-level model-checking infrastructure, which integrates a language-model agent into IC3 to guide semantic proof search using register-transfer-level (RTL) design information. The framework exposes an agent-oriented interface to a persistent IC3 backend, allowing the agent to interact with an explicit, evolving proof state throughout verification. Across successive proof obligations, the agent relates intermediate proof states and solver feedback to the RTL and proposes high-level lemmas through both SAT and UNSAT generalization. Beyond generalization, the agent can introduce derived observation signals to express design relationships succinctly and obtain more informative feedback, and backtrack to revise proposals that lead to unproductive proof branches. The backend checks proposals before updating the proof state, preserving soundness and providing feedback for further reasoning. On a suite of 14 benchmarks spanning security information-flow verification and functional verification of communication protocols, processors, and functional units, Agentic-IC3 solves 10 cases within a one-hour timeout, including 4 unsolved by all three evaluated baselines: rIC3, Pono-IC3Bits, and A-IC3.",
-        "authors": [
-          "Yu-Wei Fan",
-          "SooHyuk Cho",
-          "Aarti Gupta",
-          "Sharad Malik"
-        ],
-        "published": "2026-09-22T23:48:12Z",
-        "pdf_url": "https://arxiv.org/pdf/2609.27162v1",
-        "score": 0.6195
       },
       {
         "arxiv_id": "2609.29965",
@@ -1224,6 +1072,35 @@
         "published": "2026-09-24T15:20:39Z",
         "pdf_url": "https://arxiv.org/pdf/2609.29965v1",
         "score": 0.6193
+      },
+      {
+        "arxiv_id": "2609.29727",
+        "title": "VQ-LIC: Shared Vector-Quantized Learned Image Compression on a Resource-Constrained FPGA",
+        "abstract": "Learned image compression (LIC) is hard to deploy on severely resource-constrained FPGAs, since how fast it actually runs depends not just on arithmetic count, but also on memory traffic, imbalance between different operations, and how the hardware batches its work. We present VQ-LIC, an asymmetric edge-cloud codec in which a compact INT8 depthwise (DW)-pointwise (PW) analysis transform and multi-codebook vector quantization (VQ) run at the edge on a reusable DW/PW engine pair, while reconstruction is handled by a larger cloud decoder. Since VQ codeword matching is expressible as a dot product, it is mapped directly onto the same PW engine, removing the need for a separate VQ compute array, to our knowledge a first for FPGA LIC. A novel latency model, derived from deterministic RTL cycle counts of an FPGA's read, DW, PW, and write costs, predicts an analysis transform's per-block latency; since VQ shares the same PW datapath, the model applies to VQ as well. Validated directly against silicon, the model predicts deployed analysis and VQ latency within 0.26\\% and 0.05\\%, and guides the selection of a three-block $16$-$48$-$64$ transform. Post-training codebook reduction then cuts VQ arithmetic and codebook storage by $4\\times$ and shrinks the fixed-width latent representation. On a 220-DSP Zynq-7020, VQ-LIC's mid-rate preset reaches 0.1398 bits per pixel at 28.69 dB PSNR and 13.06 dB MS-SSIM on CLIC~2017, outperforming a similarly sized neural encoder and reaching a rate-distortion range comparable to a codec three orders of magnitude larger. The complete 0.1945-kMAC/pixel analysis-VQ pipeline runs at 47.98 frames per second and 42.84 mJ per frame on silicon, using an order of magnitude fewer DSPs than comparable FPGA LIC accelerators while achieving lower bitrate, higher throughput, and lower energy per frame at a modest PSNR tradeoff.",
+        "authors": [
+          "Muhammad Fahd Ibrahim Bhatti",
+          "Abdullah Bin Faisal",
+          "Ahsan Usman",
+          "Naveed Anwar Bhatti",
+          "Muhammad Ali Siddiqi"
+        ],
+        "published": "2026-09-24T12:41:44Z",
+        "pdf_url": "https://arxiv.org/pdf/2609.29727v1",
+        "score": 0.6063
+      },
+      {
+        "arxiv_id": "2609.29267",
+        "title": "MagiCFirm: A Runtime for Magic-State Cultivation with Algorithm-Hardware Co-Design",
+        "abstract": "Magic-state cultivation offers a promising alternative for lowering the cost of non-Clifford operations in fault-tolerant quantum computing (FTQC). However, realizing cultivation in practice exposes two challenges: (i) the lack of an open-source classical runtime layer between logical software and physical control, and (ii) the latency constraints on protocol-specific decisions that determine magic-state readiness. To address these challenges, we adopt an algorithm--hardware co-design approach. At the algorithm level, we develop a two-stage early-escape scheme that identifies an informative subset of detectors offline, constructs a compact decoding problem, and performs partial decoding in parallel with complete decoding at runtime, allowing high-confidence attempts to advance before full decoding completes. At the hardware level, we present MagiCFirm, a configurable runtime that combines offline-compiled microprograms with dedicated datapaths for detector construction, event processing, and protocol control, enabling end-to-end execution of magic-state cultivation. Across evaluated configurations, MagiCFirm reduces wall-clock magic-state preparation time by up to 39.3% at matched logical error rate. For a representative magic-state-bound workload, this translates to an estimated 11% reduction in overall application runtime.",
+        "authors": [
+          "Jubo Xu",
+          "Abbas B. Ziad",
+          "Prakash Murali",
+          "Hongxiang Fan"
+        ],
+        "published": "2026-09-24T09:05:29Z",
+        "pdf_url": "https://arxiv.org/pdf/2609.29267v1",
+        "score": 0.5957
       }
     ]
   }
