@@ -7,6 +7,43 @@ unattended once deployed — no manual filtering, no checking arXiv by hand.
 
 **[View the Live Dashboard Here](https://arxiv-semantic-tabs-of-8-sectors.streamlit.app/)**
 
+![Python](https://shields.io)
+![Streamlit](https://shields.io)
+![Embeddings](https://shields.io)
+![Automation](https://shields.io)
+![Configuration](https://shields.io)
+
+
+## Application Walkthrough & Pipeline Gallery
+
+Complete execution cycle of arXiv Signal—spanning automated background CRON triggers down to multi-tab interactive data presentation.
+
+<table width="100%">
+  <!-- Row 1: Pipeline Automation & Live UI -->
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <img src="outputs/github-actions.png" alt="GitHub Actions Automation Schedule" style="max-width: 100%; border-radius: 6px; border: 1px solid #ddd;" />
+      <br />
+      <strong>1. 48-Hour Scheduled Ingestion Runs (GitHub Actions)</strong>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <img src="outputs/dashboard-main.png" alt="Streamlit 8 Sector Dashboard Interface" style="max-width: 100%; border-radius: 6px; border: 1px solid #ddd;" />
+      <br />
+      <strong>2. Multi-Tab Sector Overview & Relevancy Progress Metrics</strong>
+    </td>
+  </tr>
+  
+  <!-- Row 2: Full-Width Telemetry Validation Logs -->
+  <tr>
+    <td align="center" valign="top" colspan="2" width="100%">
+      <img src="outputs/pipeline-log.png" alt="Console Terminal Status Summary Logs Pipeline" style="max-width: 100%; border-radius: 6px; border: 1px solid #ddd;" />
+      <br />
+      <strong>3. Multi-Sector Deduplication & Pipeline Telemetry Execution Logs</strong>
+    </td>
+  </tr>
+</table>
+
+
 ## The problem this solves
 
 arXiv publishes far more papers per day than anyone can realistically read, spread
