@@ -7,11 +7,14 @@ unattended once deployed — no manual filtering, no checking arXiv by hand.
 
 **[View the Live Dashboard Here](https://arxiv-semantic-tabs-of-8-sectors.streamlit.app/)**
 
-![Python](https://img.shields.io/badge/Python-3.13-blue)
-![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)
-![Embeddings](https://shields.io)
-![Automation](https://shields.io)
-![Configuration](https://shields.io)
+<p align="left">
+  <img src="https://shields.io" alt="Python" />
+  <img src="https://shields.io" alt="Streamlit" />
+  <img src="https://shields.io" alt="Embeddings" />
+  <img src="https://shields.io" alt="Automation" />
+  <img src="https://shields.io" alt="Configuration" />
+</p>
+
 
 
 ## Application Walkthrough & Pipeline Gallery
