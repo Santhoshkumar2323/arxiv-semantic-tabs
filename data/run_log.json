@@ -1,100 +1,100 @@
 {
-  "run_timestamp": "2026-10-07T09:41:52.462612+00:00",
+  "run_timestamp": "2026-10-09T09:56:33.932144+00:00",
   "cycle_hours": 48,
-  "duration_seconds": 115.43,
+  "duration_seconds": 105.47,
   "sectors": {
     "AI": {
       "name": "AI",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 17.11,
+      "duration_seconds": 12.47,
       "ok": true,
       "error": null,
-      "score_min": 0.4636847972869873,
-      "score_max": 0.6274157762527466,
-      "score_mean": 0.5392003655433655
+      "score_min": 0.4149552583694458,
+      "score_max": 0.695610523223877,
+      "score_mean": 0.5485986471176147
     },
     "ML": {
       "name": "ML",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 16.35,
+      "duration_seconds": 17.43,
       "ok": true,
       "error": null,
-      "score_min": 0.5049868822097778,
-      "score_max": 0.6791350841522217,
-      "score_mean": 0.5724999308586121
+      "score_min": 0.4720652997493744,
+      "score_max": 0.7030138969421387,
+      "score_mean": 0.5670813322067261
     },
     "DL": {
       "name": "DL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 15.16,
+      "duration_seconds": 15.08,
       "ok": true,
       "error": null,
-      "score_min": 0.466492235660553,
-      "score_max": 0.6181486248970032,
-      "score_mean": 0.5486536622047424
+      "score_min": 0.5146810412406921,
+      "score_max": 0.6342869997024536,
+      "score_mean": 0.5590824484825134
     },
     "RL": {
       "name": "RL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 15.14,
+      "duration_seconds": 14.98,
       "ok": true,
       "error": null,
-      "score_min": 0.45226871967315674,
-      "score_max": 0.6936154365539551,
-      "score_mean": 0.5577405691146851
+      "score_min": 0.44119495153427124,
+      "score_max": 0.6687043905258179,
+      "score_mean": 0.5542632937431335
     },
     "Robotics": {
       "name": "Robotics",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 13.24,
+      "duration_seconds": 14.79,
       "ok": true,
       "error": null,
-      "score_min": 0.46713411808013916,
-      "score_max": 0.6872293949127197,
-      "score_mean": 0.5796313285827637
+      "score_min": 0.4991747736930847,
+      "score_max": 0.722132682800293,
+      "score_mean": 0.5854294896125793
     },
     "Radiotherapy": {
       "name": "Radiotherapy",
-      "pulled": 10,
-      "retained": 8,
-      "duration_seconds": 5.29,
+      "pulled": 6,
+      "retained": 6,
+      "duration_seconds": 2.84,
       "ok": true,
       "error": null,
-      "score_min": 0.5022286176681519,
-      "score_max": 0.6797434687614441,
-      "score_mean": 0.5833426117897034
+      "score_min": 0.5022287368774414,
+      "score_max": 0.7364763021469116,
+      "score_mean": 0.598949670791626
     },
     "Semiconductors": {
       "name": "Semiconductors",
       "pulled": 30,
       "retained": 8,
-      "duration_seconds": 17.31,
+      "duration_seconds": 16.66,
       "ok": true,
       "error": null,
-      "score_min": 0.4867417812347412,
-      "score_max": 0.7118128538131714,
-      "score_mean": 0.6037583947181702
+      "score_min": 0.504810094833374,
+      "score_max": 0.7235461473464966,
+      "score_mean": 0.589148223400116
     },
     "Embedded Systems": {
       "name": "Embedded Systems",
-      "pulled": 30,
+      "pulled": 24,
       "retained": 8,
-      "duration_seconds": 15.83,
+      "duration_seconds": 11.21,
       "ok": true,
       "error": null,
-      "score_min": 0.5263667106628418,
-      "score_max": 0.7307657599449158,
-      "score_mean": 0.6043166518211365
+      "score_min": 0.5474511384963989,
+      "score_max": 0.7011538743972778,
+      "score_mean": 0.6029519438743591
     }
   },
   "totals": {
-    "pulled": 220,
-    "retained": 74,
+    "pulled": 210,
+    "retained": 72,
     "failed_sectors": 0
   }
 }
