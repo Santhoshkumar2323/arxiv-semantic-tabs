@@ -869,66 +869,9 @@
     ]
   },
   "Radiotherapy": {
-    "pulled": 6,
-    "retained": 6,
+    "pulled": 1,
+    "retained": 1,
     "papers": [
-      {
-        "arxiv_id": "2610.10824",
-        "title": "Technical Preparations for the First Carbon-Ion Therapy Facility in the United States",
-        "abstract": "Carbon ion radiotherapy (CIRT) provides greater biological effectiveness than conventional photon therapy because of its high linear energy transfer and its ability to induce complex DNA damage. Mayo Clinic Florida is developing the first CIRT facility in the United States, using a synchrotron-based system with dose-driven continuous scanning (DDCS). Although DDCS improves delivery efficiency by keeping the beam on during spot transitions, it also creates the challenge of accurately modeling the dose delivered during beam motion (move dose), which is not fully addressed in current treatment planning systems. In this work, we present a method for accurate simulation of move dose to support Monte Carlo (MC) dose calculations. The method models realistic beam trajectories, including the characteristic hockey stick motion caused by different scanning speeds in the X and Y directions, and accounts for time-dependent beam intensity with linear ramp-up behavior. The beam path is divided into small segments, each represented by a move source with analytically determined position, intensity, and monitor units. Beam intensity fluctuations are also included using a stochastic model based on measurements. Validation using TOPAS simulations for a 430 MeV/u carbon ion beam in a water phantom showed accurate modeling of move dose and the resulting dose distributions. This method provides a practical framework for MC-based dose calculation in clinical CIRT.",
-        "authors": [
-          "Jun Tan",
-          "Xiaoying Liang",
-          "Keith M Furutani",
-          "Justin Park",
-          "Sridhar Yaddanapudi",
-          "Bo Lu",
-          "Chris J. Beltran"
-        ],
-        "published": "2026-10-07T19:26:46Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.10824v1",
-        "score": 0.7365
-      },
-      {
-        "arxiv_id": "2610.08060",
-        "title": "Gold nanorod radioenhancement: interpreting Monte Carlo dose enhancement across geometry, composition, coating, and localization",
-        "abstract": "Nanoparticle radiosensitization depends on interconnected NP properties, yet geometry, elemental composition, surface coating, and localization are typically studied separately, with their combined biological impact rarely assessed in one framework. Drawing on TOPAS Monte Carlo simulations from PhD research, we consolidated four investigations of metallic nanorods, mainly gold nanorods (AuNRs), examining these parameters across closely linked studies. The findings reveal that each parameter can influence over a distinct spatial range. Nanorod geometry primarily alters the spectrum and distribution of low-energy Auger-Meitner electrons emitted within tens of nanometers. Elemental composition induces significant near-field dose enhancement that rapidly attenuates and becomes negligible beyond roughly 1 um. Surface coatings reduce the fluence of secondary electrons below 3.5 keV, absorbed within about 150 nm of the surface, lowering physical dose contribution by 1-7%. Since coatings predominantly remove low-energy electrons, radiolytic yield changes through a shift in the electron energy spectrum, not directly following dose response. At the vascular scale, the enhanced dose region extends to approximately 10 um from the vessel wall, meaning NP localization determines where the biological target sits relative to radiation sources. Collectively, no single design parameter serves as a universal predictor of radiosensitization. Translating physical radioenhancement into biological effect depends on whether the target lies within each parameter's effective range. Furthermore, charged-particle equilibrium (CPE) correction, applied where beam confinement necessitated it, substantially alters calculated dose enhancement ratios. Consequently, scoring distance and CPE-corrected values should be explicitly reported to ensure comparability across studies.",
-        "authors": [
-          "Ali Taheri",
-          "Hans Rabus",
-          "Mayeen Uddin Khandaker",
-          "Farhad Moradi",
-          "David Andrew Bradley"
-        ],
-        "published": "2026-10-06T09:56:49Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.08060v1",
-        "score": 0.6307
-      },
-      {
-        "arxiv_id": "2610.09884",
-        "title": "How Can Technology Improve Acetabular and Pelvic Fractures Management in the Operating Room? A Systematic Review",
-        "abstract": "In recent years, there has been a proliferation of literature describing new technologies increasingly integrated into the surgical management of pelvic fractures. However, the available data are heterogeneous, scattered, and sometimes limited to small series or single-center studies. This review aims to present new technologies in the field of pelvic and acetabular fractures and explore their potential benefits for surgeons and patients. The goal is to describe current concepts, advantages, and limitations and to open a discussion about future use and development. The search was conducted through Medline, Central and Embase databases from inception to January 2025 following the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) protocol. A total of 841 records were reviewed and 115 studies were included according to the inclusion and exclusion criteria. Technologies such as robotics, navigation, patient-specific management, and 3D printing are being developed for the management of pelvic injuries. These technologies demonstrate greater surgical accuracy without increasing complications. In pelvic and acetabular fractures surgery, new technologies are very attractive and are a promising help for management of these complex injuries and need to be improved before being included in routine care.",
-        "authors": [
-          "Marie Le Baron",
-          "Martine Pithioux",
-          "St\u00e9phane Candoni",
-          "Xavier Flecher"
-        ],
-        "published": "2026-10-07T11:43:51Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.09884v1",
-        "score": 0.603
-      },
-      {
-        "arxiv_id": "2610.08080",
-        "title": "Laplace-Domain Beamforming for Ultrafast Plane-Wave Imaging",
-        "abstract": "Fourier-domain beamforming methods, such as filtered backpropagation (FBP), are beneficial in ultrafast plane-wave imaging due to their computational efficiency and high image quality. These methods use the Fourier diffraction theorem (FDT) for steered plane waves to exactly invert linear scattering models. However, these models rely on simplifying assumptions that degrade image quality. The use of linear transducer arrays, in particular, requires: (i) a two-dimensional space, and (ii) lossless tissues. Herein, Laplace-domain beamforming is proposed. This method retains the computational efficiency of the Fourier-domain methods while improving image quality for linear arrays. Specifically, the method uses a generalization of the FDT, here called Laplace diffraction theorem, to account for three spatial dimensions, finite array element heights, and lossy tissues. A phantom experiment showed that the proposed method improves image uniformity, spatial resolution, and contrast compared to FBP. Using three steering angles, the lateral and axial -6 dB-widths of wires reduced by up to 12% and 25%, respectively, while the contrast of anechoic regions improved by up to 9%.",
-        "authors": [
-          "Martin F. Schiffner"
-        ],
-        "published": "2026-10-06T10:09:33Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.08080v1",
-        "score": 0.5681
-      },
       {
         "arxiv_id": "2610.12273",
         "title": "Deep preferential evolution guided by pairwise comparisons enables motion correction in photoacoustic tomography",
@@ -943,136 +886,13 @@
         "published": "2026-10-08T16:36:31Z",
         "pdf_url": "https://arxiv.org/pdf/2610.12273v1",
         "score": 0.5532
-      },
-      {
-        "arxiv_id": "2610.08377",
-        "title": "Data geometry preserves prediction but reshapes explanation",
-        "abstract": "Across scientific domains, empirical data often give rise to positive semidefinite matrices that encode similarities, couplings or interactions and induce natural geometries. We investigate whether changing the geometry used to compare the same empirical representations preserves subject-level performance and the local structures from which explanations are derived, a question we term the prediction explanation invariance problem. We address this problem across morphometric MRI, fMRI and EEG data by comparing Frobenius and trace geometries applied to the same empirical matrices. Predictive performance was broadly preserved across geometries, but comparable performance did not imply agreement in subject-level decision scores or predicted labels. Predictive similarity also masked geometry-dependent differences in local neighbourhoods, perturbation sensitivities and explanatory rankings. Dimensionality reduction made the two subject-space geometries progressively more concordant, while classification performance and decision-level agreement declined. These results identify data geometry as a hidden degree of freedom in explainability: similar performance does not guarantee invariant decisions or explanations.",
-        "authors": [
-          "Nicola Amoroso",
-          "Mario Caruso",
-          "Marianna La Rocca",
-          "Loredana Bellantuono",
-          "Tommaso Maggipinto",
-          "Michele Morelli",
-          "Sabina Tangaro",
-          "Marco Tatullo",
-          "Roberto Bellotti",
-          "Ester Pantaleo",
-          "Alfonso Monaco"
-        ],
-        "published": "2026-10-06T14:01:04Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.08377v1",
-        "score": 0.5022
       }
     ]
   },
   "Semiconductors": {
-    "pulled": 30,
-    "retained": 8,
+    "pulled": 7,
+    "retained": 7,
     "papers": [
-      {
-        "arxiv_id": "2610.10953",
-        "title": "Band Tail States: Speed Bump or End of the Road for Two-Dimensional Semiconductors?",
-        "abstract": "We propose that the path to realizing the full potential of two-dimensional (2D) electronics lies in understanding and mastering their energy band tail states (BTS). Unlike silicon, which benefits from sharp band edges (Urbach energy $E_\\rm U$ ~ 10 meV), today's monolayer 2D semiconductors have rough band edges ($E_\\rm U$ ~ 100 meV) caused by spatial potential inhomogeneity. Comparing a physics-based electrical model to experiments, we demonstrate that BTS cause reduced effective mobility and \"slow\" transistor turn-on with excessive gate voltage in monolayer 2D transistors, which sets a fundamental limit for their energy-efficient operation. We also show that BTS effects in 2D transistors could be mitigated with higher gate capacitance, with strain engineering, and by using bilayer instead of monolayer 2D channels, as long as $E_\\rm U$ is reduced below ~ 50 meV. This work provides a theoretical framework and design guidelines to navigate these fundamental limits, and to enable successful integration of 2D semiconductors into low-power nanoelectronics.",
-        "authors": [
-          "Zherui Han",
-          "Robert K. A. Bennett",
-          "Davide Donadio",
-          "Maritha A. Wang",
-          "Tara Pe\u00f1a",
-          "Mika\u00ebl Cass\u00e9",
-          "Martin Vanbrabant",
-          "Valeriya Kilchytska",
-          "Jean-Pierre Raskin",
-          "Eric Pop"
-        ],
-        "published": "2026-10-07T22:11:33Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.10953v1",
-        "score": 0.7235
-      },
-      {
-        "arxiv_id": "2610.10060",
-        "title": "Charge transport in two-dimensional conductors with hybrid three-component plasma",
-        "abstract": "Electron--hole plasma in two-dimensional systems has mainly been studied in two limiting cases: degenerate semimetals with parabolic bands and nondegenerate symmetric Dirac systems such as graphene. Here we investigate a different regime realized in a gapless HgTe quantum well: a multicomponent plasma where massless Dirac carriers coexist with thermally activated heavy holes from lateral valence-band valleys. Near charge neutrality, the resistance increases approximately as $T^2$, in sharp contrast to the nearly temperature-independent resistivity expected for a symmetric Dirac plasma. We show that once heavy holes are populated, charge neutrality pins the chemical potential above the Dirac point, leaving the Dirac electrons moderately degenerate while the heavy holes remain nondegenerate and obey Boltzmann statistics. The light electrons therefore scatter almost elastically from the heavy holes, allowing a relaxation-time treatment of interparticle transport. Using carrier densities from self-consistent band-structure calculations, we reproduce the data with a short-range electron--hole interaction in the weakly disordered limit, for which the conductivity scales as $T^{-2}$ and the excess resistivity is proportional to the heavy-hole density. In contrast, an unscreened Coulomb interaction would give a temperature-independent conductivity. The extracted interaction amplitude is of the expected Coulomb scale. These results establish near-critical HgTe quantum wells as a platform for interaction-driven transport in multicomponent systems combining degenerate massless and nondegenerate massive carriers.",
-        "authors": [
-          "A. D. Levin",
-          "V. A. Chitta",
-          "Z. D. Kvon",
-          "N. N. Mikhailov",
-          "G. M. Gusev"
-        ],
-        "published": "2026-10-07T13:29:20Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.10060v1",
-        "score": 0.6807
-      },
-      {
-        "arxiv_id": "2610.11297",
-        "title": "Displacement-Field-Induced Ionization of Defect States in High-Quality hBN",
-        "abstract": "Encapsulation of two-dimensional (2D) materials with hexagonal boron nitride (hBN) is widely used to fabricate ultraclean van der Waals (vdW) heterostructures for optoelectronic and quantum transport studies. These devices are often operated under strong out-of-plane displacement fields that tune the electronic properties of the active 2D material, while the surrounding hBN is typically assumed to remain electronically inert. This assumption, however, neglects defect states that are present even in high-quality hBN crystals. Here, we probe their response to the applied displacement field using monolayer graphene encapsulated between hBN crystals as a sensitive charge sensor. Increasing the displacement field induces notable charge transfer between graphene and hBN, producing additional electron doping of 10-20x10^9 cm^(-2) even at the moderate displacement field (~0.5 V nm^(-1)), while simultaneously increasing carrier-density inhomogeneity of the graphene layer. Both effects are consistent with ionization of defect states within the hBN bandgap, with the bulk density ~1-7x10^(-5) nm^(-3) varying across different hBN crystals. Our results show that displacement-field-induced defect ionization in hBN can modify the electronic response of vdW heterostructures, with direct implications for device design and interpretation of experiments.",
-        "authors": [
-          "Ilia Begichev",
-          "Daria Belotcerkovtceva",
-          "Iakov Reznikov",
-          "Sergey Slizovsky",
-          "Weijie Lu",
-          "Nansi Zhou",
-          "Ian Babich",
-          "Makars Siskins",
-          "Kostya S. Novoselov",
-          "Vladimir I. Falko",
-          "Kenji Watanabe",
-          "Takashi Taniguchi",
-          "Alexey I. Berdyugin"
-        ],
-        "published": "2026-10-08T06:05:47Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.11297v1",
-        "score": 0.6755
-      },
-      {
-        "arxiv_id": "2610.11244",
-        "title": "Enhancement of the Topological Hall Effect through Engineering the Skyrmion Size and Shape",
-        "abstract": "The topological Hall effect of skyrmions is a promising electrical probe of magnetic textures, but its small magnitude limits applications. In this work, we theoretically investigate the topological Hall effect induced by sparsely distributed skyrmions in the weak-coupling limit, focusing on how the size and shape of the skyrmion affect the Hall effect. To this end, we used a formalism based on angular-momentum eigenstates, which enables systematic analysis within reasonable computation time. We found that, in clean materials where the electron mean-free path is comparable to or larger than the skyrmion size, the Hall effect depends considerably on the size and shape of the skyrmion. In particular, the Hall effect is largest when $k_F\u03bb\\sim 1$, and its magnitude can be tuned by the domain-wall width of skyrmions. These findings provide a basis for investigating how the shape and size of skyrmions affect transport properties and demonstrate that the topological Hall effect is controllable by engineering these properties.",
-        "authors": [
-          "Kazuma Murata",
-          "Ryunosuke Terasawa",
-          "Hiroaki Ishizuka"
-        ],
-        "published": "2026-10-08T04:46:47Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.11244v1",
-        "score": 0.65
-      },
-      {
-        "arxiv_id": "2610.10733",
-        "title": "Hydrodynamic Anomalous Hall Effect in a Two-Dimensional Dirac Fluid",
-        "abstract": "In ultraclean conductors, electron-electron collisions can make transport hydrodynamic. In a Berry-curved band, these collisions can also produce two-particle coordinate shifts, which contribute to the anomalous Hall current in the presence of a transport electric field. We develop a kinetic theory of this contribution for a two-dimensional massive Dirac Fermi liquid with weak contact interactions and weak short-range disorder. The computed response is independent of interaction strength at leading Born order. Its contribution to the anomalous Hall conductivity is comparable to the thermal correction to the intrinsic anomalous Hall conductivity. The existence of the momentum zero mode of the electron-electron collision integral leads to a nontrivial frequency dependence of the anomalous Hall response considered in this work. In particular, the limits of vanishing frequency (dc) and vanishing disorder do not commute. In the dc limit, the momentum response to the transport field grows inversely with the momentum relaxation rate. This allows arbitrarily weak, energy-dependent impurity scattering to produce a finite correction by coupling conserved momentum to the modes relaxed by electron-electron scattering. This correction disappears when the clean limit is taken before the zero-frequency limit. As a result, the interaction-induced Hall response retains information about the mechanism of momentum relaxation even as the overall disorder strength tends to zero.",
-        "authors": [
-          "A. Levchenko",
-          "D. A. Pesin"
-        ],
-        "published": "2026-10-07T18:06:47Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.10733v1",
-        "score": 0.6423
-      },
-      {
-        "arxiv_id": "2610.10159",
-        "title": "Beyond Equilibrium Raman Thermometry: Fermi-Level Control of the Anti-Stokes Response in Graphene",
-        "abstract": "Non-equilibrium electron and phonon populations govern heat generation and dissipation in nanoscale devices, yet their direct characterization remains challenging. Anti-Stokes Raman scattering provides a sensitive probe of phonon populations and local temperatures, although its interpretation becomes more complex when electronic and phononic populations are driven out of equilibrium. Here, we investigate the gate-dependent anti-Stokes Raman response of monolayer graphene and find that the anti-Stokes response deviates from that expected from an equilibrium phonon population. Using a spatially localized microdroplet spectroelectrochemical platform, dielectric back-gates, and chemical doping, we observe a strong and reversible suppression of the G-mode anti-Stokes intensity as the Fermi level is tuned away from the Dirac point, while the Stokes intensity remains essentially unchanged. By contrast, the G-mode frequency and linewidth of both the Stokes and anti-Stokes branches evolve with doping as expected from the established Kohn-anomaly picture. The anti-Stokes/Stokes intensity ratio decreases by several-fold over the measured range and displays a pronounced, gate-dependent power response with maximum sensitivity at charge neutrality. Comparison with previous studies of non-equilibrium carrier dynamics in doped graphene suggests an important role of Fermi-level-dependent electronic phase space, which can influence both hot-carrier-driven phonon populations and electronically mediated Stokes-anti-Stokes scattering. Our findings establish anti-Stokes Raman scattering as a sensitive probe of electron-phonon coupling and non-equilibrium phonon dynamics in graphene.",
-        "authors": [
-          "Martin Jindra",
-          "Luka Pirker",
-          "Tim Verhagen",
-          "Ciar\u00e1n Fowley",
-          "Martin Kalb\u00e1\u010d",
-          "Mat\u011bj Velick\u00fd",
-          "Riichiro Saito",
-          "Ado Jorio",
-          "Otakar Frank"
-        ],
-        "published": "2026-10-07T14:36:22Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.10159v2",
-        "score": 0.6386
-      },
       {
         "arxiv_id": "2610.12018",
         "title": "Field-Free Reconfigurable Spin Logic in Compositionally Graded MnxCoAl Layer",
@@ -1105,135 +925,108 @@
         "published": "2026-10-08T14:25:24Z",
         "pdf_url": "https://arxiv.org/pdf/2610.12031v1",
         "score": 0.6215
+      },
+      {
+        "arxiv_id": "2610.12286",
+        "title": "Accessing electronic entanglement via photo-assisted two-electron tomography",
+        "abstract": "Witnessing entanglement between electrons propagating in quantum circuits requires accessing their two-electron coherences, which encode the two-particle quantum correlations generated by Coulomb interactions. Yet, experimental reconstruction of two-electron coherence remains a major challenge. We introduce photo-assisted two-electron tomography, a quantum coherence reconstruction protocol from dc-currents and time-averaged current correlations, routinely measured in electron quantum optics experiments. Driving an energy filter with a small rf tone encodes off-diagonal coherences in the frequency domain into the dc-current response, enabling single-electron tomography without resorting to current-noise measurements. Extending it to two channels, current correlations after two photo-assisted filters reconstruct the two-electron Wigner distribution and isolate its irreducible two-body part. When applied to Coulomb-coupled quantum Hall edge channels, the protocol reveals interaction-induced energy entanglement. Signatures of this entanglement are visible through the violation of an entanglement witness based on Cauchy-Schwarz inequalities, as well as Wigner function negativities, which remain resolved above the thermal background for realistic device parameters. A generalized Franson geometry further extends the approach to intra-channel two-electron coherences. This opens a direct pathway to detect and characterize electronic entanglement in ballistic quantum circuits.",
+        "authors": [
+          "M. Paulet",
+          "G. Rebora",
+          "M. Bienioszek",
+          "G. M\u00e9nard",
+          "G. F\u00e8ve",
+          "A. Feller",
+          "P. Degiovanni"
+        ],
+        "published": "2026-10-08T16:42:01Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.12286v1",
+        "score": 0.6134
+      },
+      {
+        "arxiv_id": "2610.12136",
+        "title": "Dynamical many-body control of high harmonic generation in a Mott insulator",
+        "abstract": "High harmonic generation (HHG) has emerged as a powerful probe of ultrafast electron dynamics in solids. However, in strongly correlated materials, where electronic excitations arise from many-body interactions rather than single-particle band dispersion, the field remains in its infancy. Here, we report HHG up to the 23$^{rd}$ order in the prototypical Mott insulator La$_2$CuO$_4$. We observe a robust 4 eV cutoff that is independent of driving field strength, revealing an intrinsic energy scale defined by the Hubbard bands. Using time-resolved high harmonic spectroscopy, we disentangle the distinct contributions of carrier creation, intraband acceleration, and interband recombination to the nonequilibrium radiation spectrum. We demonstrate that photo-doping triggers a fundamental reorganization of the many-body manifolds above a critical excitation density, a process that renormalizes the band curvature and suppresses nonlinear intraband currents, thereby directly imprinting the signature of many-body band reconstruction onto the harmonic emission. These results establish HHG as a sensitive probe of subtle correlation-driven electronic reconstructions and highlight that many-body interactions enable extreme nonlinear optical responses that are highly tunable in nonequilibrium states.",
+        "authors": [
+          "Mingyao Guo",
+          "Ryo Noguchi",
+          "Mohammad Muntasir Hassan",
+          "Steven J. Gomez Alvarado",
+          "Reina M. Gomez",
+          "Yao-Jui Chan",
+          "Yu-Chieh Wen",
+          "Stephen D. Wilson",
+          "Yao Wang",
+          "David Hsieh"
+        ],
+        "published": "2026-10-08T15:24:03Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.12136v1",
+        "score": 0.5808
+      },
+      {
+        "arxiv_id": "2610.12223",
+        "title": "Measurement-induced enhancement of the $X$-parity lifetime in a Majorana tetron",
+        "abstract": "A recent experiment [arXiv:2507.08795] has reported measurements of the interwire $X$-parity lifetime in a Majorana tetron device via the quantum capacitance of an auxiliary readout dot. Motivated by these measurements, we theoretically study the interwire parity lifetime in a minimal model of the coupled dot-tetron system subject to electrostatic noise. We show that coupling to the measurement dot can itself strongly modify the parity dynamics by generating an energy splitting that shifts noise-induced transitions to finite frequency and thereby stabilizes the measured states against low-frequency fluctuations. For representative noise strengths motivated by disordered nanowire devices, we find $X$-parity switching lifetimes of order microseconds in the measurement configuration even when the corresponding bare-tetron coherence time is only tens of nanoseconds long. We analyze both the dispersive regime, where the dot can be integrated out and the dynamics reduces to an effective two-level system, and the near-resonant regime, where all four low-energy states participate. In the latter case, rapid transitions organize the spectrum into two long-lived manifolds that approximately correspond to sectors of the combined dot-tetron $X$-loop parity, yielding effective two-state switching despite the underlying multilevel structure. Our results show that measurement-induced stabilization can substantially enhance the observed $X$-parity switching lifetime, such that the lifetime measured under continuous readout can greatly exceed the intrinsic idle $T_2^*$ coherence time of the isolated Majorana tetron qubit.",
+        "authors": [
+          "Katharina Laubscher",
+          "Jay D. Sau",
+          "Sankar Das Sarma"
+        ],
+        "published": "2026-10-08T16:08:03Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.12223v1",
+        "score": 0.5522
+      },
+      {
+        "arxiv_id": "2610.11859",
+        "title": "Tunable Ultrastrong Magnon-Magnon Coupling and Squeezed States in a Triaxial Van der Waals Antiferromagnet",
+        "abstract": "Achieving and quantifying ultrastrong magnon-magnon coupling (USC) remains a key challenge for quantum magnonics. Here, we demonstrate widely tunable USC between chiral (right- and left-handed) and acoustic or optical magnon modes in the van der Waals antiferromagnet $CrPS_4$. Using a full quantum model, we decompose the interaction into three microscopic interaction channels: the co-rotating term $g_1$ (mode hybridization), the counter-rotating term $g_2$ (two-mode squeezing), and, uniquely in the chiral regime, the self-squared term $g_3$ that mediates single-mode squeezing. The normalized coupling ratio reaches $g/f_g$ $\\sim$ 0.41, entering the USC regime. Most significantly, we establish a complete protocol linking these USC parameters to a measurable quantum phenomenon: a squeezed magnon vacuum state. Our simulations not only visualize the chirality and polarization evolution of the hybrid modes but also demonstrate how to directly extract quadrature fluctuations and a substantial squeezing factor (up to $\\sim$ 9.7 dB) from thermal noise-driven magnetization dynamics. This work provides a material-specific quantum framework for USC and a practical pathway to detect and exploit non-classical magnon states in low-damping two-dimensional magnets, opening a route toward quantum-enhanced spintronics and hybrid quantum information platforms.",
+        "authors": [
+          "Xiao Xiao",
+          "Zishuang Li",
+          "Zui Tao",
+          "Lina Chen",
+          "Ping Liu",
+          "Shuai Zhang",
+          "Haozhe Wang",
+          "Yong Pu",
+          "Ronghua Liu"
+        ],
+        "published": "2026-10-08T12:38:53Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.11859v1",
+        "score": 0.5395
+      },
+      {
+        "arxiv_id": "2610.11982",
+        "title": "Magnon dynamics driven by the symplectic quantum metric in a chiral soliton lattice",
+        "abstract": "We investigate the effects of quantum geometry on the motion of magnon wave packets in one-dimensional quantum spin chains. In contrast to fermionic systems, where transport phenomena driven by the quantum metric have been extensively studied, we show that the dynamics in bosonic magnon systems are strongly affected by the symplectic structure and the pseudo-unitarity of the transformation of the magnon Bogoliubov-de Gennes Hamiltonian. A chiral soliton lattice provides a setting in which the symplectic quantum metric strongly influences the longitudinal magnon dynamics. We derive the semiclassical response of a magnon wave packet in such a system to a weak, slowly varying perturbation and demonstrate that the wave packet velocity acquires a geometric contribution proportional to the momentum derivative of the symplectic quantum metric, which dominates over the conventional group velocity for a nearly flat band. Solving the resulting equations of motion, we obtain a bounded trajectory in real time with a phase-space area determined by the symplectic quantum metric.",
+        "authors": [
+          "Sidhartha Chatterjee",
+          "Andreas Haller",
+          "Peter P. Orth",
+          "Thomas L. Schmidt"
+        ],
+        "published": "2026-10-08T13:55:35Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.11982v1",
+        "score": 0.5048
       }
     ]
   },
   "Embedded Systems": {
-    "pulled": 24,
-    "retained": 8,
+    "pulled": 1,
+    "retained": 1,
     "papers": [
       {
-        "arxiv_id": "2610.08688",
-        "title": "A Framework for Accelerating Transformer Inference on RISC-V for Edge AI",
-        "abstract": "This work presents a framework for accelerating transformer-based language models (LMs) on resource-constrained IoT devices. The framework targets compact LMs: BERT-Tiny (B-Ty), MobileBERT (M-Bt), MiniLM (M-Lm), Electra (E-Lt) and DeBERTa (D-Bt) -- selected for their architectural diversity and use in edge inference scenarios. The proposed flow derives lightweight instruction set extensions tailored to the non-obvious computational patterns of these models. In addition, a custom instruction is introduced to accelerate the address generation stage of batch matrix multiplication, achieving a performance improvement of 15.39--21.74% with modest ASIC overheads of 6.79% in area and 2.33% in power. To further enhance performance without incurring additional processor core hardware cost, an optional compiler-directed loop unrolling strategy is employed, trading increased code size for overall reduced execution time. Evaluation on the Synopsys trv32p3f RISC-V core demonstrates inference speedups of up to 2.19x, and FPGA implementation on the AMD Zynq UltraScale+ ZCU102 shows a 32.94% area overhead at 75 MHz, whereas the ASIC implementation using the TSMC 28 nm library incurs a 21.08% area overhead while operating at 250 MHz.",
+        "arxiv_id": "2610.11748",
+        "title": "DEX: Digit-Level Early Exit for Energy-Efficient MSDF Neural Network Inference",
+        "abstract": "U-Net inference for brain-tumor segmentation requires billions of multiply-accumulate operations, motivating hardware that can reduce computation dynamically rather than relying only on fixed precision or static model compression. Most-significant-digit-first (MSDF) arithmetic exposes the leading digits of a result during computation, enabling output-dependent decisions before the full value is generated. This paper presents an MSDF accelerator for quantized U-Net segmentation with a two-stage grouped processing element supporting signed INT8 operands and in-stream bias accumulation. Four runtime mechanisms operate directly on the output digit stream: exact early negative detection (END) in ReLU layers, exact sign-only decision making in the segmentation head, calibrated low-order-digit skipping, and calibrated pruning. The two approximate mechanisms are selected offline under an accuracy constraint, while execution requires only lightweight control and does not modify the stored weights. On a residual U-Net trained with nnU-Net for BraTS, the proposed mechanisms reduce digit cycles by 38.38\\% while achieving a mean Dice score of 80.58\\% on 73 held-out cases, compared with 81.20\\% for the floating-point model; the exact mechanisms alone reduce cycles by 18.79\\% without altering the quantized output. Synthesized in 45~nm, the processing element operates at 500~MHz, occupies 0.858~mm$^2$, and consumes 0.726~mJ per $192\\times192$ patch under switching-activity-annotated power analysis. A projected eight-output accelerator with shared activation delivery achieves 16.6~ms latency and 1.67~mJ per patch.",
         "authors": [
-          "Ajay Kumar M",
-          "Vishnu PS",
-          "Yike Li",
-          "Shreejith Shanker",
-          "Dimitrios S. Nikolopoulos",
-          "Bo Ji",
-          "Hans Vandierendonck",
-          "Deepu John"
+          "Yousef Sadegheih",
+          "Dorit Merhof",
+          "Muhammad Usman"
         ],
-        "published": "2026-10-06T17:06:11Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.08688v1",
-        "score": 0.7012
-      },
-      {
-        "arxiv_id": "2610.09447",
-        "title": "BenchmarkAnything: Agent-Driven Construction of Simulator-Ready Microarchitecture Benchmarks",
-        "abstract": "The selection of benchmark workloads is of paramount importance in computer architecture, as it establishes the yardstick against which architectural innovations are measured and guided. Yet for decades, the SPEC benchmark suites, comprising merely tens of workloads, have been the de facto standard in academic architectural research, where they are frequently treated as a principal evaluation and optimization target. When a suite this small is relied upon so heavily, it risks architectural overfitting; as our research and prior studies demonstrate, an overly narrow focus can mislead design decisions by overvaluing certain innovations, producing cores that excel on SPEC benchmarks yet underperform on broader, realistic workloads. To mitigate this overfitting, adopting a large, comprehensive benchmark suite is the natural solution. However, the immense engineering effort required to strip software into the clean, interference-free binary executables demanded by simulators often makes this highly impractical. In this work, we demonstrate that AI agents provide an elegant solution to this challenge. Rather than manually curating yet another static benchmark suite, we introduce an agent-driven workflow capable of autonomously transforming arbitrary open-source repositories into simulator-ready executables. This automated approach makes workload collection highly scalable, allowing us to rapidly harvest hundreds of diverse applications from public repositories into our benchmark suite. Through a comparative analysis of our agent-generated suite against SPEC, we show that it not only achieves higher-fidelity performance assessments but also uncovers novel architectural insights that traditional, static suites fail to expose.",
-        "authors": [
-          "Xiangfeng Sun",
-          "Ceyu Xu",
-          "Chen Bai",
-          "Yuan Xie"
-        ],
-        "published": "2026-10-07T05:00:03Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.09447v1",
-        "score": 0.6542
-      },
-      {
-        "arxiv_id": "2610.11447",
-        "title": "Closed-loop evaluation of LLM agents for embedded software development",
-        "abstract": "Large language models (LLMs) are increasingly deployed as coding agents that edit files, run builds and tests, inspect execution results, and repair software iteratively. Embedded firmware is a demanding target because correctness depends on closed-loop behavior under sensing, timing, and safety constraints, not only on static source quality. Yet embedded-agent evaluation remains limited and often emphasizes one-shot synthesis or offline correctness. We present a benchmark for closed-loop evaluation of embedded coding agents. Each task provides a plain-text engineering description, constrained workspace, and visible build-and-runtime surface. The agent must translate requirements into implementation and self-verification steps, then iterate until the required device behavior is achieved. The suite contains five embedded-control tasks and four feedback scenarios: one-shot generation, realistic self-verification, CI-style red/green feedback, and oracle-style detailed feedback. The implementation targets simulated ESP32 firmware for reproducibility. We evaluate seven GPT-family and Qwen-family configurations across five tasks and four scenarios, with three repetitions per condition for 420 runs. gpt-5.4 has the highest pass rate among evaluated configurations but does not saturate the benchmark; qwen3.5-27B is the strongest observed local model; and smaller local models degrade sharply in pass rate and search efficiency. These results suggest that capable local embedded coding agents are emerging.",
-        "authors": [
-          "Jorge Garc\u00eda-Carrasco",
-          "Sergio Garc\u00eda-Carrasco",
-          "Alejandro Mat\u00e9",
-          "Juan Trujillo"
-        ],
-        "published": "2026-10-08T08:02:10Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.11447v1",
-        "score": 0.6541
-      },
-      {
-        "arxiv_id": "2610.08502",
-        "title": "X-OPM: Explainable Automatic Digital On-Chip Power Modeling for Enhanced Robustness",
-        "abstract": "Proactive power management systems reduce processor dynamic power through runtime power prediction and power-aware scheduling. Accurate, stable and low-overhead digital on-chip power meters (OPMs) are crucial for improving the prediction quality. Recent studies have explored various modeling methods, including using linear models, decision trees, and multi-layer perceptrons (MLPs) to construct OPMs. However, most current approaches train models end-to-end without analyzing the physical interpretability of features, affecting their ability to generalize to unseen workloads. Grounded in the design principles of synchronous digital VLSI circuits, X-OPM introduces a robust feature engineering framework that uses tree-based models to capture feature interactions and linear models for prediction. It also incorporates a human-in-the-loop workflow to balance model accuracy against modeling effort. Evaluated on a commercial C906 vector processor, X-OPM consistently achieves $R^2 > 0.93$ across all workloads with sampling window size set below $8$ cycles. In contrast, state-of-the-art methods including APOLLO, COBIT, and standard MLPs fail to generalize across all test cases. Layout with commercial EDA tools shows that X-OPM incurs an area overhead below $0.1\\%$, which is on par with lightweight tree-based and linear models, and significantly smaller than MLP-based models.",
-        "authors": [
-          "Jingbo Jiang",
-          "Xizi Chen",
-          "Jian Peng",
-          "Wei Zhang"
-        ],
-        "published": "2026-10-06T15:09:52Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.08502v1",
-        "score": 0.6302
-      },
-      {
-        "arxiv_id": "2610.10129",
-        "title": "When Algorithmic Exploration Becomes Cheap: A Case Study of Agentic Research in EDA",
-        "abstract": "As EDA researchers, we conducted eight deliberate trials of agentic algorithm exploration, selecting several topics outside our areas of depth. One faculty member and seven students participated, including students without publication experience. With limited intervention in the algorithms, agents developed mathematical constructions, analyzed existing tools, and implemented improvements; some efforts fell short of their practical goals. We also used AI to collect, classify, and analyze 8,420 papers from four EDA conferences and two journals over 2022-2026. Among 2,380 primary-core papers, we classified 97.7% from titles and abstracts as computationally closed, including work on new formulations. Together, these observations suggest that much of EDA offers an executable environment for increasingly accessible algorithm research. We see an opportunity for tool developers to investigate ideas they previously lacked time to pursue. We also ask how EDA should validate and reward research when results become easier to produce than to examine, and what papers and venue labels will continue to tell us about a contribution.",
-        "authors": [
-          "Keren Zhu",
-          "Yu Deng",
-          "Xiaoyu Hao",
-          "Liwen Jiang",
-          "Zijian Jiang",
-          "Cunqing Lan",
-          "Boxiang Song",
-          "Pujun Su",
-          "Yaojia Wang"
-        ],
-        "published": "2026-10-07T14:10:57Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.10129v1",
-        "score": 0.6284
-      },
-      {
-        "arxiv_id": "2610.09999",
-        "title": "ReSAFT: An Efficient Stuck-at Fault-Tolerant Scheme for ReRAM-based Process-in-Memory Accelerators",
-        "abstract": "Analog ReRAM-based process-in-memory (PIM) accelerators provide high parallelism and energy efficiency for deep convolutional neural networks (CNNs) inference. However, their susceptibility to permanent faults, such as stuck-at high (SaH) and stuck-at low (SaL) resistance states, poses a major challenge by permanently corrupting the CNN weights mapped to conductance values of ReRAM cells and degrading inference accuracy, which leads to system unreliability in safety-critical applications. In this paper, we propose a fault-tolerant scheme for analog ReRAM-based PIM accelerators to tackle stuck-at faults (SAFs) with minimal redundancy overhead to recover classification accuracy degradation. The proposed scheme contains a redundancy-based hardware solution alongside fault-aware mapping method for ensuring reliable analog computation in ReRAM crossbar. We analyze the impact of varying number of redundant rows and columns on accuracy and design metrics. Subsequently, a multi-objective optimization (MOO) problem is formulated and solved to efficiently determine the number of redundant rows and columns, considering trade-offs among various design metrics. Furthermore, a fault-aware weight mapping is proposed for dual-crossbar structures to further compensate for the accuracy degradation caused by SAFs. Simulation results show that, for the SimpleNet model using the MNIST dataset, the inference accuracy is recovered by approximately 22.39%, on average, across four configurations of optimal solutions, each offering a trade-off between reliability and area, energy consumption, and latency overheads. The mean-time-tofailure (MTTF) improves by about 61x on average compared to the baseline. These selected configurations also reduce energy and area overheads by 32%, on average, in comparison to row-only and column-only configurations.",
-        "authors": [
-          "Aniseh Dorostkar",
-          "Hamed Farbeh",
-          "Hamid R. Zarandi"
-        ],
-        "published": "2026-10-07T12:56:03Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.09999v1",
-        "score": 0.6244
-      },
-      {
-        "arxiv_id": "2610.10858",
-        "title": "RFChipAgent: Multi-Agentic AI Flow for Analog/RF Chip Design",
-        "abstract": "Analog/RF circuits remain the critical interface between digital computation and the physical world, and emerging standards from Wi-Fi 7 to 6G place stringent demands on them, yet analog/RF design remains one of the most labor-intensive steps in chip development. We present RFChipAgent, a first-of-its-kind multi-agent flow of large language model (LLM) agents for end-to-end analog/RF circuit design automation, in which AI agents collaboratively orchestrate the complete design flow under human supervision. RFChipAgent is built around four technical pillars. First, a multimodal retrieval-augmented generation (RAG) subsystem with private per-document FAISS indexing extracts design knowledge from existing engineering documentation. Second, a topology agent drives topology selection, and a schematic and testbench agent automates circuit and testbench assembly. Third, a closed-loop hybrid circuit-sizing engine combines Tree-structured Parzen Estimator (TPE) and CMA-ES optimization, evaluating every candidate in a simulator-in-the-loop framework. Fourth, a trust-scored simulation database accumulates verified performance data and builds an adaptive optimization model that informs subsequent trials. We validate RFChipAgent on a family of GF22FDSOI 60 GHz wideband mm-wave low-noise amplifier (LNA) topologies, demonstrating automated topology generation, specification-driven design-space exploration, and simulator-guided optimization. Experimental results show substantial reductions in design effort while maintaining signoff-quality verification. This work establishes a foundation for LLM-driven multi-agent electronic design automation (EDA) for analog/RF circuits.",
-        "authors": [
-          "Awani Khodkumbhe",
-          "Yunfei Feng",
-          "Raj Rangarajan",
-          "Kevin Wang",
-          "Kamal Sahota"
-        ],
-        "published": "2026-10-07T20:02:33Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.10858v1",
-        "score": 0.6232
-      },
-      {
-        "arxiv_id": "2610.08373",
-        "title": "ECO: Energy-Oriented Configuration Optimization for Attention FFN Disaggregated LLM Serving",
-        "abstract": "Energy-efficient LLM serving requires minimizing serving GPU energy while meeting latency and throughput service-level objectives (SLOs). Attention--FFN disaggregation (AFD) enables separate resource allocation and operating controls for attention and expert computation, but their energy effects remain coupled through the execution pipeline. Realizing its energy-saving potential therefore requires navigating a hierarchical configuration space in which deployment structures constrain admissible controls and shape their end-to-end effects. Finding low-energy configurations that meet SLOs is challenging because physical evaluations are costly and only a small fraction of candidates can be measured. We present Energy-Oriented Configuration Optimization (ECO), which jointly searches deployment structures and their admissible operating controls under a limited measurement budget. ECO constructs a structure-aware energy prior from calibrated stage behavior and pipeline dependencies, then learns residual prediction errors with a Gaussian process. Its cost-aware constrained Bayesian optimization prioritizes measurements according to expected energy improvement while accounting for SLO feasibility, execution success, and evaluation cost, and returns the lowest-energy measured feasible configuration. Across all 16 scenarios on A6000 and A100 with Qwen and DeepSeek, ECO's frozen configurations, evaluated on disjoint requests, reduce serving energy by 40.5\\% and increase output token rate by 20.7\\% on average relative to baselines while meeting target SLOs. Across the 8 A6000 scenarios, its selected feasible energy averages 33.1\\% below generic constrained Bayesian optimization and 25.8\\% below genetic search.",
-        "authors": [
-          "Zou Qingyun",
-          "Bin Gao",
-          "Zhuobin Huang",
-          "Weng-Fai Wong",
-          "Tulika Mitra",
-          "Bingsheng He"
-        ],
-        "published": "2026-10-06T13:57:44Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.08373v1",
-        "score": 0.6141
+        "published": "2026-10-08T11:39:01Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.11748v1",
+        "score": 0.5565
       }
     ]
   }
