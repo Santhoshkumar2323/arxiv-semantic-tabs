@@ -745,24 +745,9 @@
     ]
   },
   "Radiotherapy": {
-    "pulled": 12,
-    "retained": 8,
+    "pulled": 4,
+    "retained": 4,
     "papers": [
-      {
-        "arxiv_id": "2610.30424",
-        "title": "Comparing local and global optimization reveals untapped hybrid potentials for machine learning-based inverse planning",
-        "abstract": "Machine learning (ML) models for normal tissue complication probability (NTCP) can be embedded directly into inverse treatment planning, but the resulting optimization problems are generally nonconvex, and the choice between global and local optimization involves a trade-off between optimality guarantees and computational cost. Two open-source frameworks for ML-based inverse planning were compared: OptiCL (global mixed-integer optimization via constraint learning) and pyanno4rt (local nonlinear optimization via end-to-end differentiation). Logistic regression, linear support vector machine, and feed-forward neural network NTCP models for grade 2+ xerostomia and grade 2+ radiation pneumonitis were embedded. Plan optimization was performed for eight head-and-neck (HN) photon cases and seven lung proton cases. The plans were compared by target coverage, OAR dose metrics, spatial dose agreement, post-hoc predicted NTCP, and runtime. A projection-based gradient approximation was introduced to embed decision trees. In addition to that, warm-starting, constraint strengthening, and pruning were investigated as hybrid strategies for combining local and global optimization. Comparing OptiCL and pyanno4rt across the HN and lung treatment plans revealed broadly consistent dose distributions. Mean differences (OptiCL}$-$pyanno4rt [95% CI]) were small: for HN cases, -0.16 Gy [-0.37, 0.06] (parotid) and -0.00 Gy [-0.01, 0.00] (PTV); for lung cases, -0.52 Gy [-1.10, 0.06] (total lung) and -0.04 Gy [-0.07, -0.01] (PTV). Mean NTCP differences amounted to -0.08 p.p. [-0.49, 0.33] (HN) and -1.73 p.p. [-2.68, -0.77] (lung). OptiCL tended toward lower OAR doses and predicted NTCP, but required higher wall-clock runtime. Hybridization of the decision tree-based HN plan eliminated 80% of binary decision variables without compromising plan quality.",
-        "authors": [
-          "Tim Ortkamp",
-          "Florian Leininger",
-          "Zhongxing Liao",
-          "Niklas Wahl",
-          "Ali Ajdari"
-        ],
-        "published": "2026-10-21T20:33:02Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.30424v1",
-        "score": 0.6721
-      },
       {
         "arxiv_id": "2610.31240",
         "title": "AI Enhanced Cerenkov Luminescence Microscopy",
@@ -776,37 +761,6 @@
         "published": "2026-10-22T13:23:12Z",
         "pdf_url": "https://arxiv.org/pdf/2610.31240v1",
         "score": 0.6395
-      },
-      {
-        "arxiv_id": "2610.30440",
-        "title": "Unified Projection-Domain Material Decomposition for Energy-Integrating and Photon-Counting CT",
-        "abstract": "Objective: To develop a unified and efficient method for projection-domain material decomposition in spectral computed tomography (CT) that incorporates an arbitrary number of spectral measurements, independent of the acquisition mechanism, without reducing the measurements to two effective energies. Approach: A nested optimization method was developed for two-material basis decomposition from K>=2 spectral measurements. It extends an existing two-measurement univariate method by replacing its polynomial approximation with profile minimization of the Poisson negative log-likelihood, reducing the inversion to two one-dimensional searches that use all measurements without spectral rebinning. The method was evaluated in simulation for energy-integrating (GE Revolution Apex Elite, Siemens SOMATOM Flash) and photon-counting (Siemens NAEOTOM Alpha) CT. Main results: The method recovered line integrals with noiseless iodine errors below 3e-6 g/cm^2 and noise within 3% of the Cramer-Rao lower bound (CRLB). Virtual monoenergetic images (VMIs) agreed, at 70 keV and above, with reference CT numbers and, on all three systems, with vendor VMIs of physical scans (mean absolute error 6-22 HU). For photon counting, four measurements instead of two reduced the iodine CRLB by 19% and image noise by 8-16% at every VMI energy, and lowered the regression error at 70 keV and above. Iteration and tolerance settings changed CT numbers by less than 0.04 HU, and decomposition took 0.34-0.67 s per million rays on an A100 GPU. Significance: The method provides fast, accurate decomposition for any spectral CT acquisition mechanism and number of measurements, so one method can serve every scanner in a virtual imaging trial.",
-        "authors": [
-          "Dale Black",
-          "Surya Naidu",
-          "Hamidreza Khodajou-Chokami",
-          "Sabee Molloi"
-        ],
-        "published": "2026-10-21T20:49:51Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.30440v1",
-        "score": 0.626
-      },
-      {
-        "arxiv_id": "2610.28884",
-        "title": "Quantitative Imaging of Scandium Isotopes with a Long Axial Field-of-View PET/CT",
-        "abstract": "Objective. $^{43}$Sc and $^{44}$Sc are positron-emitting isotopes of scandium that have attracted growing interest for theranostic applications in conjunction with the therapeutic isotope $^{47}$Sc. Both isotopes are non-pure positron emitters, and the associated prompt-gamma emission together with the high positron energy introduce complexities in achieving precise quantitative imaging. Approach. We evaluated the quantitative imaging performance of $^{44}$Sc and a $^{43/44}$Sc mixture on a long axial field-of-view (LAFOV) PET/CT using a NEMA IEC body phantom. We assessed contrast recovery coefficients, image noise and bias for different numbers of iterations and for absolute versus relative scatter correction, and implemented an isotope-specific point-spread-function (PSF) correction based on FLUKA-simulated positron ranges. Main results. The quantitative imaging performance of both isotopes is comparable to $^{18}$F, and the vendor's prompt-gamma correction effectively suppresses the additional random coincidences and lung error caused by prompt-gamma emission. The isotope-specific PSF correction further improves contrast recovery. While the bias obtained for $^{44}$Sc meets the EARL acceptance criterion for non-standard radionuclides, the bias for the $^{43/44}$Sc mixture exceeds it, which we attribute to the mixture-specific cross-calibration of the dose calibrators rather than to the PET imaging. Significance. Our results support the use of LAFOV PET/CT for quantitative imaging of scandium isotopes and provide practical reconstruction recommendations for clinical protocols.",
-        "authors": [
-          "Lorenzo Mercolli",
-          "Mohammadreza Teimoorisichani",
-          "Alenka E. Gaschen",
-          "Pascal V. Grundler",
-          "Anzhelika N. Moiseeva",
-          "Saverio Braccini",
-          "Nicholas P. van der Meulen"
-        ],
-        "published": "2026-10-20T20:01:34Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.28884v1",
-        "score": 0.6197
       },
       {
         "arxiv_id": "2610.31340",
@@ -829,225 +783,133 @@
         "score": 0.5926
       },
       {
-        "arxiv_id": "2610.30793",
-        "title": "Advancing oxygen-enhanced MRI acquisition and modelling through dynamic $\u0394R_{1}$ and $\u0394R_2^*$ sensing",
-        "abstract": "Purpose: To develop a multiparametric mapping framework for quantifying fat- and water-specific longitudinal and effective transverse relaxation rates, as well as changes in these parameters induced by a gas challenge. Theory and Methods: The proposed framework, termed SR-Fat DESPOT (single-reference fat-water separated driven equilibrium single-pulse observation of $T_1$), combines a two-component signal model with a single-reference variable flip angle (SR-VFA) approach. The signal model explicitly incorporates gas challenge-induced changes in relaxation rates. The single-reference acquisition strategy reduces data acquisition requirements while preserving sensitivity to both baseline parameters and dynamic changes. Sequence parameters were optimized using Cramer-Rao lower bound theory. SR-Fat DESPOT was evaluated using a modified open-surce abdominal numerical phantom and in two in vivo experiments: a single participant test-retest experiment and a pilot study with six participants. Results: In the abdominal numerical phantom, SR-Fat DESPOT was accurate for quantification of baseline relaxation rates with a normalized median absolute error (nMedAE) <3% for signal-to-noise ratio (SNR) >30 when comparing ground truth and estimates. SR-Fat DESPOT was also able to accurately recover median changes in relaxation rates, with differences within 0.001 $s^-1$ when compared to ground truth. In vivo, SR-Fat DESPOT measured changes in relaxation rates for spleen, kidneys, liver, and muscle under 100% O2 breathing, consistent with reports in literature. Changes detected in the spleen and kidneys were statistically significant across participants. Conclusion: SR-Fat DESPOT can quantify changes in relaxation rates induced by a gas challenge while reducing data requirements compared to more conventional approaches used in MR-oximetry literature.",
+        "arxiv_id": "2610.31567",
+        "title": "Geometry-Dependent Properties of Physically Crosslinked PPy-PVA Hydrogels Enable Tunable Iontophoretic Drug Delivery",
+        "abstract": "Objective: Iontophoretic drug delivery has primarily relied on current modulation to regulate drug transport. Here, we investigate hydrogel geometry, microstructure, and local electric fields as alternative mechanisms for controlling transdermal delivery. Methods: Bovine serum albumin (BSA) was encapsulated in polypyrrole-polyvinyl alcohol (PPy-PVA) hydrogels. Five geometries, including Hilbert curve-based designs, were fabricated to vary pore architecture and local electric field distributions. We optimized PPy content, drug loading, and current density. Electric fields were evaluated using finite element analysis, and microstructures were characterized by scanning electron microscopy. Drug transport was assessed using Franz diffusion cells with artificial membranes. Results: Hydrogel geometries exhibited distinct microstructures and electric field distributions. Iontophoresis substantially enhanced permeability compared with passive diffusion, while individual geometries produced different cumulative release, flux, and permeability profiles. The average iontophoretic permeability was (3.80 +/- 1.93) x 10^-5, exceeding previously reported values using artificial membranes. Conclusion: Geometry-driven fabrication of drug-loaded hydrogels enables tunable transport characteristics under both iontophoretic and passive conditions. Significance: Geometry-mediated control offers an alternative approach to regulating iontophoretic drug delivery without requiring individual current-density modulation.",
         "authors": [
-          "Jorge Campos Pazmi\u00f1o",
-          "Amiel Beausoleil-Morrison",
-          "Nathalie Panov",
-          "V\u00e9ronique Fortier",
-          "Ives R. Levesque"
+          "Heather Jin Hee Kim",
+          "Mohsen Alishahi",
+          "Kyuin Park",
+          "Mikaila K. Roncevich",
+          "Larissa M. Shepherd",
+          "Cara M. Nunez"
         ],
-        "published": "2026-10-22T06:16:41Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.30793v1",
-        "score": 0.588
+        "published": "2026-10-22T17:10:35Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.31567v1",
+        "score": 0.5559
       },
       {
-        "arxiv_id": "2610.29666",
-        "title": "Reference Manual of MEDiml",
-        "abstract": "Radiomics is the high-throughput extraction of quantitative features (e.g., tumor shape, intensity distributions, and texture) from medical images to characterize tissues and uncover disease patterns invisible to the human eye. These features can serve as candidate imaging biomarkers for cancer diagnosis, prognosis, and classification. However, extracting thousands of features makes it difficult to identify the most informative ones for a given clinical task, while implementing an end-to-end workflow can require programming expertise that limits accessibility for clinical researchers. Hence, we propose MEDiml, an open-source, standards-compliant radiomics platform connecting feature extraction, predictive modeling, and interpretation through complementary graphical and programmatic interfaces. MEDiml combines a Python package (MEDiml-pkg) with a graphical desktop application (MEDiml-app) that enables researchers to conduct experiments without writing code. Both interfaces use the same computational implementation, and code generation exports graphically configured workflows as executable Python code, facilitating reproducibility and collaboration between clinical researchers and computational scientists. A typical MEDiml workflow includes image preprocessing, radiomic feature extraction, feature set reduction, model training and evaluation, and interpretation using feature importance. Feature sets can be grouped into levels of radiomic complexity (morphological, intensity-based, textural, and filter-based) to evaluate whether more complex features provide additional predictive value. This reference manual documents the radiomics concepts, workflow, software components, architecture, and installation, compares MEDiml with existing tools, and demonstrates its complexity-driven workflow on five oncological imaging cohorts comprising 2,104 patients. Resources: www.mediml.app.",
+        "arxiv_id": "2610.30927",
+        "title": "LieGROG: A Lie algebra approach for calibrating GRAPPA operators",
+        "abstract": "Purpose: In multi-coil acquisitions based on non-Cartesian k-space sampling, image reconstruction using GRAPPA Operator based gridding (GROG) can provide advantages with respect to the non-uniform FFT (NUFFT): It waives both the need for calculating a density compensation function, and for transferring back and forth between Cartesian and non-Cartesian points in iterative algorithms. Non-trivial noise propagation and self-calibration limited to specific trajectories, however, have contributed to GROG being rather sparsely applied so far. Theory and Methods: The group structure of the GRAPPA Operator allows estimating its generator as a single joint fit for all k-space dimensions within the associated Lie algebra. Assuming a linear regime, the generator can be fitted using subsequent pairs of sampling points from nearly any arbitrary non-Cartesian read-out. This approach called LieGROG was evaluated against classical GROG calibration and NUFFT/Toeplitz, using simulations with an analytic ground truth and various 2D and 3D MR-scans employing typical non-Cartesian trajectories. Results: Throughout all applications, LieGROG proved to provide fast, robust and straightforward calibration of the GRAPPA Operator. It clearly outperformed the classical GROG calibration approaches in terms of noise amplification. LieGROG matched the results of the NUFFT/Toeplitz-based reference MR reconstructions closely, while being 6 to 189 times faster and reducing peak VRAM by 20 to 45% in the 3D experiments. Conclusion: LieGROG transforms GROG into a more versatile and stable tool, ultimately aligning non-Cartesian imaging with the standard, FFT-based reconstruction pipelines established for Cartesian scans.",
         "authors": [
-          "Mahdi Ait Lhaj Loutfi",
-          "Simon Provost",
-          "\u00c9lodie Gillard",
-          "Moustafa Amine Bezzahi",
-          "Alexander Chum",
-          "Ben Coull-Nveu",
-          "Duran Juan",
-          "Mariem Kallel",
-          "Hakima Laribi",
-          "Oliver Lefebvre",
-          "Nicolas Longchamps",
-          "Thanh-Tri Nguyen",
-          "Steven Ravary",
-          "Ouael Nedjem Eddine Sahbi",
-          "J\u00e9r\u00e9my Dana",
-          "Martin Valli\u00e8res"
+          "Tobias Wech"
         ],
-        "published": "2026-10-21T12:41:23Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29666v1",
-        "score": 0.5814
-      },
-      {
-        "arxiv_id": "2610.28448",
-        "title": "Toward opportunistic coronary artery calcium assessment from dual-layer dual-energy chest radiography using deep learning: a simulation study",
-        "abstract": "Background: Coronary artery calcium (CAC) predicts cardiovascular risk. Dual-energy (DE) chest radiography may enable accessible opportunistic CAC assessment by separating calcifications from overlapping bone. Purpose: To evaluate multi-task deep learning for CAC localization and CT-referenced score prediction and assess projection, image representation, and exposure effects. Methods: This retrospective simulation study used 550 calcium-scoring CT exams with reference CAC masks and Agatston scores. Dual-layer DE radiographs were simulated with a physics-based detector model. A modified nnU-Net jointly predicted CAC localization and scores from continuous probability maps. Comparisons included AP, 45\u00b0, and lateral views; lateral single-energy (SE), DE bone, and high-pass filtered DE bone images; and dose-matched models at 70, 50, and 24 mAs. Patient-level splitting reserved 10% for independent testing; five-fold models provided averaged inference. Metrics included Dice and AUC at CAC thresholds >0, >100, >400, and >1000, with bootstrap uncertainty and paired DeLong tests with Holm-Bonferroni correction. Results: Lateral views achieved Dice 0.34 versus 0.23 (AP) and 0.22 (45\u00b0), with AUCs for CAC >100 of 0.86, 0.81, and 0.77, respectively; AUC differences were not significant after correction. Lateral DE bone outperformed SE (Dice: 0.33 vs. 0.19; AUC for CAC >100: 0.86 vs. 0.64), with significant AUC advantages at >100, >400, and >1000. High-pass filtering added little classification benefit. Dice decreased with exposure, while AUC differences across doses were not significant. Conclusions: Simulation results support lateral dual-layer DE bone imaging for opportunistic CAC assessment, with significant advantages over SE. Physical and clinical validation is needed.",
-        "authors": [
-          "Linxi Shi",
-          "Akyl Swaby",
-          "Kaitlin Hellier",
-          "Praveen Bharathi",
-          "Scott Hsieh",
-          "Dominik Fleischmann",
-          "Shiva Abbaszadeh",
-          "Adam S. Wang"
-        ],
-        "published": "2026-10-20T16:09:34Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.28448v1",
-        "score": 0.5758
+        "published": "2026-10-22T08:45:35Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.30927v1",
+        "score": 0.55
       }
     ]
   },
   "Semiconductors": {
-    "pulled": 30,
-    "retained": 8,
+    "pulled": 6,
+    "retained": 6,
     "papers": [
       {
-        "arxiv_id": "2610.29739",
-        "title": "Electric-field tunable spin texture in dual-gated HfS$_2$/graphene van der Waals heterostructures",
-        "abstract": "Spin-charge interconversion provides the essential link between spin information and electrical signals in spintronic devices. In spin-orbit coupled systems, spin-charge interconversion can contain multiple components associated with different spin-polarization directions, reflecting the underlying spin texture. Tuning this spin texture therefore provides a way to control not only the magnitude of spin-charge interconversion, but also the balance among its different components. Graphene-based van der Waals heterostructures provide an attractive platform for this purpose because interfacial spin-orbit coupling can host multiple spin-charge interconversion channels that couple to different spin-polarization directions. Here, we demonstrate electric-field control of spin texture in a dual-gated HfS$_2$/graphene van der Waals heterostructure, where independent control of carrier density and vertical electric field allows us to disentangle electrostatic doping from electric field-induced spin-orbit effects. Nonlocal spin precession measurements show that near zero vertical electric field, spin-charge interconversion is dominated by a spin Hall component with out-of-plane spins. Increasing the vertical electric field enhances additional in-plane spin components with Rashba-Edelstein-like character, including both parallel and perpendicular to the charge current contributions. These results provide experimental evidence that a vertical electric field can reconfigure the effective spin texture and control the corresponding spin-charge interconversion components, demonstrating electrical tunability of spin-orbit functionalities.",
+        "arxiv_id": "2610.30929",
+        "title": "Piezo-Kerr effect in altermagnets and noncollinear antiferromagnets",
+        "abstract": "Symmetry is usually viewed as a constraint on physical responses, but it can also be used to design the fields that control them. Here, we adopt the representation-matching principle used to identify conjugate fields of order parameters and apply it to response tensors. A linear coupling, the key ingredient for sign-switching control, is symmetry-allowed when a component (or a combination of components) of the control field and the selected response component share the same irreducible representation of the magnetic point group (MPG) of the system. Applied to the magneto-optical Kerr effect, this principle yields a piezo-Kerr effect, in which specific strain combinations activate a Kerr response forbidden in the unstrained state. Enumerating all 122 MPGs, we identify 16 groups in which the unstrained Kerr response is forbidden while a linear strain-induced contribution is allowed. These groups are realized by altermagnets and noncollinear antiferromagnets with symmetry-enforced vanishing net magnetization. The active strain channels and the associated first-order sign reversals follow directly from symmetry. First-principles calculations for bulk MnTe$_{2}$ and CoF$_{2}$, and Cr$_{2}$Se$_{2}$O and Cr$_{2}$Te$_{2}$O monolayers confirm these predictions. In these materials, the Kerr rotation vanishes without strain, whereas 0.5-3% strain produces rotations ranging from tens to hundreds of millidegrees, and reversing the matched strain channel reverses the Kerr sign. These results establish a general route to large and switchable Kerr responses emerging from symmetry-forbidden states in compensated magnets.",
         "authors": [
-          "Haozhe Yang",
-          "Zhendong Chi",
-          "Eoin Dolan",
-          "Josep Ingla-Ayn\u00e9s",
-          "Beatriz Mart\u00edn-Garc\u00eda",
-          "Witold Skowro\u0144ski",
-          "Marco Gobbi",
-          "Andrey Chuvilin",
-          "Luis E. Hueso",
-          "F\u00e8lix Casanova"
+          "Yuqi Liu",
+          "Qiu-Shi Huang",
+          "Xinfeng Chen",
+          "Yilin Han",
+          "Run-Wu Zhang",
+          "Zhi-Ming Yu",
+          "Yugui Yao"
         ],
-        "published": "2026-10-21T13:38:29Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29739v1",
-        "score": 0.6671
+        "published": "2026-10-22T08:49:03Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.30929v1",
+        "score": 0.6089
       },
       {
-        "arxiv_id": "2610.29081",
-        "title": "The Spectroscopic Atlas of Excitonic Complexes in hBN-Encapsulated S-TMD Monolayers: From Excitons to Oxcitons and Beyond",
-        "abstract": "Hexagonal boron nitride (hBN) encapsulation has transformed the optical spectroscopy of semiconducting transition-metal dichalcogenide monolayers (MLs) by suppressing extrinsic disorder and enabling the resolution of an increasingly complex hierarchy of excitonic states. This Review provides a spectroscopy-oriented framework for understanding and identifying excitonic complexes in hBN-encapsulated Mo- and W-based MLs and their alloys. The discussion covers bright and dark excitons, Rydberg states, charged excitons, biexcitons, phonon-assisted replicas, and higher-order Fermi-sea many-body states, including hexcitons and oxcitons, with an emphasis on the experimental signatures that distinguish them. Particular attention is given to the combined use of photoluminescence and absorption-related spectroscopy, electrostatic gating, polarization analysis, excitation-power and temperature dependences, magnetic fields, and time-resolved measurements to establish microscopic assignments. The role of alloying as an additional degree of freedom for engineering the excitonic hierarchy, spin-valley configuration, and magneto-optical response is also highlighted. By organizing the rapidly expanding phenomenology around experimentally accessible fingerprints rather than individual material systems, this Review aims to provide a practical and broadly applicable guide for identifying, comparing, and engineering excitonic states in high-quality two-dimensional semiconductors.",
+        "arxiv_id": "2610.31508",
+        "title": "Spin-Dependent Transport in One-Dimensional Mercury- and Silver-Mediated DNA Nanowires",
+        "abstract": "Metallo-DNA nanowires serve as a versatile, programmable scaffold for molecular-scale electronics. In this work, we demonstrate that periodic heavy-metal coordination fundamentally reshapes the electronic landscape of DNA, generating dispersive, metal-centered conduction bands rather than isolated localized states. Driven by enhanced inter-layer coupling, where second nearest-neighbor hopping plays a crucial role: the conduction bandwidth can approach 1 eV, more than double that of canonical DNA. These broad bands suggest enhanced robustness of transport against structural fluctuations. As a result of relativistic effects, in these quasi-one-dimensional materials, spin-orbit (SO) coupling enhances band dispersion and governs spin-dependent transport. We predict that although ligand hybridization reduces atomic SO splitting, the effective SO splitting in these nanowires is comparable to the next-nearest-neighbor hopping strength, which results in considerable spin mixing. We find that Hg2+-coordinated nanowire exhibit pronounced spin-flip conductance comparable to spin-conserving conductance across the LUMO manifold. This efficient spin conversion remains robust over extended molecular lengths and is accompanied by a set of highly delocalized unoccupied states with oscillating nodal structures, readily accessible under low-bias transport measurements. In contrast, the Ag+-coordinated nanowires exhibit weak spin-flip scattering that is more than an order of magnitude smaller than spin-preserving transport. This duality establishes the choice of coordination metal as a decisive parameter to govern metal-metal interaction, electron delocalization, and spin-dependent transport. Overall, our findings demonstrate how relativistic effects and quantum confinement intersect in these bio-templated, quasi-one-dimensional molecular conductors.",
         "authors": [
-          "Maciej R. Molas"
+          "Arpan De",
+          "William Livernois",
+          "Simon Vecchioni",
+          "Yoel P. Ohayon",
+          "M. P. Anantram"
         ],
-        "published": "2026-10-21T02:09:58Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29081v1",
-        "score": 0.6586
+        "published": "2026-10-22T16:24:49Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.31508v1",
+        "score": 0.6072
       },
       {
-        "arxiv_id": "2610.29484",
-        "title": "Quantum Interference Enhanced Rectification in Mesoscopic Nanowires",
-        "abstract": "Nanoscale nonreciprocal elements are needed to control signal flow in scalable quantum technologies, but existing nonreciprocal components are often bulky. Here, we show that a strongly nonreciprocal current-voltage relation can arise entirely from coherent elastic scattering in a mesoscopic Rashba nanowire with gate-defined scatterers. We first identify the symmetry constraints that enforce reciprocal transmission in a phase coherent conductor even when inversion and time-reversal symmetry are broken. We then show how gates that are capacitively coupled to the leads, together with a magnetic scatterer or transverse subband mixing, can remove these constraints. In the weak-scattering regime, nonreciprocal conductance originates from interference between distinct backscattering paths. In the strong-scattering regime, nonreciprocity can be resonantly enhanced by the hybridization of the transmitting channel with bound states that arise from a higher transverse subband or spin-split band. In this regime, we find that a bias-induced change in the gate potentials of about one percent can produce an order-unity diode response, i.e., electrons are transmitted almost as in a clean wire for one bias polarity, whereas for the other polarity the current is strongly suppressed.",
+        "arxiv_id": "2610.31067",
+        "title": "Scale-free localization in pseudo-Hermitian quantum walk",
+        "abstract": "Scale-free localization is a distinctive phenomenon in non-Hermitian systems, where specific eigenstates, known as scale-free localized states (LSs), possess localization lengths that scale linearly with the system size. Here, we show that a single non-Hermitian defect in one-dimensional quantum walks (QWs) induces scale-free localization. Driven by non-Hermiticity, the QW system undergoes a pseudo-Hermitian (PH) phase transition and the PH symmetry breaking is accompanied by the emergence of scale-free localization. As non-Hermiticity is further increased, the system undergoes a second phase transition, marked by the emergence of two pairs of bound states. Crucially, we identify the critical points of both transitions using localization properties. Furthermore, we extend our investigation to two-dimensional QWs, where a single non-Hermitian defect also induces scale-free localization, thereby demonstrating the universality of this phenomenon. Our work provides a valuable perspective for further exploring defect physics and a type of novel LS in non-Hermitian quantum systems.",
         "authors": [
-          "T. J. Osborne",
-          "B. Braunecker",
-          "H. F. Legg"
+          "Haiting Zhang",
+          "Lei Xiao",
+          "Cui-Xian Guo",
+          "Quan Lin",
+          "Peng Xue"
         ],
-        "published": "2026-10-21T09:41:25Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29484v1",
-        "score": 0.6524
+        "published": "2026-10-22T10:46:27Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.31067v1",
+        "score": 0.5805
       },
       {
-        "arxiv_id": "2610.29486",
-        "title": "Interaction-Induced Bloch Geometry and Transverse Thermoelectric Transport",
-        "abstract": "Electron--electron interactions can reconstruct Bloch wave functions, changing their geometry and the associated thermoelectric response. We derive the linear thermoelectric response within the Hartree--Fock (HF) approximation using the thermal length-gauge density-matrix approach, resolving Drude, symmetric quantum-metric, and antisymmetric Berry-curvature contributions. In a noninteracting Bloch eigenbasis, we separate the reconstructed Berry connection into the noninteracting connection and an interaction connection. This gives bare, coherence, and interaction-connection contributions to the anomalous thermoelectric response. We determine the constraints imposed by spatial inversion, rotational, time-reversal, and combined symmetries on the three transport channels. In the relaxation-time approximation, the leading weak-broadening behavior is $\u0393^{-1}$ for the Drude contribution, $\u0393$ for the quantum-metric contribution, and $\u0393^0$ for the Berry-curvature contribution. The interband scalings apply away from band degeneracies. Self-consistent calculations for the triangular-lattice extended Hubbard model illustrate how interactions generate Berry curvature and a quantum metric, change the symmetry of the system, and thereby contribute to transverse thermoelectric transport.",
+        "arxiv_id": "2610.31242",
+        "title": "Fluctuation-free Quantum Battery Charging Enabled by Bell-like Entangled and Separable Charger States",
+        "abstract": "The implication of entanglement in quantum battery charging remains poorly understood. In addition, intrinsic quantum randomness poses a fundamental challenge to charging uniformity across distinct trials. To address these issues, we study a three-qubit system within a cascaded collision frame, with two qubits acting as the charger and the third serving as the battery. After each collision, an adaptive measurement is performed on the charger, yielding four conditional post-measurement battery states with identical expected stored energy. For arbitrary fixed charger states, we derive analytical expressions for the recurrence relation of stored energy. We find that stored-energy fluctuations depend on whether the dynamics relies on the battery phase \\(\u03b3_n\\). For two Bell-like families of entangled states, together with their computational basis states termed Bell-like separable states, the dynamics is \\(\u03b3_n\\)-independent and fluctuations vanish, whereas for other entangled and separable states, fluctuations emerge. These insights establish a paradigm for engineering charger states to design uniform-charging quantum-battery architectures despite inherent quantum randomness.",
         "authors": [
-          "Heng-Yu Di",
-          "YuanDong Wang",
-          "Zhen-Gang Zhu",
-          "Gang Su"
+          "Longyan Gong",
+          "Jing Zhang",
+          "Yongtao Li"
         ],
-        "published": "2026-10-21T09:42:14Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29486v1",
-        "score": 0.6398
+        "published": "2026-10-22T13:24:47Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.31242v1",
+        "score": 0.5606
       },
       {
-        "arxiv_id": "2610.29694",
-        "title": "Effect of Annealing on Maze Domains in Topological Insulator - Magnetic Multilayer Heterostructures",
-        "abstract": "Combining topological insulators with chiral magnetic multilayers offers the opportunity to greatly enhance the spin-orbit torque (SOT) driven manipulation of hosted spin textures, however this also exposes devices to the often poor temperature stability of the commonly used, Bi$_2$X$_3$-based (X is a chalcogenic element), topological insulator films. In this work we demonstrate through in-situ-annealing and polarised neutron reflectometry that the multilayer at a Bi$_2$Se$_3$ interface remains magnetically robust up to a temperature of 350 $^{\\circ}$C: even as the Bi$_2$Se$_3$ epilayer structurally deteriorates. Through x-ray photoemission electron microscopy, an intermediate annealing temperature of $\\sim$ 200 $^{\\circ}$C was found to improve the domain ordering of the multilayer, allowing for field-induced skyrmion nucleation, all whilst sustaining minimal damage to the topological insulator",
+        "arxiv_id": "2610.30905",
+        "title": "Broadband emitter localization and prefabrication two-photon interference from InAs/InP quantum dots monolithically grown on an InGaAsP/InP distributed Bragg reflector",
+        "abstract": "We demonstrate a monolithic telecom C-band single-photon platform based on low-density InAs/InP quantum dots grown on an InGaAsP/InP distributed Bragg reflector, with simulated upward light-extraction efficiency exceeding 10% within the 40 nm spectral band. Enhanced light extraction is crucial for wide-field photoluminescence imaging, enabling approximately 3 nm statistical centroid-localization precision of QD emitters due to improved signal-to-noise ratio. The identified charged exciton emitting at 1549.5 nm exhibits single-photon emission purity up to 94.7%, validated by a raw peak-area integration under pulsed quasi-resonant excitation. Under these conditions, photons emitted sequentially from the unprocessed planar structure reveal a raw two-photon interference visibility of 51% of the photon wave packet within the 2 ns time window and 41% over a 4 ns integration window, all without Purcell enhancement typical for cavity-embedded emitters. Combining broadband extraction, high photon coherence, and emitter preselection on a native III-V wafer, this architecture paves the way for marker-based deterministic fabrication of high-quality monolithic nanophotonic devices.",
         "authors": [
-          "Benjamin A. Brereton",
-          "Soumyarup Hait",
-          "Christy J. Kinane",
-          "Francesco Maccherozzi",
-          "Ahmet Yagmur",
-          "Satoshi Sasaki",
-          "Thomas A. Moore",
-          "Sean Langridge",
-          "Christopher H. Marrows"
+          "Pawe\u0142 Mrowi\u0144ski",
+          "Jan \u015amigiel",
+          "Miko\u0142aj Badura",
+          "Beata \u015aciana",
+          "Wojciech Kijaszek",
+          "Emilia Zi\u0119ba-Ost\u00f3j",
+          "Pawe\u0142 Holewa",
+          "Marcin Syperek"
         ],
-        "published": "2026-10-21T13:08:39Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29694v1",
-        "score": 0.635
+        "published": "2026-10-22T08:27:25Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.30905v1",
+        "score": 0.5594
       },
       {
-        "arxiv_id": "2610.29453",
-        "title": "Higher-order Angular Momentum Transport of Alteraxial Phonons in 2D Magnets",
-        "abstract": "The coupling between lattice vibrations and magnetic order in two-dimensional (2D) magnets gives rise to a variety of physical phenomena, among which magnetic effects of axial phonons carrying phonon angular momentum (PAM) have attracted considerable interest. However, a systematic classification of axial phonons in 2D magnets that covers their multipolar patterns and the resulting transport manifestations remains largely unexplored. Here, based on symmetry analysis, we classify all 2D magnetic point groups by their long-wavelength PAM wave patterns. Beyond the s-wave axial phonon, we identify alteraxial phonons with p-, d-, f-, g-, and i-wave multipolar textures, characterized by 1, 2, 3, 4, and 6 zero-PAM nodal lines, respectively. We then develop a theory of nonlinear PAM transport driven by a temperature gradient and derive two selection rules: a parity selection rule that determines whether the response occurs at even or odd orders, and an angular-harmonic selection rule that fixes the lowest allowed order for each wave pattern. The multipolar PAM patterns and selection rules are exemplified by two effective lattice models realizing f-wave and d-wave PAM patterns, respectivley. The angular dependence of the nonlinear PAM current reflects the underlying multipolar PAM texture, offering a signature for experiments. Our results establish a symmetry-guided framework for detecting and utilizing higher-order PAM textures in 2D magnets.",
+        "arxiv_id": "2610.31507",
+        "title": "Macroscopic Nuclear Resonance Energy Transfer Mediated by Coherent Magnons",
+        "abstract": "Phonon-mediated nuclear Resonance Energy Transfer (RET) in metal deuterides is severely constrained by inertial rest-mass dilution, lattice fracture limits, and thermal nuclear spin cancellation. Extending the generalized nuclear Dicke model to Ferromagnetic Resonance (FMR) magnons eliminates mass dilution via hyperfine-amplified M1 coupling while unlocking relativistic Dirac M2 coupling via Overhauser spin polarization. We derive a Suhl-clamped FMR scaling law predicting 14.2 MeV (Pd-106) and 11.4 MeV (Ni-58) breakup neutrons, 19.9 MeV alpha particles, and reconciled sub-keV fusion anomalies.",
         "authors": [
-          "Linxin Liu",
-          "Fuyi Wang",
-          "Huaiqiang Wang"
+          "Ryan Weed"
         ],
-        "published": "2026-10-21T09:10:25Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29453v1",
-        "score": 0.6324
-      },
-      {
-        "arxiv_id": "2610.30453",
-        "title": "Orientation-selective microwave heating of laser-graphitized diamond at 2.45 GHz",
-        "abstract": "Pristine diamond couples negligibly to a 2.45 GHz field. We show that femtosecond-laser inscription of a buried graphitic (sp2) architecture makes a 4 x 4 x 2 mm^3 N-doped (100 ppm) high-pressure high- temperature (HPHT) crystal absorb strongly, and that the absorption is switched by the orientation of the inscribed structure relative to the cavity electric field. With the 1.8 mm depth of a concentric grating along E, stepped power gave a smooth staircase to an indicated ~500C at 80 W followed, at 90 W, by an abrupt excursion to an indicated ~900C with surface roughening and terraced oxidation. Rotating the same sample so that the grating diameter lay along E, and an unmodified crystal in either orientation, gave no signal above the ~40C floor. We account for this by the depolarisation factors L of the sub-wavelength tracks, collapsed into one screening parameter S = L\u03c3/(\u03c9\u03b50\u03b5h), here, \u03c3 conductivity, \u03c9 - cyclic frequency, \u03b5h,0 - permittivity of host and vacuum, respectively. The model turns element length, diameter and writing regime into design variables for microwave absorption in a transparent host.",
-        "authors": [
-          "Massimiliano Zamengo",
-          "Meguya Ryu",
-          "Haoran Mu",
-          "Hsin-Hui Huang",
-          "Nguyen Hoai An Le",
-          "Tomas Katkus",
-          "Darius Gailevi\u010dius",
-          "Junko Morikawa",
-          "Saulius Juodkazis"
-        ],
-        "published": "2026-10-21T21:08:47Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.30453v1",
-        "score": 0.6153
-      },
-      {
-        "arxiv_id": "2610.30733",
-        "title": "Ferroelastic Reversal Magnon Thermal Hall Effect in a Fully Compensated Ferrimagnet",
-        "abstract": "Magnons offer a charge-neutral channel for spin and heat transport, yet reversible and nonvolatile control of their thermal Hall response poses a fundamental challenge in systems with zero net magnetization. Here, we establish ferroelastic switching as an effective route to manipulate magnonic transverse responses in fully compensated ferrimagnets. A minimal Heisenberg-Dzyaloshinskii-Moriya model reveals that ferroelastic switching can re-orientate the lattice anisotropy, which reconstructs the chirality-resolved magnon bands and Berry curvature distribution. Consequently, the two orthogonal fully compensated ferrimagnetic variants related by [C2||C4z] exhibit magnon thermal Hall responses with opposite signs, whereas the response vanishes in the intermediate altermagnetic phase. First-principles calculations further identify monolayer V2SSe as a promising material candidate for realizing the proposed ferroelastic control of transverse magnon transport. Remarkably, ferroelastic switching drives a dual magnonic-electronic band reconstruction, enabling nonvolatile reversal of the magnon thermal Hall effect while producing anisotropic orbital Hall responses and distinct magneto-optical spectra as complementary transport and optical fingerprints. Our findings establish ferroelasticity as an effective route to nonvolatile magnon control and multichannel state identification in zero net magnetization systems.",
-        "authors": [
-          "Yingxi Bai",
-          "Zihan Chen",
-          "Chengwang Niu",
-          "Ming Yang"
-        ],
-        "published": "2026-10-22T05:01:12Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.30733v1",
-        "score": 0.6094
+        "published": "2026-10-22T16:23:29Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.31507v1",
+        "score": 0.5564
       }
     ]
   },
   "Embedded Systems": {
-    "pulled": 14,
-    "retained": 8,
+    "pulled": 2,
+    "retained": 2,
     "papers": [
-      {
-        "arxiv_id": "2610.28699",
-        "title": "Reinforcement learning for hardware acceleration and system-level optimization on FPGA and integrated-circuit platforms: A survey",
-        "abstract": "Reinforcement learning (RL) enables adaptive and autonomous decision-making in embedded, edge, and heterogeneous computing systems. Field-programmable gate arrays (FPGAs) and integrated circuits (ICs) offer low latency, energy efficiency, and architectural flexibility for RL deployment, while introducing challenges in resource constraints, implementation complexity, and hardware-algorithm co-design. This review surveys more than 100 studies on RL implementations across FPGA and IC platforms, emphasizing architectures, implementation strategies, performance evaluation, and applications. The literature is organized by RL family, including model-based Markov decision processes, classical value-based methods, deep RL, actor-critic, policy-gradient, and multi-agent approaches. We further classify studies by abstraction level, hardware realization strategy, and application domain, examining how RL algorithms map onto reconfigurable and fixed hardware. Unlike surveys restricted to particular algorithms or platforms, this work provides a unified analysis of FPGA and IC implementations, covering acceleration, reconfigurable architectures, energy-aware control, and system-level optimization. Comparative assessments consider resource utilization, latency, throughput, power consumption, and reported performance gains. Finally, we identify recurring architectural patterns, practical limitations, open challenges, and research directions for efficient RL-driven hardware systems. The survey offers a consolidated reference for researchers developing and evaluating RL solutions on specialized hardware.",
-        "authors": [
-          "Hamza Kheddar"
-        ],
-        "published": "2026-10-20T11:15:34Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.28699v1",
-        "score": 0.728
-      },
-      {
-        "arxiv_id": "2610.29503",
-        "title": "Hard and Soft Real-Time DNN Inference Scheduling on Heterogeneous Multi-Accelerator Systems via Reinforcement Learning",
-        "abstract": "We present a scheduling framework for heterogeneous multi-accelerator systems executing both hard real-time and soft real-time QoS-aware DNN inference workloads. The framework combines an online reinforcement learning (RL) scheduler with a deterministic runtime safety layer. The RL scheduler dynamically generates candidate schedules by jointly selecting sub-job priorities and accelerator assignments, while runtime certification guarantees that all HRT deadlines remain satisfied independently of the learned policy. To enable runtime certification in heterogeneous precedence-constrained systems, we introduce a schedulability-preserving prefix replacement criterion based on machine-wise cuts. The proposed criterion guarantees that runtime-generated schedule prefixes preserve the existence of a feasible continuation without requiring complete finish-time dominance with respect to a feasible reference schedule. Experimental results on heterogeneous DNN accelerator platforms show that the proposed framework preserves HRT schedulability while improving QoS-aware deadline satisfaction, client-level service quality, and accelerator utilization compared to state-of-the-art scheduling approaches.",
-        "authors": [
-          "Francesco Giulio Blanco",
-          "Enrico Russo",
-          "Giuseppe Ascia",
-          "Davide Patti",
-          "Maurizio Palesi"
-        ],
-        "published": "2026-10-21T09:52:28Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29503v2",
-        "score": 0.6183
-      },
       {
         "arxiv_id": "2610.30990",
         "title": "SnakeCharmer: Orchestrating Utility, Timeliness, and Placement in GPU Prefetching",
@@ -1068,79 +930,18 @@
         "score": 0.6081
       },
       {
-        "arxiv_id": "2610.29873",
-        "title": "HAWK: Heterogeneity-Aware KV Cache Transfer for Efficient GPU-NPU Phase-Disaggregated LLM Inference",
-        "abstract": "Large language model (LLM) inference exhibits distinct computational characteristics across its two phases: prefill is compute-intensive, whereas decode is more memory-bound. As a result, AI accelerators achieve varying levels of efficiency across the two phases. GPUs are well suited to prefill, but are often underutilized during decode. By contrast, NPUs can utilize their compute resources more effectively during decode. Motivated by this observation, we explore a heterogeneous architecture that integrates GPUs and NPUs, mapping prefill to GPUs and decode to NPUs to achieve high performance and efficiency. However, realizing such heterogeneous integration is challenging because LLM phase disaggregation requires KV cache transfer from prefill to decode (that is, from GPUs to NPUs), which is complicated by differences in inter-device communication mechanisms and KV cache tensor layouts. To address this, we propose HAWK, a transfer mechanism that enables rapid KV cache transfer across heterogeneous devices. HAWK establishes a remote direct memory access (RDMA) path for direct cross-device transfers while handling inter-device tensor layout discrepancies as part of the transfer process. In particular, HAWK allocates tensor-layout-aware RDMA buffers on the NPU side to match the target tensor layout. Leveraging these buffers, HAWK orchestrates data transfer from a conventional contiguous GPU RDMA buffer to the corresponding NPU buffers, allowing transferred tensors to be consumed directly without additional data rearrangement while maintaining transfer efficiency. We implement and evaluate HAWK on a system built with commercially available GPUs and NPUs, demonstrating performance within 7.88% of a GPU-only system under the same SLO constraints while achieving up to 1.26$\\times$ higher power efficiency and 1.72$\\times$ higher cost efficiency.",
+        "arxiv_id": "2610.31630",
+        "title": "Ray-by-Ray: Fine-Grained Resource Management for GPU Ray Tracing Units",
+        "abstract": "Ray tracing (RT) generates photorealistic images by simulating the physical behavior of light as it interacts with surfaces in a virtual scene. In film production and high-end rendering pipelines, this technique computes global illumination, reflections, refractions, and soft shadows by tracing millions of light rays per frame and accurately modeling their bounces and attenuation. Contemporary GPUs incorporate specialized ray tracing hardware to accelerate key operations in the traversal pipeline. By accelerating these stages in hardware, the unit enables real-time ray tracing for complex scenes that previously required offline computation. However, ray tracing introduces substantial control and data divergence. Each ray may traverse a different set of nodes in the acceleration structure, encounter distinct materials, or terminate at varying depths. This irregularity reduces thread coherence and exposes a fundamental disparity between the GPU SIMT and per-thread execution model of dedicated RT units, where each ray progresses independently. In this work, we seek to validate assumptions made in open-source infrastructure and identify potential inefficiencies in resource management within the ray tracing pipeline. To address inefficiency caused by mismatches between SIMT and RT granularities, we propose Ray-by-Ray, which decomposes on-chip buffers into the granularity of individual rays and introduces lightweight management structures that enable more warps to run in parallel without increasing buffer capacity. This approach improves ray tracing unit utilization and increases memory-level parallelism. Experimental results show that Ray-by-Ray achieves an average performance improvement of 1.91x over the baseline, with an area overhead of 0.19\\%.",
         "authors": [
-          "Junhyeok Park",
-          "Jungeun Yoon",
-          "Kyungmin Kim",
-          "Hunsoon Lee",
-          "Shinyoung Ahn",
-          "Kangho Kim"
+          "Junrui Pan",
+          "Cesar Avalos Baddouh",
+          "Kai Ze Ee",
+          "Timothy G. Rogers"
         ],
-        "published": "2026-10-21T15:25:35Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29873v1",
-        "score": 0.6005
-      },
-      {
-        "arxiv_id": "2610.28276",
-        "title": "RPolyPlan: A Unified Global Floorplanning and Legalization Framework for Rectilinear Soft Modules",
-        "abstract": "Floorplanning with rectilinear soft modules improves area utilization and wirelength by allowing modules to adapt to rectilinear polygon (RPoly) shapes. Existing methods typically construct rectilinear polygons through incremental refinement after obtaining a rectangular global solution, which confines polygon exploration to the neighborhood induced by the initial floorplan. This paper presents RPolyPlan, a unified framework for outline-free and fixed-outline floorplanning that directly incorporates continuously deformable rectilinear polygons into global floorplanning. To enable direct polygon optimization, we introduce a structured continuous representation and a differentiable polygon shaping model that dynamically optimizes rectilinear module shapes based on overlaps, making continuous shape optimization feasible for gradient-based global floorplanning. An augmented Lagrangian formulation robustly handles the coupled inequality constraints, provides theoretical convergence guarantees, and reduces dependence on manual penalty-parameter tuning. During legalization, minimum-cost flow and rectangular decomposition determine the target areas of subrectangles, and horizontal and vertical constraint graphs encode their geometric relations. The resulting convex legalization formulation satisfies the area, shape, separation, connectivity, and outline constraints while minimizing either the chip area or the displacement from the global floorplanning solution. Experiments on the GSRC, MCNC, and ICCAD 2023 contest benchmarks demonstrate that RPolyPlan reduces HPWL over the evaluated state-of-the-art methods by 7% and 6% in fixed-outline and outline-free experiments, respectively.",
-        "authors": [
-          "Fuxing Huang",
-          "Wenxing Zhu",
-          "Xinning Liu",
-          "Ziran Zhu"
-        ],
-        "published": "2026-10-20T14:29:26Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.28276v1",
-        "score": 0.5934
-      },
-      {
-        "arxiv_id": "2610.29489",
-        "title": "Reorienting the Vector Axis: Restructuring FlashAttention for Long-Vector Processors",
-        "abstract": "A Transformer is built around attention, whose cost grows with the square of the sequence length and dominates the layer on long sequences. FlashAttention made that cost manageable by tiling the attention matrix and updating the softmax as it goes, but almost all work since has targeted GPUs. On long-vector processors one vector register can hold up to 512 single-precision numbers. The savings of a vector instruction are proportional to how much of the register it uses, so the choice of which loop to vectorize is a first-order decision. We port PyTorch's CPU FlashAttention kernel to a RISC-V CPU with 2KB vector registers and find that it reaches 16.2% of peak floating-point throughput. The kernel walks each tile one query row at a time: the product against V is vectorized along the 64-element head dimension, the softmax's per-row maximum and sum are reductions that collapse a full register to a scalar, and the software exponential's polynomial coefficients compete with tile data for vector registers and cause spilling. We propose two techniques. The first transposes the score tile and the running output so that queries lie along the contiguous axis. The algorithm and its values are unchanged. A single parameter, the number of queries in a tile, now sets the vector length of every part of the kernel and can be matched to the machine. Both reductions also disappear. The second moves the polynomial's coefficients into scalar registers, removing the spills and cutting the softmax's vector memory instructions by 78.7%. On silicon the two together cut whole-kernel cycles by 1.84 to 2.08x at a head dimension of 64, raising floating-point utilization from 16.2% to 29.7% of peak. An FPGA of the same design ranks the changes identically and scores them higher, at 2.71x.",
-        "authors": [
-          "Emmanuel Irabor",
-          "Marc Casas"
-        ],
-        "published": "2026-10-21T09:45:14Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29489v1",
-        "score": 0.5905
-      },
-      {
-        "arxiv_id": "2610.30480",
-        "title": "FIGFLEX: A Mixed-Precision FP-INT GEMM Accelerator Co-Designed with Low-Bit LLM Quantization",
-        "abstract": "Weight-only quantization keeps LLM activations in floating point and stores weights as low-bit integers, turning the dominant workload into floating-point-integer (FP-INT) general matrix multiplication. Recent quantizers reach a 2-3-bit average with mixed precision, but hardware has not kept pace: GPUs dequantize weights to FP16 before the tensor-core multiply-accumulate, and bit-parallel FP-INT accelerators run at a single weight precision, so fewer bits save memory but not computation. In this paper, we present FIGFLEX, an algorithm-hardware co-designed mixed-precision accelerator whose bit-parallel datapath scales throughput as precision falls. FIGFLEX contributes (1) a shift-add, radix-4 reformulation of FP-INT multiplication that fuses the multiply-accumulate into a unified, precision-flexible partial-product reduction and roughly halves the partial products, together with a novel INT3 optimization that reclaims the idle datapath radix-4 leaves at that precision; and (2) a mixed-precision quantizer that assigns each channel group its bit-width according to the error GPTQ cannot compensate, with a per-input-channel column scaling whose power-of-two normalization keeps the scaled activations out of the FP16 subnormal range, so that the quantized model maps directly onto FIGFLEX's datapath with the same accuracy as on a GPU. On LLaMA-2-7B, FIGFLEX attains 5.85 and 8.77 WikiText-2 perplexity at 3- and 2-bit average precision, lower than GPTQ, AWQ, SliM-LLM, AMQ, and QuIP# (without fine-tuning), while delivering 1.56x and 1.42x higher whole-chip throughput per area on the linear GEMMs of a 3-bit mixed-precision model than AxCore and FIGLUT, respectively.",
-        "authors": [
-          "Faraz Tahmasebi",
-          "Haocheng Xu",
-          "Andrew Trauger",
-          "Yomal Perera",
-          "Zhenyu Tang",
-          "Nael Chowdhury",
-          "Sitao Huang"
-        ],
-        "published": "2026-10-21T21:59:47Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.30480v1",
-        "score": 0.5795
-      },
-      {
-        "arxiv_id": "2610.29617",
-        "title": "TernScope: Model-Hardware Co-Design for Efficient Ternary Endoscopic Segmentation",
-        "abstract": "Edge medical segmentation must reconcile small model size, high accuracy, and fast inference. TernScope addresses this tradeoff through model--hardware co-design, learning a compact segmentation network whose low-bit operators also simplify hardware execution. Split-channel large-kernel blocks preserve spatial context with limited computation, while branch fusion removes redundant inference paths. Ternary Progressive Quantization-aware Training (TPQ) then adapts the fused network from deep to shallow layers, through the decoder, and finally to the input and prediction layers. All 25 convolutions use ternary weights and 8-bit activations, enabling packed storage and multiplier-free computation. The resulting model uses 0.2483 M parameters and 0.0949 GMACs while retaining competitive segmentation accuracy on in-domain and external datasets. Under the same 45 nm technology, TernScope reduces compute-array area by 88.46% compared with the original Gemmini, a systolic-array accelerator with 8-bit $\\times$ 8-bit multipliers. These results demonstrate a path from accurate lightweight medical segmentation to compact low-bit hardware.",
-        "authors": [
-          "Zhuoyu Wu",
-          "Wenhui Ou",
-          "Qiawei Zheng",
-          "Xuhong Qiu",
-          "Wenqi Fang",
-          "Rapha\u00ebl C. -W. Phan"
-        ],
-        "published": "2026-10-21T11:56:23Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.29617v1",
-        "score": 0.5769
+        "published": "2026-10-22T17:48:11Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.31630v1",
+        "score": 0.5707
       }
     ]
   }
