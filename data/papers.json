@@ -777,28 +777,9 @@
     ]
   },
   "Radiotherapy": {
-    "pulled": 7,
-    "retained": 7,
+    "pulled": 1,
+    "retained": 1,
     "papers": [
-      {
-        "arxiv_id": "2610.39647",
-        "title": "Evaluation of attenuation-based simulated X-ray images for image-guided radiotherapy",
-        "abstract": "In image-guided radiation therapy (IGRT), in-room X-rays are often used for patient positioning and monitoring, however, usually default imaging settings are utilized for each indication. Obtaining patient-specific imaging settings before treatment is achievable using simulated X-rays, which can facilitate IGRT workflow optimization. This study evaluated the image quality of simulated X-rays for thoracic, cranial and pelvic regions. Simulated X-rays were created from computed tomography (CT) scans with indication-specific default settings using a pre-release pilot software, which mimics the geometry of the room-mounted ExacTrac Dynamic (ETD) system (Brainlab SE, Germany). The basis of this algorithm was the Beer-Lambert law. Linear attenuation coefficients were approximated from the CT hounsfield units, while incident intensities were defined by flood images. CT scans were included from three anthropomorphic phantoms and 57 patients (13 lung, 20 glioblastoma, 24 prostate). For evaluation, real X-rays were used as ground truth. Three image quality metrics - Structural Similarity Index (SSIM), Normalized Cross Correlation (NCC), Normalized Mean Absolute Error (NMAE) - complemented by histogram and intensity profile comparisons were used for evaluation. SSIMs for phantom and patient average were 0.87 and 0.80 for the thoracic, 0.94 and 0.88 for the cranial and 0.85 and 0.79 for the pelvic region. Corresponding NCCs yielded values of 0.99 and 0.89, 0.99 and 0.99 and 0.99 and 0.60. NMAEs were 4.1% and 10.7% (lung), 2.6% and 3.2% (brain) and 2.6% and 4.0% (pelvis). Histograms of real X-rays and simulated X-rays (sX-rays) were slightly shifted and showed differences at the background pixel value. Intensity profiles exhibited similar trends with some differences in absolute values. The investigated simulated X-rays demonstrated promising quality for individualized IGRT treatment preparation.",
-        "authors": [
-          "Hannah Jungreuthmayer",
-          "Julius Arnold",
-          "Andreas Renner",
-          "Wolfgang Lechner",
-          "Maximilian Schmid",
-          "Richard Wohlgemuth",
-          "Kajetan Berlinger",
-          "Dietmar Georg",
-          "Barbara Kn\u00e4usl"
-        ],
-        "published": "2026-10-29T09:04:08Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39647v1",
-        "score": 0.7189
-      },
       {
         "arxiv_id": "2610.40046",
         "title": "EPC-RawDC: Equivariant Physics Constrained 3D Diffusion with Raw Data Consistency for CBCT to CT Image Synthesis",
@@ -811,90 +792,11 @@
         "published": "2026-10-29T13:42:56Z",
         "pdf_url": "https://arxiv.org/pdf/2610.40046v1",
         "score": 0.6777
-      },
-      {
-        "arxiv_id": "2610.39359",
-        "title": "P^2-Gaussian: Prior-Driven and Projection-Guided Gaussian Splatting for Sparse-View Cone-Beam CT Reconstruction",
-        "abstract": "Sparse-view cone-beam computed tomography (CBCT) reconstruction reduces imaging dose and scan time, but severe angular undersampling makes the inverse problem highly ill-posed. Existing 3D Gaussian Splatting (3DGS) methods initialize Gaussian primitives from Feldkamp-Davis-Kress (FDK) reconstructions that are contaminated by streak artifacts. The limited angular coverage also leaves the Gaussian parameters underconstrained, producing needle-like artifacts. We propose P2-Gaussian, a prior-driven and projection-guided 3DGS framework. In this framework, a latent rectified flow model, Sparse2Prior, first restores the artifact-corrupted FDK volume into an anatomical prior in approximately 5 s. Gaussian primitives are then initialized from this prior in a tissue-adaptive manner, which yields a compact representation with 62%-65% fewer optimized primitives than random sampling. During optimization, virtual projections synthesized at intermediate angles between the measured projections are activated in rotation, while measured projections remain dominant in the objective function. Experiments on 5, 10 and 20 measured views showed that the proposed P2-Gaussian achieved the highest PSNR and SSIM among all methods. Compared with the optimization-based Gaussian baseline, our method increases PSNR by 5.98, 4.25 and 2.49 dB and accelerates reconstruction by 2.6-3.0 times. These results indicate that coupling a learned anatomical prior with measurement-constrained Gaussian optimization is effective for sparse-view CBCT reconstruction. Code is publicly available at: https://github.com/Ballbo5354/P-2-Gaussian.",
-        "authors": [
-          "Jinqiu Xia",
-          "Jianhui Ma",
-          "Bin Ouyang",
-          "Xiaoyan Huang",
-          "Yuan Xu",
-          "Zun Piao"
-        ],
-        "published": "2026-10-29T04:51:02Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39359v1",
-        "score": 0.6473
-      },
-      {
-        "arxiv_id": "2610.39170",
-        "title": "LesionStudio: A Patient-Informed Platform for Task-Specific Optimization of Emission Tomography Reconstructions",
-        "abstract": "Purpose: For task-specific PET and SPECT reconstruction optimization, we developed LesionStudio, an open-source platform incorporating patient background heterogeneity, realistic lesion morphology and texture, and lesion-background interactions beyond conventional phantoms. Methods: LesionStudio, a Python framework built on PyTomography, inserts lesions into PET/SPECT data using modality-specific forward projection and stochastic background ablation. Clinical realism was evaluated by physician review of 30 inserted lesions in eight DLBCL patients from a 1,579-lesion FDG lymphoma library. Quantification and detectability were assessed in FDG PET using spherical and patient-derived lesions varying in size, LBR, and site, reconstructed with OSEM and BSREM. Results: Inserted lesions were visually indistinguishable from true disease (AUC = 0.49). OSEM improved the patient-derived quantification limit from ~3.7 mL at iteration 4 to ~2.0 mL at iteration 10, but with increased noise and edge artifacts. Weakly regularized BSREM (beta = 5) achieved a similar ~2.0 mL limit with stability, whereas stronger regularization increased under-recovery. Detectability was contrast-dependent: no lesions were detected at LBR 2:1, whereas detectable volume ranged from 0.70 to 3.63 mL at LBR 4:1 and decreased to 0.70 mL at LBR 6:1-8:1 for both OSEM and weakly regularized BSREM. Conclusion: Reconstruction settings can shift SUV metrics and detectability enough to affect interpretation, so no single protocol suits every task. OSEM required early stopping for detection and feature stability but more iterations for mean-SUV quantification, whereas weakly regularized BSREM matched both at one setting. LesionStudio (https://github.com/qurit/LesionStudio), with our public library of realistic lesions, provides a reproducible framework for task-specific optimization across radiopharmaceuticals and scanners.",
-        "authors": [
-          "Narges Aghakhanolia",
-          "James Fowler",
-          "Ahmad Shariftabrizi",
-          "Omid Gharibi",
-          "Behnam Panahi",
-          "Sinan Akay",
-          "Arman Rahmim",
-          "Pedro L. Esquinas"
-        ],
-        "published": "2026-10-29T01:59:30Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39170v1",
-        "score": 0.6256
-      },
-      {
-        "arxiv_id": "2610.39069",
-        "title": "Quantitative Ultrasound Perfusion Biomarker: Cross-Modality Validation with Laser Speckle Imaging",
-        "abstract": "Rationale and Objectives: Tooth extraction can cause alveolar bone resorption and variable healing despite socket preservation. Current perfusion assessment relies largely on visual evaluation, limiting objective monitoring of socket healing. We developed and validated a quantitative color flow ultrasound framework to reduce sensitivity to imaging settings and motion artifacts. Materials and Methods: Color flow ultrasound data were acquired longitudinally in 30 patients undergoing tooth extraction and grafting. Velocity- and power-weighted color pixel density (CPDvel and CPDpwr) were derived from complex-valued color flow (TRI) data at 0-1.5 mm beneath the epithelial surface. Gain robustness was assessed using a Quantitative Imaging Biomarker Alliance (QIBA) flow phantom. Concurrent laser speckle contrast imaging (LASCA) provided in vivo comparison. Results: Phantom velocity estimates remained stable across color gain settings of 20-100 a.u. at flow rates of 2, 4, 6, and 8 mL/s. Perfusion metrics decreased over approximately 2-30 weeks after extraction. Nonlinear fits yielded R2 values of 0.74 for CPDvel, 0.45 for CPDpwr, and 0.66 for LASCA. Exponential half-decay times were 60.3, 92.4, and 48.3 days, respectively, relative to the first post-extraction measurement. LASCA correlated linearly with ultrasound-derived velocity (R2 = 0.68) and power (R2 = 0.74; both p < 0.05). Conclusions: The framework supports noninvasive, quantitative monitoring of superficial perfusion during socket healing with reduced sensitivity to color gain. Direct analysis of TRI data provides depth-specific perfusion metrics and may improve consistency across imaging sessions. Further validation is needed to determine its ability to identify compromised healing and inform clinical decisions.",
-        "authors": [
-          "Haowei Tai",
-          "Oscar Duran-Garnica",
-          "Karen Villarreal",
-          "Hsun-Liang Chan",
-          "Oliver D. Kripfgans"
-        ],
-        "published": "2026-10-29T00:00:36Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39069v1",
-        "score": 0.5876
-      },
-      {
-        "arxiv_id": "2610.39254",
-        "title": "Common Offset Gathers for Efficient Multistatic Beamforming in Frequency Domain",
-        "abstract": "Frequency-domain beamformers reconstruct ultrasound images with far fewer operations than delay-and-sum (DAS). However, for multistatic synthetic aperture data, they require Fourier transforms over the full transmit-receive aperture and large amounts of memory, limiting their use for volumetric imaging. Here, we adapt common offset gathers (COG) from seismic imaging to frequency-domain beamforming: transmit-receive pairs with the same offset are beamformed independently using a bistatic formulation, holding only one offset gather in memory at a time. We combine COG with the range-Doppler algorithm (RDA) and evaluate COG RDA against DAS and conventional multistatic RDA using simulated, phantom, and in vivo acquisitions. For linear arrays, COG RDA reduced memory requirements by two orders of magnitude relative to conventional RDA and beamformed up to 25x faster than DAS, with comparable image quality. For a 32x32-element matrix array, COG RDA requires only 2-D instead of 4-D Fourier transforms, and reconstructed a volume on a GPU 32x faster and with 67x less energy than DAS. COG RDA makes frequency-domain multistatic beamforming practical for matrix arrays and power-constrained devices.",
-        "authors": [
-          "Marko Jakovljevic",
-          "Xiaohong Wang",
-          "Ion Candel",
-          "Anthony E. Samir",
-          "Kai Thomenius"
-        ],
-        "published": "2026-10-29T03:05:53Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39254v1",
-        "score": 0.5543
-      },
-      {
-        "arxiv_id": "2610.38548",
-        "title": "Biomechanical influence of cavity fillers on periwound soft tissue strains in sacral pressure injuries",
-        "abstract": "Objective: Deep cavity pressure injuries (PIs) are commonly managed with wound fillers, the biomechanical role of which remains poorly understood. This study aimed to assess how the mechanical properties of filler influence periwound soft tissue strains. Method: The study combined hydrated mechanical testing of commercial cavity fillers with finite element modelling of sacral stage 3 PIs to assess how filler-related parameters affected periwound soft tissue shear strains. Results: Sensitivity analysis showed that filling ratio was the dominant factor governing the volume of mechanically preserved tissue, outweighing filler stiffness, friction and compressibility. High filling ratios markedly reduced strain concentrations, while more compliant, adipose-like fillers further improved tissue protection. Conclusion: The findings of this study highlight the importance of dead-space elimination and tissue-matched filler design to mechanically protect the surrounding tissues and thereby improve healing.",
-        "authors": [
-          "Coraline Staub-Milants",
-          "Gr{\u00e9}gory Chagnon",
-          "No{\u00e9}mie Briot",
-          "Laurent Pasquinet",
-          "Yohan Payan"
-        ],
-        "published": "2026-10-28T09:47:34Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.38548v1",
-        "score": 0.5154
       }
     ]
   },
   "Semiconductors": {
-    "pulled": 30,
+    "pulled": 22,
     "retained": 8,
     "papers": [
       {
@@ -934,58 +836,6 @@
         "published": "2026-10-29T13:48:13Z",
         "pdf_url": "https://arxiv.org/pdf/2610.40059v1",
         "score": 0.665
-      },
-      {
-        "arxiv_id": "2610.39428",
-        "title": "Graphene Islands as a Platform for Band-Structure Engineering",
-        "abstract": "Multilayer graphenes have emerged as a versatile avenue towards exploring novel electronic phases of matter. Recently, nanoscale multilayer graphene islands have been realized experimentally, where the island is less than 50 nm in diameter and distinct in layer configuration from the contact portion of the same graphene sheets, the latter of which act as leads for transport probes. Here, we theoretically investigate how the proximity between these islands and their chemically identical environment modifies the electronic structure. Within the tight-binding approximation, we find that the proximity effect is enhanced by the closely matched momenta between both parts, creating an unusually strong band renormalization which persists as the island size is increased, and only limited by the coherence length. An effective single-unit-cell Hamiltonian to capture these modifications is derived, expressed in terms of interlayer hopping parameters that scale with the relative island area. We predict a substantially altered low-energy density of states for 3- and 4-layer graphene islands, demonstrating the tunability of the electronic structure by spatial size.",
-        "authors": [
-          "Yonah Mann",
-          "Tobias Holder"
-        ],
-        "published": "2026-10-29T06:06:48Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39428v1",
-        "score": 0.6607
-      },
-      {
-        "arxiv_id": "2610.39694",
-        "title": "Exceptional Superconducting Interfaces between Graphene and Atomic Chains in A15-MoRe",
-        "abstract": "Realizing highly transparent and magnetic-field-resilient superconducting contacts is a critical bottleneck for the advancement of two-dimensional (2D) quantum devices. Molybdenum-rhenium (MoRe) alloys have been empirically favored as they uniquely yield ballistic, highly transparent contacts to graphene that survive in high-magnetic-field regimes; however, the microscopic origin of this anomalous transparency has remained a long-standing puzzle. Here, we resolve this paradox by revealing that pristine graphene/MoRe interfaces are governed by the classical A15 superconducting phase. Combining low-temperature transport, X-ray diffraction, and atomic-resolution electron microscopy, we demonstrate that as-deposited MoRe spontaneously forms the A15 phase in direct contact with graphene, whereas thermal annealing triggers a phase transition to a hexagonal close-packed (hcp) structure that severely degrades the Josephson transparency. Crucially, the one-dimensional (1D) transition-metal atomic chains unique to the A15 structure exhibit a near-perfect lattice match (mismatch < 1%) with graphene edges. First-principles calculations further prove that the d-orbitals of these historically renowned 1D chains possibly hybridize with graphene's Dirac cone near the K point. These findings not only uncover the structural and electronic origins of optimal MoRe contacts but also establish A15-phase superconductors as a geometrically ideal, universal platform for realizing robust quantum electronics based on 2D materials.",
-        "authors": [
-          "Hiroto Ogura",
-          "Yuto Tsukidate",
-          "Shun Kondo",
-          "Zhuoqun Li",
-          "Natsuki Sasaki",
-          "Tsunenobu Sato",
-          "Azusa Utsumi",
-          "Tomohiro Otsuka",
-          "Mitsuhiro Saito",
-          "Kazutoshi Inoue",
-          "Takashi Taniguchi",
-          "Kenji Watanabe",
-          "Yuichi Ikuhara",
-          "Toshiaki Kato"
-        ],
-        "published": "2026-10-29T09:32:46Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39694v1",
-        "score": 0.646
-      },
-      {
-        "arxiv_id": "2610.39604",
-        "title": "Spin-Polarized Weyl Fermions and Unconventional Spin Transport",
-        "abstract": "Large and electrically controllable spin splitting in nonmagnetic materials is highly desirable for condensed-matter physics and spintronics, enabling strongly spin-polarized quasiparticles and unconventional spin transport as well as their electrical control. Here, we establish a general framework for critical spin-polarized Weyl fermions in two-dimensional (2D) nonmagnetic systems. We predict the $\u03b1$-Bi-like Group-V puckered-layer family of 2D ferroelectrics as a material platform combining critical spin-Weyl fermions, giant spin splitting, and electrically switchable nonlinear and spin transport. Our calculations reveal exchange-scale spin splitting induced by spin-orbit coupling and a $p$-wave spin texture in the BiAs monolayer. Moreover, BiAs hosts four critical spin-Weyl points, each formed within a single-spin channel. The nearly quantized $\\langle S_z\\rangle$ is protected by an emergent $S_z$-conservation symmetry in the low-energy limit. The spin-Weyl cones also give rise to unconventional spin-transport phenomena, including a purely out-of-plane Edelstein response and a pronounced spin Nernst effect. Ferroelectric reversal further enables electrical switching of the $p$-wave spin texture and inversion-odd responses, while the tunability of these properties through composition, strain, and magnetic field is also systematically demonstrated across the entire family. These results establish both a general nonmagnetic framework and a promising material platform for exploring critical spin-Weyl physics, nonlinear Hall phenomena, and unconventional spin transport.",
-        "authors": [
-          "Chenhao Liang",
-          "Haohao Sheng",
-          "Sheng Zhang",
-          "Zhong Fang",
-          "Hongming Weng",
-          "Zhijun Wang"
-        ],
-        "published": "2026-10-29T08:41:24Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39604v1",
-        "score": 0.6387
       },
       {
         "arxiv_id": "2610.39993",
@@ -1039,59 +889,59 @@
         "published": "2026-10-29T13:17:10Z",
         "pdf_url": "https://arxiv.org/pdf/2610.39997v1",
         "score": 0.6293
+      },
+      {
+        "arxiv_id": "2610.40104",
+        "title": "Continuous tuning of quantum critical behavior in hybrid Josephson junction arrays",
+        "abstract": "We report finite-temperature scaling of voltage-driven quantum phase transitions in hybrid Josephson junction arrays. A dual-gate geometry separately tunes interisland coupling and proximity-induced superconductivity, providing access to superconducting, insulating, and metallic transport regimes. The critical resistivity and scaling exponent evolve continuously with electrostatic tuning. Where the three regimes converge, the critical resistivity approaches $h/4e^2$, consistent with the self-dual limit, while the scaling exponent approaches the quantum-percolation estimate. Tuning toward stronger insulating behavior raises the critical resistivity and shifts the scaling exponent toward the classical-percolation value, while both parameters decrease toward the metallic regime. These results connect scaling regimes previously reported in different two-dimensional superconducting systems through continuous electrostatic control.",
+        "authors": [
+          "E. Fugl",
+          "L. L. Olsen",
+          "S. Sasmal",
+          "M. Efthymiou-Tsironi",
+          "G. Nagda",
+          "F. Krizek",
+          "L. Casparis",
+          "S. Vaitiek\u0117nas"
+        ],
+        "published": "2026-10-29T14:05:24Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.40104v1",
+        "score": 0.6281
+      },
+      {
+        "arxiv_id": "2610.40083",
+        "title": "Magnetotransport experiments on side-contacted topological insulator three-terminal Josephson junctions",
+        "abstract": "Multiterminal Josephson junctions have recently attracted substantial attention. The ability to study Andreev bound states in a multi-phase parameter space opens up exciting avenues for generating topologically non-trivial phases in superconducting devices. A particularly interesting case is the trijunction based on a topological insulator (TI), which is predicted to host Majorana zero modes for suitable phase configurations (Fu and Kane, PRL 2008). Here we turn to the platform of the side-contacted TI trijunction and present experimental evidence for a multiterminal Josephson effect. We study the transport properties and find typical features of a two-dimensional critical current contour (CCC) as well as bias regimes in which only a single junction remains dissipationless. We pay particular attention to these features and study the effects of magnetic fields on single junctions within the trijunction, where, depending on the field direction, the supercurrents show Fraunhofer patterns, SQUID oscillations, or a monotonic decay. We find good agreement with semiclassical simulations for a single TI junction that take into account the top and bottom surface states. We observe pronounced non-convex shape deformations of the CCC under perpendicular magnetic fields that reflect the flux buildup in the loop formed by our trijunctions and provide a simple model sufficient to explain the observed effect. Our results provide the foundations for future studies of Majorana zero modes on this platform.",
+        "authors": [
+          "Christoph Wassmer",
+          "Ella Nikodem",
+          "Oliver Breunig",
+          "Yongjian Wang",
+          "Yoichi Ando",
+          "Jakob Schluck"
+        ],
+        "published": "2026-10-29T13:54:42Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.40083v1",
+        "score": 0.6129
+      },
+      {
+        "arxiv_id": "2610.40442",
+        "title": "Time Reflection-Refraction Crossover at Topological Kramers Edge States",
+        "abstract": "Time-reversal symmetry protects helical edge states against static nonmagnetic backscattering. We show that spatially uniform temporal modulation produces a time reflection-refraction crossover within the same quantum spin Hall phase while preserving time-reversal symmetry of the instantaneous Hamiltonian. A finite gap to the bulk and an edge splitting that vanishes at the Kramers crossing allow the modulation to suppress bulk excitation while remaining nonadiabatic between the edge channels. Virtual transitions through bulk states enable coherent conversion between counter-propagating edge channels at fixed crystal momentum. Near the crossing, $qT$ governs the leading crossover dynamics for a fixed ramp shape, where $q$ is the momentum offset and $T$ the ramp duration. Coherent interference can suppress and restore reflection as the ramp slows. In the adiabatic limit, two initially time-reversed wave packets follow their respective propagation branches and acquire equal geometric displacements. Their group-velocity contributions cancel, isolating the contribution from the Berry curvature to be directly observable. Temporal modulation thus controls protected states and quantum geometry along a topological edge.",
+        "authors": [
+          "Junpeng Hou",
+          "Ya-Jie Wu"
+        ],
+        "published": "2026-10-29T16:56:58Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.40442v1",
+        "score": 0.6075
       }
     ]
   },
   "Embedded Systems": {
-    "pulled": 18,
-    "retained": 8,
+    "pulled": 4,
+    "retained": 4,
     "papers": [
-      {
-        "arxiv_id": "2610.39380",
-        "title": "Learning to Formulate: Agentic Hardware-Software Co-Design of AI Infrastructure through Progressive Optimization and Verification",
-        "abstract": "AI infrastructure, the chips and software that train and serve AI models, is designed in layers. Layers make the system manageable, but they also fix which choices an optimizer can consider. Gains that need the chip and its software to change together are excluded before optimization begins: the formulation leaves them out. Language-model agents make it possible to revisit these boundaries, but an agent's proposal cannot show by itself that a design is correct or optimal. We present Formulaic, a flow that divides the work. The agent writes the formulation, a mathematical solver optimizes within it, and verification and measurement check its assumptions and results. The agent refines the problem step by step, from the computation graph toward the chip. Each step is a template: a family of programs with the conditions under which they are correct. Wall relaxation searches the chip by pricing the hardware limits that bind the software. This paper takes a first step, through separate studies rather than one end-to-end run. On NVIDIA GB10, templates the agent wrote run complete Qwen3-8B layers $1.075\\times$ faster than SGLang. In a simulated Ventus GPU study, joint design cuts the worst-scenario cycles of Qwen2.5-0.5B to 0.428 of the reference, against 0.934 for software alone. On a five-step GEMM refinement chain, reusing proofs makes checking $2.51\\times$ faster.",
-        "authors": [
-          "Yi Ding",
-          "Li Shang"
-        ],
-        "published": "2026-10-29T05:15:00Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39380v1",
-        "score": 0.7019
-      },
-      {
-        "arxiv_id": "2610.39570",
-        "title": "LLM Agent-Based Design of RISC-V CPUs with FPGA-in-the-Loop Evaluation",
-        "abstract": "Long-run RTL simulation of CPU candidates can take hours, while short diagnostic runs may miss performance degradation that emerges later in execution. This evaluation cost can delay design decisions in LLM-agent-based CPU development. We present a development environment in which LLM agents implement CPU candidates on an FPGA and use on-board performance measurements to guide design decisions. We applied it to the human-supervised development of a single-cycle RV32I core into a three-wide out-of-order RV32IM core. The final design reaches 5.61 CoreMark/MHz at 130 MHz on a Artix-7 FPGA. For the same CPU candidate running 8,000 CoreMark iterations, FPGA evaluation, including implementation, was 9.6x faster than single-threaded RTL simulation. In one case, board measurements revealed long-run performance degradation in a candidate that improved in a short diagnostic run. The result guided candidate selection and led to RTL-based root-cause analysis and a fix.",
-        "authors": [
-          "Leo Itoh",
-          "Junichiro Kadomoto"
-        ],
-        "published": "2026-10-29T08:14:01Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39570v1",
-        "score": 0.6818
-      },
-      {
-        "arxiv_id": "2610.38752",
-        "title": "Hardwired Distributed Processing Units at the Sensor: Truly Parallel Vision Pre-Processing that Frees the Host CPU",
-        "abstract": "Conventional vision pipelines route every pixel to a host processor, which must then wait for a complete frame before it can act and devote part of each frame period to routine pre-processing. We examine an alternative organisation in which this work is distributed across hardwired distributed processing units (HDPUs): small, fixed datapaths attached directly to the sensor, each committed to a single always-on task, operating truly in parallel on the same pixel stream and delivering compact results to the host. From one library of 3x3 operators sharing a common two-clock latency, we construct three HDPUs (Canny edges, Harris corners, and a line tracker that issues a steering decision) and run them side by side on a single camera stream in a low-cost Artix-7 FPGA, at a cost of 2,568 LUTs and an estimated 0.318 W. Every stage of every unit is bit-exact with its software model. In a full-system simulation with a datasheet camera model, each decision leaves its HDPU within 11.03 camera lines of the pixel that produced it, 22-67x sooner than the earliest moment at which a frame-based program on the host could respond; the HDPU latency varies by no more than 17 ns, whereas the host's own run times reached 12.5x their median. Offloading the three tasks returns 18-30% of a core to the host in every frame period at 640x480, and 63% of the frame period, with all threads in use, at 1080p. The cost of the units grows with frame width only through their line buffers, and in a closed-loop model of a line-following vehicle the HDPU raises the highest speed at which the line is held from 4.75 to 10.00 m/s.",
-        "authors": [
-          "Raj Mali"
-        ],
-        "published": "2026-10-28T19:34:54Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.38752v1",
-        "score": 0.6541
-      },
-      {
-        "arxiv_id": "2610.38575",
-        "title": "Exploring and optimizing the Vivado Flow on large FPGA designs: A Practical Analysis of Strategies and Their Impact on Timing",
-        "abstract": "Achieving timing closure in FPGA designs is crucial, especially for high-performance applications. The Vivado Design Suite offers several strategies for optimization, but finding the best configuration for a given project remains challenging. This paper explores the various Vivado's timing directives and strategies to improve performance across timing, area, and runtime. Through two test-case designs, an NQR spectrometer SoC-FPGA and a digital readout ASIC prototype for high energy physics particle detector's, different strategies and configurations are compared to identify the most efficient flow.",
-        "authors": [
-          "Kachkachi Nor Eddine"
-        ],
-        "published": "2026-10-28T10:07:43Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.38575v1",
-        "score": 0.6502
-      },
       {
         "arxiv_id": "2610.40039",
         "title": "How Far Are We From On-Device VLM Inference? A Measurement Study on Edge NPUs",
@@ -1108,52 +958,57 @@
         "score": 0.647
       },
       {
-        "arxiv_id": "2610.39222",
-        "title": "When Does Heterogeneity Pay Off? Understanding GPU-WSE System Complementarity",
-        "abstract": "As AI accelerator architectures become increasingly diverse, integrating different architectures into a unified system is emerging as a new heterogeneous computing paradigm. GPUs and WSEs differ substantially in compute, memory, and communication organization, creating both architectural complementarity and additional overheads, yet how to translate this heterogeneity into practical performance gains remains unclear. To address this gap, we propose a hierarchical benchmarking methodology to characterize GPU--WSE heterogeneous execution and the conditions for exploiting complementarity, together with an analytical performance model that identifies when heterogeneity becomes a bottleneck and when it yields system-level performance gains.",
+        "arxiv_id": "2610.39882",
+        "title": "LAMP: LLM-Driven Analog Placement through Adaptive Tool Composition",
+        "abstract": "Analog placement requires circuit-specific trade-offs among area, matching, routability, and electrical performance. Balancing these trade-offs through predefined objectives and fixed placement flows remains difficult. In this paper, we propose an analog placement framework in which a large language model (LLM) acts as a layout engineer through composable placement components. These components support constraint management, placement and legalization, and lightweight evaluation of routability and electrical performance. Using multimodal checkpoints of the initial and evolving design, the LLM selects and combines components to construct and revise its own placement flow. It also adapts the placement hierarchy by reopening modules or partitioning and regrouping devices, allowing local layouts to respond to global design needs. An experience skill provides reusable design knowledge to guide these decisions. Evaluation on two SMIC 180 nm circuits shows that the framework reduces placement area and improves most measured post-layout performance metrics.",
         "authors": [
-          "Ziyu Hu",
-          "Zhijing Ye",
-          "Jiamin Wang",
-          "Zhiqing Zhong",
-          "Zhendong Mi",
-          "Shaoyi Huang",
-          "Weijian Zheng",
-          "Rajkumar Kettimuthu",
-          "Xiaodong Yu"
+          "Zecheng Xu",
+          "Guanhua Chen",
+          "Yumao Wu",
+          "Keren Zhu"
         ],
-        "published": "2026-10-29T02:42:48Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39222v1",
-        "score": 0.6453
+        "published": "2026-10-29T11:58:07Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.39882v1",
+        "score": 0.6056
       },
       {
-        "arxiv_id": "2610.39268",
-        "title": "Energy-Efficient FPGA Implementation of an End-to-End Cosine-Domain CNN Using High-Level Synthesis",
-        "abstract": "The computational cost of conventional Convolutional Neural Networks (CNNs) limits their deployment in low-power devices for high-speed edge AI applications. This paper presents an end-to-end cosine-domain CNN (CD-CNN) architecture for energy-efficient FPGA inference using high-level synthesis (HLS). The proposed architecture performs intermediate feature extraction using real-valued DCT-domain representations, avoiding complex-valued arithmetic and intermediate inverse transforms between spectral layers. The design is implemented on a Xilinx Kintex UltraScale+ XCKU5P FPGA and evaluated against a fully spectral Fourier-domain CNN (FD-CNN) under consistent network and implementation constraints. Experiments on the MNIST and 94-class ASCII datasets show that the CD-CNN reduces normalized resource utilization and improves inference throughput on both datasets. Its energy efficiency reaches 112.91 frames/J for MNIST and 101.27 frames/J for ASCII, corresponding to improvements of $1.51\\times$ and $2.76\\times$, respectively, over the fully spectral FD-CNN architecture. Furthermore, compared to the previous GPU-based fully spectral CD-CNN implementation, the proposed end-to-end FPGA implementation improves energy efficiency by $12.96\\times$. These results demonstrate the potential of real-valued spectral processing in the DCT domain for energy-efficient edge AI deployment.",
+        "arxiv_id": "2610.40000",
+        "title": "NORmal: Architecting 3D Ferroelectric NOR Flash as Main Memory -- From Co-Fabricated BEOL Arrays to 200B-Class Multi-Agent LLMs in a Smartphone",
+        "abstract": "Smartphone agents increasingly work as teams, in which a large planner directs parallel workers across long sessions. Running such a team on the device requires 200B-class models and contexts that exceed phone DRAM many times over, yet existing tiers treat flash as storage: UFS starves per-token weight streaming, and mobile High-Bandwidth Flash (HBF) needs a redesigned SoC and cannot absorb continuous KV writes. We show that a non-volatile memory can join an unmodified LPDDR6 bus as a plain rank only if its access latency fits the DRAM timing window, a condition no NAND tier meets. We present NORmal, to our knowledge the first main-memory architecture for 3D ferroelectric NOR flash. We have fabricated and experimentally characterized back-end-of-line (BEOL) 3D FeNOR arrays that co-integrate dense 3-bit MLC and fast, high-endurance in-place-writable SLC with sub-7.5 ns sensing. NORmal turns these co-fabricated arrays into a byte-addressable, deterministic-timing load/store rank on an unmodified LPDDR6 interface through an under-array DRAM-emulation bridge, staggered bank reads with zero-cycle weight swizzling, and posted SLC writes. Across this rank and DRAM, NORmal places agent state by mutability and lifetime rather than by hotness, serving 200B-class models and persistent planner contexts in place while dynamically partitioning subchannels across agent phases. In serving-level simulation on production agent traces, NORmal is 8.9$\\times$--28.0$\\times$ faster than UFS offloading, within 0.4% of an unlimited-DRAM ideal, and 2.8$\\times$--6.3$\\times$ faster than HBF on sessions beyond 256K tokens, with 8.1$\\times$--17.8$\\times$ less memory energy per token.",
         "authors": [
-          "Sana Fatima",
-          "Ab Al-Hadi Ab Rahman",
-          "Ibrahim Yousef Alshareef",
-          "Farhad Khodadadi",
-          "Nuzhat Khan"
+          "Zhuoran Li",
+          "Chen Gu",
+          "Zhuohang Bian",
+          "Haochen Yu",
+          "Yibo Zhao",
+          "Xuxiao Yang",
+          "Zhaori Cong",
+          "Jinshan Yue",
+          "Qing Luo",
+          "Di Geng",
+          "Ling Li",
+          "Youwei Zhuo"
         ],
-        "published": "2026-10-29T03:21:51Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39268v1",
-        "score": 0.6425
+        "published": "2026-10-29T13:19:45Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.40000v1",
+        "score": 0.5959
       },
       {
-        "arxiv_id": "2610.39515",
-        "title": "APPlace: Co-Optimizing Device Locations and Access Points for Routing-Aware Analog Placement",
-        "abstract": "Analog layout automation remains challenging in Analog/Mixed-Signal circuit design, because parasitics and mismatches introduced during layout strongly affect circuit performance. Placement is especially critical among the layout stages, as it constrains the routing solution space and the achievable post-layout performance. Existing analytical placement methods optimize device coordinates under center-based wirelength proxies and leave access point (AP) selection to routing. In analog circuits, however, a routing pin is an extended piece of terminal metal rather than a fixed point, and the best AP on it depends on where the other connected devices are placed, so a coordinate-only placement optimizes for connection points that the router will not use. We present APPlace, a routing-aware analog placement framework that co-optimizes device locations and AP selections during global placement, followed by a legalization stage that preserves the structure established by global placement. Experimental results on four real-world analog benchmarks show that APPlace achieves better overall post-layout performance than representative baselines at comparable layout area. Ablation studies further show that removing AP co-optimization causes up to a 13 dB CMRR loss among the OTA benchmarks and a 23% increase in comparator delay.",
+        "arxiv_id": "2610.39797",
+        "title": "Caerus: Prefetching by Thinking Globally and Acting Locally",
+        "abstract": "Modern processors rely heavily on data prefetching to bridge the growing performance gap between computation and memory accesses. In offset prefetching, prefetches are issued at an address delta relative to the most recently observed access, selecting deltas that have exhibited high coverage in the recent access-stream history. The Best-Offset Prefetcher (BOP) exemplifies this approach by selecting a single uniformly-issued global offset that delivers timely prefetches. However, its lack of context-sensitive accuracy tracking results in significantly increased DRAM traffic and sometimes disappointing performance. Conversely, Berti, the state-of-the-art offset prefetcher, achieves impressive prefetching performance and accuracy. However, its Program-Counter (PC)-local approach to extracting offsets limits its ability to capture global memory patterns, meaning there are many scenarios where simpler global offset prefetchers, such as BOP, outperform it. Observing the limitations of contemporary offset prefetchers, we present Caerus: an offset prefetcher that employs PC-local filtering on multiple non-overlapping globally derived offsets. Caerus extracts multiple offsets from the global memory trace and maximizes their combined coverage by training each offset only on accesses not already covered by previously learned offsets. The accuracy of each extracted offset is tracked per-PC based on whether it can cover future accesses for any PC. This allows Caerus to address complex delta patterns while maintaining high accuracy. In SPECspeed 2017, Caerus gains a geomean speedup of 8.3%, outperforming Berti by 2.0% while achieving low hardware and DRAM-traffic overhead.",
         "authors": [
-          "Bingyang Liu",
-          "Xiaohan Gao",
-          "Souradip Poddar",
-          "David Z. Pan"
+          "Jacky Wong",
+          "Jacob Alexandrou",
+          "Yinting Huang",
+          "Luke Panayi",
+          "Lev Mukhanov",
+          "Sam Ainsworth",
+          "Paul Kelly"
         ],
-        "published": "2026-10-29T07:14:08Z",
-        "pdf_url": "https://arxiv.org/pdf/2610.39515v1",
-        "score": 0.6102
+        "published": "2026-10-29T10:44:43Z",
+        "pdf_url": "https://arxiv.org/pdf/2610.39797v1",
+        "score": 0.5727
       }
     ]
   }

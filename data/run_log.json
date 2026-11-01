@@ -1,13 +1,13 @@
 {
-  "run_timestamp": "2026-10-31T09:14:19.606015+00:00",
+  "run_timestamp": "2026-11-01T10:01:17.568565+00:00",
   "cycle_hours": 48,
-  "duration_seconds": 123.13,
+  "duration_seconds": 108.82,
   "sectors": {
     "AI": {
       "name": "AI",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 17.43,
+      "duration_seconds": 17.45,
       "ok": true,
       "error": null,
       "score_min": 0.4264596402645111,
@@ -18,7 +18,7 @@
       "name": "ML",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 20.57,
+      "duration_seconds": 19.36,
       "ok": true,
       "error": null,
       "score_min": 0.47495537996292114,
@@ -29,7 +29,7 @@
       "name": "DL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 19.32,
+      "duration_seconds": 19.31,
       "ok": true,
       "error": null,
       "score_min": 0.5046758651733398,
@@ -40,7 +40,7 @@
       "name": "RL",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 19.23,
+      "duration_seconds": 19.56,
       "ok": true,
       "error": null,
       "score_min": 0.42483627796173096,
@@ -51,7 +51,7 @@
       "name": "Robotics",
       "pulled": 30,
       "retained": 10,
-      "duration_seconds": 15.55,
+      "duration_seconds": 15.75,
       "ok": true,
       "error": null,
       "score_min": 0.5256960391998291,
@@ -60,41 +60,41 @@
     },
     "Radiotherapy": {
       "name": "Radiotherapy",
-      "pulled": 7,
-      "retained": 7,
-      "duration_seconds": 4.28,
+      "pulled": 1,
+      "retained": 1,
+      "duration_seconds": 0.88,
       "ok": true,
       "error": null,
-      "score_min": 0.5154009461402893,
-      "score_max": 0.7189279794692993,
-      "score_mean": 0.6181248426437378
+      "score_min": 0.6777154207229614,
+      "score_max": 0.6777154207229614,
+      "score_mean": 0.6777154207229614
     },
     "Semiconductors": {
       "name": "Semiconductors",
-      "pulled": 30,
+      "pulled": 22,
       "retained": 8,
-      "duration_seconds": 16.44,
+      "duration_seconds": 13.94,
       "ok": true,
       "error": null,
       "score_min": 0.51559978723526,
       "score_max": 0.6849298477172852,
-      "score_mean": 0.5935785174369812
+      "score_mean": 0.587213933467865
     },
     "Embedded Systems": {
       "name": "Embedded Systems",
-      "pulled": 18,
-      "retained": 8,
-      "duration_seconds": 10.31,
+      "pulled": 4,
+      "retained": 4,
+      "duration_seconds": 2.57,
       "ok": true,
       "error": null,
-      "score_min": 0.4671552777290344,
-      "score_max": 0.7018634080886841,
-      "score_mean": 0.6100171804428101
+      "score_min": 0.5727066993713379,
+      "score_max": 0.6469574570655823,
+      "score_mean": 0.60528564453125
     }
   },
   "totals": {
-    "pulled": 205,
-    "retained": 73,
+    "pulled": 177,
+    "retained": 63,
     "failed_sectors": 0
   }
 }
