@@ -630,7 +630,7 @@
     ]
   },
   "Robotics": {
-    "pulled": 30,
+    "pulled": 24,
     "retained": 10,
     "papers": [
       {
@@ -653,21 +653,6 @@
         "published": "2026-11-12T17:30:11Z",
         "pdf_url": "https://arxiv.org/pdf/2611.17142v1",
         "score": 0.6632
-      },
-      {
-        "arxiv_id": "2611.16439",
-        "title": "HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation",
-        "abstract": "Learning whole-body mobile manipulation requires demonstrations that coordinate bimanual actions with locomotion across extended workspaces. However, existing interfaces trade off direct robot control, perception and action alignment, and natural operator mobility, making such demonstrations difficult to collect. We introduce HALO, a human-aligned data collection system for whole-body mobile manipulation. The system aligns the operator's perception and action space with the robot while preserving direct physical feedback and natural locomotion. Operators guide the robot end-effectors through kinesthetic teaching and move a low-resistance platform without the deployed mobile base while performing bimanual manipulation. This interface enables more natural whole-body demonstrations, but the close human-robot coupling introduces discrepancies between the demonstration and deployment settings. We address these discrepancies with deployment-aligned demonstration processing, which calibrates and temporally aligns platform motion with the deployed base response and masks and inpaints demonstrator hands in recorded observations. Compared with Mobile ALOHA and VR teleoperation, HALO enables up to 2.9x faster demonstration collection while maintaining comparable or higher success rates. Policies trained with HALO perform precise manipulation tasks, including zip-tie fastening, and achieve a 73.3% success rate on a six-stage long-horizon mobile manipulation task involving repeated coordinated base and arm motion. Project page: https://robbyant-research.github.io/Lingbot-ALOHA/",
-        "authors": [
-          "Shuai Yang",
-          "Fangyi Xu",
-          "Yishu Shen",
-          "Kecheng Zheng",
-          "Yinghao Xu"
-        ],
-        "published": "2026-11-12T07:51:31Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16439v1",
-        "score": 0.6469
       },
       {
         "arxiv_id": "2611.16752",
@@ -729,47 +714,6 @@
         "score": 0.6052
       },
       {
-        "arxiv_id": "2611.16423",
-        "title": "VOKE: Visual Object Kinematics Estimator for Dexterous In-Hand Manipulation",
-        "abstract": "Vision-based dexterous in-hand manipulation requires knowing not only where an object is, but also how it moves. However, most robotic manipulation systems rely on off-the-shelf visual perception models whose outputs are limited to static object masks, geometry, or 6D poses, leaving downstream controllers to infer object dynamics implicitly from noisy visual observations. We present VOKE, a kinematics-aware perception framework that augments existing object and hand-object pose estimators to recover a complete object kinematic state comprising pose, linear and angular velocity, and linear and angular acceleration. VOKE contains two core perception modules and a downstream application study. First, a Pluggable Kinematics Module (PKM) attaches to the output of a standard pose estimator and predicts the object's linear and angular velocity and acceleration from temporal visual features. Second, a Kinematics-guided Pose Refinement Module (KPRM) converts this motion vector into a second-order, motion-prior reference pose and refines the per-frame pose estimates. We evaluate VOKE on DexYCB and OakInk, where it consistently improves object pose estimation across three different backbones and substantially reduces velocity and acceleration estimation error compared with pose differencing. As a downstream application, we use Kinematics-Augmented Reinforcement Learning (KARL) to compare a kinematics-augmented policy with a pose-history baseline. After training the policies in simulation, we transfer the kinematics-augmented policy to the physical robot without policy fine-tuning, demonstrating the complete perception-to-control pathway in the target domain.",
-        "authors": [
-          "Shengjia Zhu",
-          "Wenqiang Xu",
-          "Lin Shao"
-        ],
-        "published": "2026-11-12T07:33:05Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16423v1",
-        "score": 0.6029
-      },
-      {
-        "arxiv_id": "2611.16507",
-        "title": "Input-output characterization of robotic grasping: Connecting design parameters to grasp behavior through the admittance",
-        "abstract": "Low-impedance grippers make the dynamics of a grasp matter. Current grasp metrics, however, are static: they describe how a held object resists constant loads, not how it responds to time-varying ones. To quantify this, we rely on small-signal analysis to characterize a grasp by its admittance, the transfer matrix relating load perturbations to object displacements around an equilibrium. This transfer matrix recovers the stiffness and stability of the grasp at zero frequency and captures its natural frequencies and peak gain under time-varying loads. We apply this characterization to a planar two-finger gripper under proportional-derivative control. We show that two grasps of the same object in the same position and with the same contact forces can differ in stiffness by two orders of magnitude. Likewise, two grasps that share the same stiffness can exhibit very different resonances. Nonlinear simulations confirm the effectiveness of our small-signal analysis in capturing the dynamic behavior of grasping.",
-        "authors": [
-          "Julien Vanderheyden",
-          "Guillaume Drion",
-          "Pierre Sacr\u00e9",
-          "Fulvio Forni"
-        ],
-        "published": "2026-11-12T09:07:26Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16507v1",
-        "score": 0.6024
-      },
-      {
-        "arxiv_id": "2611.16472",
-        "title": "RGB-D SLAM on the Edge: Benchmarking and Profiling RTAB-Map and ORB-SLAM3 on the Raspberry Pi 5",
-        "abstract": "Micro aerial vehicles that operate without GPS often run SLAM on ARM-based edge boards, yet there is little published data on how standard RGB-D SLAM systems behave on such hardware. We benchmark RTAB-Map and ORB-SLAM3 on the Raspberry Pi 5 using six TUM RGB-D sequences at three image resolutions, recording tracking coverage, trajectory error, time per frame, memory, CPU load and temperature for every run, and we profile both systems at the stage and function level. RTAB-Map was configured to process and keep every frame, so its back end runs on every frame rather than at its default rate of 1 Hz. On the sequences that every configuration tracked, its front end takes 38-74 ms per frame and its full pipeline 150-462 ms, compared with 13-45 ms and 26-62 ms for ORB-SLAM3. RTAB-Map's main cost is optimizing a pose graph that keeps growing, because its working memory is unbounded by default; ORB-SLAM3's local bundle adjustment costs about as much as its tracking but runs in a parallel thread. At quarter resolution, both systems lose tracking on most sequences, and runs that lose tracking finish sooner and report lower error on the poses they keep, so time and accuracy must be read alongside coverage. Timing is repeatable to within 1-5%, but trajectory error varies by up to 27% between identical runs, so the accuracy differences between the two systems are inconclusive. No thermal throttling occurred.",
-        "authors": [
-          "Himanshu Patil",
-          "Jaideep Joshi",
-          "Rohit Saluja",
-          "Ganesh Ramakrishnan"
-        ],
-        "published": "2026-11-12T08:29:56Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16472v1",
-        "score": 0.5968
-      },
-      {
         "arxiv_id": "2611.17160",
         "title": "XBot-Omni: An Omni-Modal Model for Embodied Understanding and Interaction",
         "abstract": "Embodied interaction requires an agent to integrate multimodal perception with verbal and nonverbal behaviors to effectively communicate its intentions, including speech, body motion, and facial expressions. We present XBot-Omni, a Thinker--Talker--Actor architecture that extends the Omni paradigm to robotic modalities, including body motion and facial expressions, with ``X'' representing the extensibility to robotic-specific modalities. The Thinker processes text, images, audio, and video to formulate contextually appropriate responses, which are then realized by the Talker and Actor through speech and coordinated bodily expressions, respectively. In this report, we innovatively introduce the concept of ``Actor'' as a dedicated component for embodied agents: a coordinated, streaming module that leverages the native representations of the Thinker and Talker within an end-to-end pipeline, introducing only modest latency overhead. This unified architecture enables multimodal generation conditioned on omni-modal inputs directly to prevent information loss in staged designs. We comprehensively evaluate XBot-Omni across seven benchmarks, demonstrating strong multimodal understanding capabilities on both general-domain and robot-centric videos, as well as high-quality, natural, and well-coordinated motion generation. Furthermore, our results validate its capability to generate embodied multimodal responses directly from omni inputs, meeting the diverse requirements of embodied interaction. XBot-Omni enables robots not only to perceive the omni world but also to express themselves through speech and bodily behaviors, extending Omni models from conversational interaction to embodied communication in physical environments.",
@@ -791,188 +735,127 @@
         "published": "2026-11-12T17:38:57Z",
         "pdf_url": "https://arxiv.org/pdf/2611.17160v1",
         "score": 0.5807
+      },
+      {
+        "arxiv_id": "2611.16671",
+        "title": "NSDL: Neuro-Symbolic Division of Labor for Multi-Robot Task Planning",
+        "abstract": "Planning for a heterogeneous robot team from a scene image and an instruction involves two kinds of decisions. Some must be judged from the scene: which goals are already met, how the task splits, and which robot does what. Others follow from these and can be computed: prerequisite actions, handoffs between robots, and timing. We argue that each kind should go to the component suited to it: a small vision-language model learns the first, and a deterministic solver computes the second. In NSDL (Neuro-Symbolic Division of Labor), the trained model writes its judgments as a plan sketch, which lists the goals that still need action and the intended steps in order, each with a robot. The solver expands the sketch into an executable joint plan. The model calls two tools, a detector for evidence and the solver, and is trained with the solver in the loop. We evaluate on the public VIKI-L2 benchmark and on LOCUS-Bench, a new benchmark that grades the two kinds of difficulty separately. NSDL outperforms end-to-end planners and formalize-then-plan baselines on both benchmarks and with three backbones from 3B to 8B; the 7B model reaches 97.0% out-of-distribution accuracy on VIKI-L2. Ordering and scheduling errors nearly disappear once the solver writes the structure; the remaining failures are misjudged states, and most goals the model misses are ones it never lists. Code, model weights, and LOCUS-Bench are publicly available at https://github.com/Xincheng-Tan/NSDL.",
+        "authors": [
+          "Xincheng Tan",
+          "Ke Wang",
+          "Yining Di",
+          "Minfeng Zhu"
+        ],
+        "published": "2026-11-12T11:47:48Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.16671v1",
+        "score": 0.5793
+      },
+      {
+        "arxiv_id": "2611.16822",
+        "title": "A Class of Bayesian Conjugate Distributions on $SE_n(3)$ for Motion Estimation",
+        "abstract": "This paper proposes a novel class of Bayesian Conjugate Distributions (BCDs) on extended special Euclidean groups SE_n(3) for global motion uncertainty representation and estimation. BCDs are constructed by restricting matrix Gaussian distributions on ambient Euclidean space to SE_n(3), avoiding singularity of local coordinates. The unique feature of BCDs is their conjugacy to a broad class of sampling distributions arising in motion estimation, enabling exact closed-form Bayesian inference. Optimal estimation with respect to BCDs is further investigated for implementing motion estimation. Two means are extracted as random state estimates, which maximize probability and minimize mean squared error, respectively. Moreover, within the BCD class, moment matching is shown to minimize the Kullback-Leibler divergence, and maximum likelihood estimation is also derived, which provide analytical methods to approximate underlying distributions with the optimality guarantee. As an application, a Bayesian estimator for pose and velocity estimation of an Unmanned Aerial Vehicle (UAV) is developed within an assumed density filtering architecture. The propagation and estimate extraction leverage the optimal estimation related to BCDs, and the landmark measurements are exactly fused with the BCD prior in closed form due to the conjugacy. Numerical simulations of a UAV flight indicate the advantages of BCD-based estimators over two classic Kalman filters on Lie groups with various initial uncertainties and measurement noise.",
+        "authors": [
+          "Shijie Wang",
+          "Haichao Gui",
+          "Rui Zhong"
+        ],
+        "published": "2026-11-12T13:58:05Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.16822v1",
+        "score": 0.5772
+      },
+      {
+        "arxiv_id": "2611.17238",
+        "title": "HEIR: Harness Egocentric Intent for Human-Robot Interactions",
+        "abstract": "For robots to assist, serve, and collaborate with humans, they must not only interpret human requests conveyed through language and multimodal intentional cues, but also execute long-horizon tasks that interleave navigation and manipulation. In this paper, we introduce HEIR, a resource for studying how to Harness Egocentric Intent for Human-Robot Interaction. HEIR pairs human speech, measured gaze, and egocentric video with robot observations and teleoperated navigation-manipulation trajectories, while each session preserves successive episodes, with each request fulfilled through multiple execution subtasks. The captured data, together with human-authored annotations, support the study of intent grounding, execution planning, and task completion within a unified interaction setting. To demonstrate the value of HEIR, we conduct extensive offline experiments to evaluate how models benefit from additional human-centric context across these tasks, together with real-robot experiments that assess execution task completion. HEIR thus provides a valuable resource for studying user-centric robot interaction in naturalistic household environments. Our demo and dataset are available online.",
+        "authors": [
+          "Yichi Zhang",
+          "Bo Wang",
+          "Zhenghan Zhu",
+          "Yutong Han",
+          "Jiayin Zou",
+          "Gao Kejun",
+          "Chang Liu",
+          "Shaoxuan Xie",
+          "Chi Zhang",
+          "Shi Haoyang",
+          "Zongxuan Lai",
+          "Sen Cui",
+          "Guocai Yao",
+          "Miao Liu"
+        ],
+        "published": "2026-11-12T18:25:41Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.17238v1",
+        "score": 0.5751
+      },
+      {
+        "arxiv_id": "2611.16872",
+        "title": "ACE-CaP-0: Real-World Code-as-Policies in the Era of Experience",
+        "abstract": "Recent advances in frontier models have pushed the boundaries of agentic robot control, enabling agents to perform complex robotic tasks through reasoning and interaction. However, repeated calls to these models during execution can substantially increase task completion time. Code as Policies (CaP) offers a route for coding agents to acquire physical skills through experience and retain them in executable programs, allowing the reasoning invested in development to be reused across runs. Developing reliable code policies while limiting the cost of physical experimentation remains a central challenge. We investigate human guidance as a source of priors for feasible actions and simulation as an auxiliary environment for exploring and testing candidate policies. Our findings favor robot demonstrations available on request and simulation used selectively during real-world policy refinement. These findings inform ACE-CaP-0, an agentic recipe that couples policy revision with experience acquisition through Demonstrations on Request and Simulation on Demand. Across eight real-world manipulation tasks spanning alignment, multi-object handling, and bimanual coordination, the resulting frozen programs achieve 92.1\\% success (221/240 trials). Mean execution times across tasks range from 0.97 to 2.27 minutes. The programs execute with runtime perception and control, without a human or coding agent in the loop. These results highlight CaP's potential to turn experience into reliable, reusable physical skills.",
+        "authors": [
+          "ACE-CaP Team",
+          "Changxu Wei",
+          "Yunpeng Qing",
+          "Guozheng Ma",
+          "Bowen Liu",
+          "Zexin He",
+          "Yilun Kong",
+          "Haoming Gu",
+          "Jingyuan Liu",
+          "Tianyu Zhu",
+          "Jianfei Wang",
+          "Junqiang Kou",
+          "Huinan Mo",
+          "Hao Lv",
+          "Pengbin Li",
+          "Yuesong Wang",
+          "Bo Li",
+          "Huan Zhou",
+          "Shunyu Liu",
+          "Chunxiao Liu",
+          "Bixuan Jin",
+          "Shaopeng Yin",
+          "Fei Wang",
+          "Zhi Hou",
+          "Jiaxing Huang",
+          "Changqing Zou",
+          "Dacheng Tao",
+          "Xiaogang Wang"
+        ],
+        "published": "2026-11-12T14:38:40Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.16872v1",
+        "score": 0.5745
       }
     ]
   },
   "Radiotherapy": {
-    "pulled": 10,
-    "retained": 8,
+    "pulled": 1,
+    "retained": 1,
     "papers": [
       {
-        "arxiv_id": "2611.15411",
-        "title": "EQUIP-RPT: A framework for objective evaluation of quantitative imaging methods in radiopharmaceutical therapies",
-        "abstract": "Quantitative imaging (QI) provides a non-invasive approach for dosimetry and quantitative response assessment in radiopharmaceutical therapies (RPTs). QI methods are being developed for instrumentation, acquisition, reconstruction, and image analysis. However, a key barrier to routine adoption of these methods is that evidence demonstrating reliable performance of QI methods on clinically relevant quantification tasks in RPTs remains limited. Our goal is to outline the Evaluation of Quantitative Imaging Performance in Radiopharmaceutical Therapy (EQUIP-RPT) framework, a structured approach for objective, task-based evaluation of QI methods for RPTs. We outline the EQUIP-RPT framework based on image-science and task-based image-quality evaluation methodology, practical considerations, and recent literature. The framework is organized around four linked design steps: (i) specification of the quantification task, (ii) design of the study population and imaging protocol, (iii) task-specific information extraction, and (iv) selection of figures of merit (FoMs). The EQUIP-RPT framework is presented in the context of four quantification tasks in RPT: activity uptake, absorbed dose, volumetric tumor burden, and lesion-level longitudinal quantifications. The framework distinguishes two paradigms for task-specific information extraction and organizes FoMs according to the performance attributes they characterize. We describe key elements to apply the EQUIP-RPT framework in simulation, physical phantom, and clinical studies. Finally, we show how EQUIP-RPT can be used to generate a quantitative claim based on the evaluation study. The EQUIP-RPT framework is designed to provide a structured approach for objective task-based evaluation of QI methods in RPTs, thereby facilitating clinical translation of these methods.",
+        "arxiv_id": "2611.17211",
+        "title": "A Feasibility Study of Whole-Cerebrum Task-Based fMRI at 0.55 T: Motor and Visual Tasks Using Single-Shot EPI",
+        "abstract": "Purpose: To evaluate the feasibility of whole-cerebrum task-based fMRI on a modern 0.55T system, examining the effects of extended scan duration and within-session consistency on functional mapping outcomes and comparison to acquisition with matched tasks at 3.0T. Methods: Six healthy participants were scanned at 0.55T using a single-shot EPI sequence during bilateral finger-tapping and visual checkerboard tasks. Data were processed using an open-source pipeline. To investigate sensitivity improvements, two consecutive 5-minute runs were concatenated. Within-session consistency was also assessed. A representative 3T dataset provided additional reference context for temporal dynamics and statistical sensitivity. Results: Task-evoked activations were detected at 0.55T using Family-Wise Error (FWE) rate correction (p < 0.05) in both motor and visual cortices. While single 5-minute runs provided baseline detectability, extending the acquisition to 10 minutes increased t-statistic magnitudes and cluster extents while substantially reducing background noise (47% reduction in voxelwise dispersion). Run-to-run comparisons showed consistent peak locations and statistical significance across participants. Comparison with the 3T reference demonstrated that statistical significance increases with acquisition time so that a 0.55T scan approximately matches 3T significance levels at twice the scan duration across the range compared. Conclusion: Whole-cerebrum task fMRI is feasible at 0.55T using standard EPI and modern high-performance gradients. These results indicate that modest extensions in scan duration can compensate for reduced intrinsic BOLD sensitivity at lower field strengths.",
         "authors": [
-          "Zekun Li",
-          "Carlos F. Uribe",
-          "Fereshteh Yousefirizi",
-          "Lidia Strigari",
-          "Neeta Pandit-Taskar",
-          "Jazmin Schwartz",
-          "Julia Brosch-Lenz",
-          "Babak Saboury",
-          "Joyita Dutta",
-          "Tyler J. Bradshaw",
-          "Habib Zaidi",
-          "Ronald Boellaard",
-          "Kuangyu Shi",
-          "M. Soltani",
-          "Arman Rahmim",
-          "Abhinav K. Jha"
+          "Parsa Razmara",
+          "Takfarinas Medani",
+          "Anand A. Joshi",
+          "Majid Abbasi Sisara",
+          "Ye Tian",
+          "Sophia X. Cui",
+          "Justin P. Haldar",
+          "Krishna S. Nayak",
+          "Richard M. Leahy"
         ],
-        "published": "2026-11-11T12:36:31Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.15411v1",
-        "score": 0.6577
-      },
-      {
-        "arxiv_id": "2611.14438",
-        "title": "A first application of split conformal prediction for dose prediction in knowledge-based radiotherapy planning",
-        "abstract": "Radiation therapy treatment planning is a labour-intensive process prone to inter-expert variability. Deep learning (DL) dose prediction can accelerate this process, but most DL models do not quantify their reliability. In this study, we construct prediction intervals for DL-based radiotherapy dose prediction using split conformal prediction (CP), a model-agnostic and distribution-free method for uncertainty quantification that provides finite-sample coverage guarantees. We propose patient-level nonconformity scores obtained by aggregating voxelwise scores. Specifically, we formulate a maximum aggregation construction, which guarantees simultaneous coverage of the true dose in all voxels of a future patient with at least a user-defined probability, and a quantile-based construction, which guarantees, with the same probability lower bound, that a future patient attains a prescribed minimum level of voxel coverage. We also investigate groupwise calibration for region-specific guarantees and predictive uncertainty scaling for locally adaptive prediction intervals. The methods are evaluated on head-and-neck cases using a deep ensemble model. The proposed constructions achieved empirical coverage consistent with the nominal levels. Maximum aggregation led to conservative prediction intervals, whereas quantile aggregation produced narrower intervals. Groupwise calibration and uncertainty scaling reduced interval widths in some anatomical regions, while providing region-specific guarantees and local adaptivity. This is the first application of split CP to radiotherapy dose prediction. The explicit patient-level coverage guarantees offer a more interpretable characterisation of prediction reliability than raw uncertainty estimates. Split CP could help clinicians assess the reliability of model predictions and identify cases requiring further review.",
-        "authors": [
-          "Rapha\u00ebl Brodeur",
-          "Anne-Sophie Charest",
-          "Louis Archambault"
-        ],
-        "published": "2026-11-10T18:10:47Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.14438v1",
-        "score": 0.6573
-      },
-      {
-        "arxiv_id": "2611.15762",
-        "title": "A Low-Cost MR-Compatible Pneumatic Motion Phantom for Magnetic Resonance Imaging",
-        "abstract": "We describe the detailed design, construction, and testing of a simple, low-cost, open-source, exclusively pneumatic phantom for gated magnetic resonance imaging (MRI) studies of cyclic motion. The overall phantom cost is approximately $200. It is designed to use widely-available materials and an easy-to-program, adaptable micro-controller. Image contrast is generated with air pumped through mineral oil. We demonstrate the utility of the phantom for simulating simple organ motion when developing and investigating image acquisition and reconstruction methods. Phantom motion was independently characterized by video analysis and found to be highly repeatable, with a cycle-to-cycle period variation of 0.6% and a stroke volume variation of 2.3%. The phantom does not generate electromagnetic interference, making it a suitable option for unshielded ultra-low field (ULF) MRI systems. To our knowledge, this work reports the first motion phantom to be imaged on an ULF MRI system",
-        "authors": [
-          "Jonathan Martin",
-          "Millie Barron",
-          "Charlotte Sappo"
-        ],
-        "published": "2026-11-11T17:37:55Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.15762v1",
-        "score": 0.6208
-      },
-      {
-        "arxiv_id": "2611.15375",
-        "title": "A novel model-based equation for size dependent mean recovery coefficients for spheres and other shapes",
-        "abstract": "Background: In NM-imaging, theoretical curves for the recovery coefficient (RC) of the signal maximum and mean are known for spheres and cubes, if a 3D Gaussian PSF is assumed. The RC of the maximum is also known for cylinders. For these and other shapes empirical equations with one or two fit-parameters have been utilized. Methods: An equation for the RC for large objects of arbitrary shape is derived and generalized into an empirical equation for smaller objects, which is verified by numerical simulations. The proposed equation is compared to published results on SPECT kidney phantom measurements and to PET measurements on the NEMA IEC PET body phantom with six spheres. Results: The signal loss (1-RC) for large spheres is inversely proportional to the radius, where the slope is proportional to the FWHM of the spatial resolution. For non-spherical shapes the generalized instead of the volume equivalent radius should be utilized. For smaller objects, an equation with one added empirical fit-parameter is presented. It is demonstrated that the EANM-guidelines' two-parameter logistic function results in a poor fit if the theoretical slope and inverse proportionality are forced and it gives a suboptimal fit when both parameters are fitted. Conclusions: A novel model-based equation for the mean RC-curve is derived. It can be used for arbitrary shapes as long as the sphericity is taken into account and it is accurate down to RC=10%. One parameter is directly related to the spatial resolution, while the other is a shape depending fit-parameter.",
-        "authors": [
-          "Robin de Nijs"
-        ],
-        "published": "2026-11-11T11:55:29Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.15375v1",
-        "score": 0.6064
-      },
-      {
-        "arxiv_id": "2611.14058",
-        "title": "CURRENT: A Recurrent Neural Network for Concurrent Spatial and Temporal Super-Resolution of 4D Flow MRI",
-        "abstract": "Objective: To improve the spatial and temporal resolution of aortic 4D flow MRI through a unified deep learning framework for post-acquisition super-resolution (SR) of reconstructed velocity vector fields. Methods: We propose CURRENT, a recurrent neural network that performs spatial and temporal SR with a single network architecture. Supervised training was conducted using paired low- and high-resolution datasets generated by embedding computational fluid dynamics simulations of aortic flow into in vivo thoracic MRI backgrounds, followed by controlled spatial and temporal downsampling. CURRENT was evaluated for two-fold spatial and temporal SR against 4DFlowNet and for two-fold spatiotemporal SR against sequential spatial and temporal SR pipelines based on 4DFlowNet. Image-based and k-space-based quantitative metrics were considered and conventional interpolation were used as baselines. In addition, the impact of CURRENT's spatiotemporal SR on physics-informed relative pressure estimation was assessed. Finally, the ability of CURRENT to generalize from synthetic training data to in vivo acquisitions was investigated. Results: CURRENT achieved superior spatial SR performance and comparable temporal SR performance to dedicated 4DFlowNet models while providing a unified solution for both tasks. Simultaneous spatiotemporal SR using CURRENT yielded more accurate relative pressure estimates than either spatial or temporal SR alone and outperformed sequential 4DFlowNet-based spatial and temporal SR approaches. Furthermore, the proposed model demonstrated promising generalization to in vivo 4D flow MRI data despite being trained exclusively on synthetic datasets. Conclusion: CURRENT provides a unified framework for spatial and temporal SR of 4D flow MRI. The proposed approach has the potential to enhance physics-based analysis and broaden the applicability of accelerated 4D flow MRI.",
-        "authors": [
-          "Luuk Jacobs",
-          "Pietro Dirix",
-          "Sebastian Kozerke"
-        ],
-        "published": "2026-11-10T13:25:28Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.14058v1",
-        "score": 0.5756
-      },
-      {
-        "arxiv_id": "2611.16090",
-        "title": "Multi-UTE Myelin Fraction Mapping: Repeatability and Cross-Field-Strength Reproducibility at 1.5T and 3T",
-        "abstract": "Purpose: To evaluate the repeatability and cross-field-strength reproducibility (1.5T vs 3T) of in vivo cerebral myelin fraction (MF) mapping with multi-contrast dual-resolution 3D UTE (multi-UTE), and to compare it with magnetization transfer (MT)-based methods. Methods: MT methods provide an indirect myelin-sensitive measure derived from magnetization exchange between macromolecular and free-water proton pools, whereas multi-UTE targets the ultrashort-T2* signal components. In five healthy volunteers, multi-UTE and MT-based measurements were performed at 1.5T and 3T, and the calculated MF maps were compared with magnetization transfer ratio (MTR) and magnetization transfer saturation (MTsat) maps. Two volunteers underwent repeated multi-UTE measurements within and between days. Field-strength reproducibility and test-retest repeatability were evaluated using linear regression, Bland-Altman analysis, concordance correlation coefficient (CCC), and intraclass correlation coefficient (ICC). Results: Multi-UTE enabled simultaneous acquisition of quantitative and high-resolution structural images at both 1.5T and 3T. MF repeatability was high at 3T (ICC = 0.94-0.96) and more variable at 1.5T (0,64-0.96). Across field strengths, MF and MTsat showed comparable reproducibility (CCC 0.70 vs 0.60) with small median absolute differences (8.8% vs 8.9%). MTsat showed tighter correlation (R2 = 0.77 vs 0.68), while MF showed a wider inter-regional dynamic range. MTR differed strongly between field strengths (CCC = 0.06). Conclusion: Multi-UTE MF, obtained without B1 or T1 mapping and alongside a high-resolution structural image, achieves cross-field reproducibility comparable to, but not exceeding, MTsat. Lower SNR at 1.5T and unmodelled T1 weighting may have contributed to residual field dependence.",
-        "authors": [
-          "Nan Yin",
-          "Marco Reisert",
-          "Theo Demerath",
-          "Shuai Liu",
-          "Alexander Rau",
-          "Uzay Emir",
-          "Horst Urbach",
-          "Michael Bock",
-          "Ali Caglar \u00d6zen"
-        ],
-        "published": "2026-11-11T22:58:35Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16090v1",
-        "score": 0.5751
-      },
-      {
-        "arxiv_id": "2611.15730",
-        "title": "Subwavelength registration of skull-compensating acoustic holograms via nonlinear parametric array feedback",
-        "abstract": "Realizing the potential of optimized acoustic holograms for applications like transcranial ultrasound requires sub-wavelength alignment accuracy (less than 1.5 mm at 1 MHz), which is difficult to achieve with current non-MRI optical neuro-navigation methods. To address the critical challenge of alignment, we leverage the parametric array (PA) signal as an alignment surrogate, a highly penetrative, low-frequency difference wave generated by the nonlinear mixing of two primary high-frequency beams. Simulations show that a misaligned skull-compensating lens increases the primary acoustic energy within the skull bone (volumetric energy trapping), which strengthens the nonlinear source of the PA signal. We also tested whether shear-mode conversion in bone contributes: 2D elastic simulations showed only a small (3-5%) increase in shear-type motion with misalignment, and the transmitted ex vivo bursts did not lengthen as a shear path would require. Pseudo-sound and microbubble artifacts were examined and found unlikely to explain the signal, consistent with the PA signal arising from the intrinsic nonlinearity of the bone. Minimizing this PA signal yields a noninvasive real-time feedback mechanism that achieves sub-wavelength alignment accuracy, outperforming standard neuronavigation. Our findings present a robust framework that supports the design of simple, economical, and high-performance transcranial ultrasound systems for high-precision neuro-interventions.",
-        "authors": [
-          "Pradosh Pritam Dash",
-          "Costas D. Arvanitis"
-        ],
-        "published": "2026-11-11T17:07:27Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.15730v1",
-        "score": 0.5614
-      },
-      {
-        "arxiv_id": "2611.14995",
-        "title": "A High-Fidelity Cardiac Digital Twin for Assessing Rate-Dependent Responses: A Comparative Multi-scale Study of TT2 and Tomek Models in Stratified 3D Ventricles",
-        "abstract": "Cardiac digital twins (CDTs) provide a computational platform for personalized cardiac modeling, but their predictive behavior depends strongly on the selected ionic model and the representation of transmural electrophysiological heterogeneity. In this study, we developed a multiscale CDT validation framework that integrates physiologically optimized hierarchical configurations. Using single-cell (0D) models and three-dimensional (3D) patient-specific ventricular models, we implemented the ten Tusscher-Panfilov model (TT2) and Tomek ionic model and compared their electrophysiological responses across a range of pacing frequencies, with basic cycle lengths (BCLs) from 600 to 4000 ms. The results show that tissue-level electrical coupling substantially reshapes the intrinsic dynamical properties observed at the single-cell level. By benchmarking model outputs against clinical data, this study quantifies fidelity differences between the two ionic models across multiple scales and provides a scientific basis for ionic model selection and CDT construction.",
-        "authors": [
-          "Zhenyin Fu",
-          "Zhaokai Kong",
-          "Lucheng Xu",
-          "Mingfeng Jiang",
-          "Ling Xia",
-          "Wenlong Xu",
-          "Ruiqing Dong",
-          "Dongdong Deng"
-        ],
-        "published": "2026-11-11T03:49:04Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.14995v1",
-        "score": 0.5523
+        "published": "2026-11-12T18:09:22Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.17211v1",
+        "score": 0.5308
       }
     ]
   },
   "Semiconductors": {
-    "pulled": 30,
+    "pulled": 12,
     "retained": 8,
     "papers": [
-      {
-        "arxiv_id": "2611.16203",
-        "title": "Controlled Growth and Disorder Mitigation of GaAs1-xSbx/InAs Core-Shell Quantum Wires",
-        "abstract": "We report the growth and transport properties of GaAs1-xSbx/InAs core-shell nanowires. Compared with the well-studied GaAs-InAs system, incorporating Sb substantially reduces the lattice mismatch between the core and shell. Accordingly, both the nanowire crystal quality and device performance improved significantly. Increasing x from 0.15 to 0.35, the density of crystalline defects, such as stacking faults in the InAs shell, decreases by half. Moreover, the field-effect mobility increases from 3850 cm2/Vs to 4800 cm2/Vs, consistent with the reduction of the lattice mismatch. The incorporation of Sb makes the nanowire easier to pinch off via the gate voltage, enhancing the electric field tunability over the nanowire. Magneto-conductance measurements reveal Aharonov-Bohm-like oscillations, suggesting a phase-coherent tubular InAs shell. Our results identify lattice mismatch as a critical disorder source in core-shell nanowires and provide a practical route toward low-disorder core-shell quantum devices.",
-        "authors": [
-          "Ran Zhuo",
-          "Huading Song",
-          "Yanlin Wu",
-          "Wenlong Yang",
-          "Haiyan Shi",
-          "Xiyu Hou",
-          "Sijun Chen",
-          "Zhichuan Wang",
-          "Donghai Li",
-          "Jinjin Bai",
-          "Runan Shang",
-          "Hao Zhang",
-          "Dong Pan"
-        ],
-        "published": "2026-11-12T02:50:10Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16203v1",
-        "score": 0.6788
-      },
-      {
-        "arxiv_id": "2611.16234",
-        "title": "High-Quality InSb Nanowires Grown by Molecular-Beam Epitaxy via Precise Catalyst Modulation",
-        "abstract": "Semiconductor InSb nanowires are a major material candidate for topological quantum computation. The nanowires in current devices were mostly grown using metal organic chemical vapor deposition, incompatible with in situ growth of superconductor, a crucial requirement for low-disorder devices. Growth of InSb nanowires using molecular-beam epitaxy (MBE) can address this issue. So far, studies on MBE-grown InSb remain limited due to an extremely narrow parameter window for the growth and reproducibility. Moreover, the use of foreign catalysts can introduce deep-level impurities. Here, we report a self-catalyzed MBE growth of InSb nanowires without those foreign catalysts. We first grow GaAs nanowire stems, and then convert Ga catalyst droplets into In droplets in situ. Axial heteroepitaxial growth of InSb can be realized through the In droplets on top of GaAs stems. We further find that a low flux suppresses radial growth, enabling linear length tuning from 0.8 to 2.6 micrometer with growth time, while diameter stays nearly constant. These InSb nanowires have a pure zinc-blende structure free of twins, stacking faults. Transport measurement reveals an electron mobility near 19000 cm2 V-1s-1. Moreover, the observation of quasi-ballistic transport, quantum dots, and Kondo correlations demonstrates the coherent quantum transport capability of the MBE-grown InSb nanowires. Our work provides a substrate-independent, self-catalyzed route for the controllable synthesis of high-quality InSb nanowires, establishing a robust material platform for high-performance InSb-based electronic and quantum devices.",
-        "authors": [
-          "Wenlong Yang",
-          "Jiaye Xu",
-          "Shuai Yang",
-          "Wenyu Song",
-          "Haiyan Shi",
-          "Donghai Li",
-          "Xiyu Hou",
-          "Sijun Chen",
-          "Ke He",
-          "Hao Zhang",
-          "Dong Pan"
-        ],
-        "published": "2026-11-12T03:34:04Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16234v1",
-        "score": 0.6662
-      },
       {
         "arxiv_id": "2611.16852",
         "title": "Interfacial Effects of Thermal Reorganization on Charge and Spin Transport in Organic Spin Valves",
@@ -997,34 +880,6 @@
         "score": 0.6619
       },
       {
-        "arxiv_id": "2611.16015",
-        "title": "The importance of shear strain in narrow Si/SiGe quantum wells",
-        "abstract": "Several heterostructure profiles have been proposed for Si/SiGe quantum wells, to improve the operation of quantum-dot spin qubits. These structures share a common goal of generating either of the two wave vectors that govern the conduction-band valley coupling, dubbed $k_0$ and $k_1$. Here, we focus on the long-wavelength $k_1$ term that couples valleys when paired with shear strain, and which governs the Dresselhaus spin-orbit coupling. We show that shear strain induced by metal top gates may be enough to activate the $k_1$ valley-coupling mechanism, mitigating the need for \"ultrasharp\" interfaces, as commonly assumed for large valley energy splittings. We propose a scheme featuring narrow quantum wells that does not require ultrasharp interfaces, but should still provide large deterministic valley splittings (when paired with shear strain), and large spin-orbit couplings and $g$-factor corrections, which are of great interest for experimental implementations.",
-        "authors": [
-          "Hudaiba Soomro",
-          "Talise Oh",
-          "M. A. Eriksson",
-          "Benjamin D. Woods",
-          "Mark Friesen"
-        ],
-        "published": "2026-11-11T21:18:28Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16015v1",
-        "score": 0.6571
-      },
-      {
-        "arxiv_id": "2611.16125",
-        "title": "Integrated optical isolators enabled by 2D semiconductors via spin-momentum locking",
-        "abstract": "Integrated optical isolators based on spin-momentum locking hold great potential for protecting photonic integrated circuits from unwanted reflections. Currently, the most common implementations are magneto-optical isolators that require an externally applied magnetic field. Nevertheless, a wide range of nonreciprocal effects remains to be exploited in alternative material platforms. Although the majority of these effects induce changes to the propagation of light as a function of its polarization, they can be directly connected to the propagation direction through spin-momentum locking. We employ a computational approach to investigate various designs of integrated isolators based on nonreciprocal 2D semiconductors, studying the influence of their geometry and optical properties on the device performance. Additionally, we propose a novel concept for an all-optical isolator based on spin-valley polarization and optically tunable magnetism in transition metal dichalcogenide monolayers. Our results establish 2D semiconductors as an advanced platform for integrated nonreciprocal devices, enabling functionalities that are difficult to achieve with conventional magneto-optical materials like all-optical operation.",
-        "authors": [
-          "Fernando Mart\u00edn-Romero",
-          "V\u00edctor J. G\u00f3mez",
-          "Alberto G. Curto"
-        ],
-        "published": "2026-11-12T00:19:23Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16125v1",
-        "score": 0.6517
-      },
-      {
         "arxiv_id": "2611.16705",
         "title": "A superconducting quantum point contact in Ge",
         "abstract": "Hybrid superconducting-semiconducting circuits provide a versatile platform for investigating coherent transport in mesoscopic weak links. Superconducting quantum point contacts (SQPCs) are particularly interesting in this context, as their supercurrent is carried by a discrete number of ballistic transport modes. Here, we investigate a gate-tunable superconducting quantum point contact realized in Ge/SiGe. By incorporating the QPC into a highly asymmetric superconducting quantum interference device (SQUID), we gain access to its current-phase relation (CPR) and switching current, enabling phase-sensitive studies of few-mode superconducting transport. We observe a direct correspondence between conductance quantization and switching-current quantization, linking the normal-state transport modes to the superconducting response. In addition, we demonstrate strong gate tunability of the effective transmission near the onset of the first conductance plateau. Under microwave irradiation, the QPC exhibits photon-assisted multiple Andreev reflections at lower transparencies and Shapiro replicas in the high-transparency, few-mode regime.",
@@ -1041,62 +896,93 @@
         "score": 0.6461
       },
       {
-        "arxiv_id": "2611.15494",
-        "title": "Symmetry-Enabled Ferroelectric Valley Transduction in Rhombohedral Bilayer WSe$_2$",
-        "abstract": "Ferroelectric polarization couples to the layer degree of freedom in a bilayer, but a valley-selective energy response requires the valleys to carry different interlayer character. Rhombohedral bilayer WSe$_2$ meets that condition by symmetry: three-fold rotation forbids interlayer tunneling at the $K$ valley, while strong hybridization remains at $\u0393$. The resulting contrast converts the band-effective ferroelectric layer asymmetry into a shift of the $K$ edge, and so displaces the $K$--$\u0393$ landscape: a finite-field fit that does not impose the rule leaves the $K$ coupling consistent with zero, and the shift reaches \\polshiftdft~meV, the most that asymmetry can give a single valley. Reversing the polarization mirrors the valley landscape in displacement field, so the two registries have equal and opposite differential transconductance $g_d$ at zero field. In the ideal symmetric limit a second parity holds about each registry's own compensation field and places a zero of $g_d$ there. The valley-dependent screening calculated here displaces that zero by only \\gdnulllow\\% at the read point, so device asymmetry limits the accuracy. The result links a known stacking selection rule to ferroelectric valley transduction, with a quantitative valley shift and a directly testable transport signature.",
+        "arxiv_id": "2611.16595",
+        "title": "Gatemon qubits based on in-situ ternary InAsSb/Al nanowire Josephson junctions",
+        "abstract": "Ternary InAsSb/Al nanowires combine compositionally engineerable semiconductor properties with epitaxial proximity superconductivity, making them attractive for hybrid quantum circuits and mesoscopic superconductivity. Here, we realize gatemon qubits based on shadow-defined in-situ InAsSb/Al Josephson junctions in a single growth process. Gate-dependent microwave spectroscopy demonstrates electrostatic tuning of the qubit transition over several gigahertz. Rabi oscillations and Ramsey interference show coherent qubit control, with representative values T1 = 0.79 us and T2* = 0.91 us. Across five gatemons distributed over three chips, the measured relaxation times range from approximately 0.2 us to 1 us and decrease with increasing qubit frequency. Their magnitude is comparable to a circuit estimate of spontaneous emission into the electromagnetic environment. These results establish in-situ InAsSb/Al junctions as coherent, gate-tunable circuit elements and introduce cQED architecture as a microwave probe of the dynamics of the ternary weak link.",
         "authors": [
-          "Katsunori Wakabayashi",
-          "Souren Adhikary",
-          "Tomoaki Kameda",
-          "Kazuhito Tsukagoshi"
+          "Zhenhai Sun",
+          "David Feldstein-Bofill",
+          "Sangeeth Kallatt",
+          "Sabbir A. Khan",
+          "Morten Kjaergaard"
         ],
-        "published": "2026-11-11T13:55:48Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.15494v1",
-        "score": 0.6397
+        "published": "2026-11-12T10:26:47Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.16595v1",
+        "score": 0.6273
       },
       {
-        "arxiv_id": "2611.15571",
-        "title": "Single Spin Hall Conversion in the Hall Response of Magnetic-Insulator/Heavy-Metal Bilayers Identified by Odd Spin-Hall-Angle Dependence",
-        "abstract": "The Hall response of magnetic-insulator/heavy-metal bilayers is usually ascribed to two successive spin Hall conversions and is therefore expected to be even in the spin Hall angle. Using distinct magnetic-field windows, we separate the Hall voltage of yttrium iron garnet bilayers with Ta and Pt of opposite spin Hall angle into contributions from magnetization- and magnetic-field-driven precession as well as from ordinary Hall effect. The field-driven component reverses sign between Ta and Pt, revealing a Hall response odd-in-spin-Hall-angle. The magnetization-driven component also has opposite signs for Ta and Pt, except for the thinnest heavy-metal layers. A drift-diffusion model with interface-generated spin currents describes this behavior: the field-driven component is predominantly carried by a single spin Hall conversion, and the magnetization-driven component is consistent with one as well. Other potential explanations, based on a description with a finite imaginary spin-mixing conductance rather than interface-generated spin currents, require unusually large values of this conductance, making this mechanism unlikely. Our findings advance the understanding of Hall responses in magnetic-insulator/heavy-metal bilayers toward a more general description.",
+        "arxiv_id": "2611.17217",
+        "title": "Integer and Fractional Chern Plateaus Shaped by Layer-Dependent Disorder",
+        "abstract": "The realization of integer and fractional Chern insulators in moir\u00e9 systems provides a lattice setting for exploring how the structure of Bloch wave functions influences the interplay between topology and disorder. Here we investigate how layer-dependent disorder shapes Hall plateau widths and transitions. Using a realistic three-orbital model of twisted bilayer MoTe$_2$, we compare Hall and bulk transport under onsite-potential, displacement-field, and twist-angle disorder. At equal bare disorder strength, onsite-potential disorder produces broad integer plateaus with nearly direct transitions, whereas displacement-field disorder yields narrow plateaus separated by conducting regions with pronounced Hall-resistance dips. These contrasting behaviors arise from the layer composition of the Bloch states: contributions from different layer under displacement-field disorder partially cancel, weakening the bulk localization. Composite-fermion mean-field theory further yields fractional plateaus at $\u03bd_h=2/3$ and $3/5$ with the same disorder dependence of plateau widths. These findings identify layer-dependent disorder as an important mechanism shaping Chern plateau stability in moir\u00e9 systems beyond bare disorder strength alone.",
         "authors": [
-          "Akashdeep Akashdeep",
-          "Ewiese Mohammad Ababneh",
-          "Botros Gerges Mikhail Fenhas",
-          "Duc Minh Tran",
-          "Mathias Kl\u00e4ui",
-          "Steven S. -L. Zhang",
-          "Vivek Amin",
-          "Gerhard Jakob",
-          "Timo Kuschel"
+          "Ziyue Qi",
+          "Zhan Wang",
+          "Hongming Weng",
+          "Kun Jiang"
         ],
-        "published": "2026-11-11T14:54:35Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.15571v1",
-        "score": 0.6374
+        "published": "2026-11-12T18:14:02Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.17217v1",
+        "score": 0.6241
+      },
+      {
+        "arxiv_id": "2611.16998",
+        "title": "Achiral-Chiral Dissociation and Structural Zero of the Current in the Spinterface Model of CISS",
+        "abstract": "We study the transport sector of the spinterface model of chirality-induced spin selectivity (CISS) under spin-resolved dissipation, extending the quantum non-equilibrium Green's function formulation of Ref.~\\cite{Alwan2026QSpinterface} to spin-resolved lead broadenings. The spin current decomposes into an achiral part, driven by the interfacial moment, and a chiral part, driven by the Rashba spin flip. Under increasing lead spin asymmetry, the achiral part grows linearly while the chiral part follows the geometric-mean suppression, so the two sectors dissociate; they also peak at different coupling scales along the lead broadening. The coupling and bias optima are operating points of the reference configuration, not universal scaling laws. A structural zero appears at $\u03bb_R\\sin(\u03c6/2)=t_{\\mathrm{mol}}$ in the collinear-lead configuration, where the chiral signal collapses to machine precision universally across chain lengths, frequency resolutions, and twist angles; the zero originates from the rank-one singular bond matrix, whose null eigenvector traps an electron in a spin-superposition dark state that does not hop. With non-collinear ferromagnetic leads, the zero is broken in a controlled way: the residual is generically linear in the transverse polarization, arising from a single coherent spin flip at a boundary, and becomes quadratic at a tuned cancellation angle where two boundary contributions interfere destructively, with the scaling exponent jumping sharply from one to two. These results establish the spinterface model as a transport platform with a two-axis dissociation structure, non-scaling operating optima, and an exact structural zero whose non-collinear deformation is a clean linear-plus-quadratic hierarchy.",
+        "authors": [
+          "Seif Alwan"
+        ],
+        "published": "2026-11-12T16:01:55Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.16998v1",
+        "score": 0.6213
+      },
+      {
+        "arxiv_id": "2611.17112",
+        "title": "Acoustically driven motion of single molecules at hBN surfaces",
+        "abstract": "Developments in single-molecule imaging and sensing techniques have enabled direct observation of biomolecular dynamics at interfaces, which has important implications for the fields of membrane biophysics, nanofluidic sensing and transport. However, integrating active surface transport, localization and control over molecule motion remains challenging, limiting further progress in the realization of single-molecule devices. Here, we introduce an integrated surface acoustic wave (SAW)-hexagonal boron nitride (hBN) platform as a contactless actuation platform for directional transport of biomolecules over hBN surfaces. hBN provides an atomically flat surface on which DNA can be confined and still retain in-plane mobility, whereas SAW actuation enables active and guided transport without requiring specific electrical, dielectric or magnetic properties of the biomolecules. Trajectory- and jump-based analyses show that increasing the SAW power leads to higher displacement bias in the streaming direction, resulting in transport velocities along increasingly more linearized trajectories. We thus demonstrate that SAWs can induce tunable directional transport of DNA molecules confined on hBN surfaces, providing a new approach for the on-chip manipulation of biomolecules in nanofluidic systems. Our findings have important implications for the development of advanced single-molecule sequencing platforms and other technologies for biomolecular manipulation and analysis.",
+        "authors": [
+          "Hande N. A\u00e7\u0131kg\u00f6z",
+          "Kenji Watanabe",
+          "Takashi Taniguchi",
+          "Peter G. Steeneken",
+          "Sabina Caneva"
+        ],
+        "published": "2026-11-12T17:05:40Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.17112v1",
+        "score": 0.5911
+      },
+      {
+        "arxiv_id": "2611.17122",
+        "title": "Exact characterization of three-terminal fermion counting under one-body scattering",
+        "abstract": "Quantum scattering is a fundamental probe of the scattering region and the quantum dynamics of outgoing particles. In two terminals, the statistics of non-interacting fermions is described by a generalized binomial distribution, that arises from the Pauli exclusion principle, while deviations are a signature of interactions. In this work, we extend this result to a scattering region coupled to three outgoing terminals (or channels), obtaining exact bounds for the statistics of the outgoing fermions. In particular, for two fermions and three terminals, four inequalities involving six measured probabilities determine whether a non-interacting scatterer can explain the observed statistics. Applying these inequalities to recent scattering experiments in cold atoms, we are able to identify a regime where interactions have a significant contribution on the outgoing particles. Therefore, our work opens up the possibility of identifying fermion interactions at the nanoscale in systems that range from mesoscopic conductors to optical traps in cold atoms.",
+        "authors": [
+          "Zhanning Wang",
+          "Yongtao Li",
+          "Rub\u00e9n Seoane Souto",
+          "Jos\u00e9 C. Abadillo-Uriel"
+        ],
+        "published": "2026-11-12T17:14:54Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.17122v1",
+        "score": 0.5786
+      },
+      {
+        "arxiv_id": "2611.16924",
+        "title": "Squeezed terahertz light from nonlinear diamagnetism in ultrastrongly coupled two-dimensional electrons",
+        "abstract": "Two-dimensional electron gases in terahertz cavities are among the most mature platforms for ultrastrong light--matter coupling, yet their collective response is captured by the linear Hopfield model, which has an exact classical correspondence. We show that the intrinsic band nonparabolicity of the electrons, recently revealed through nonlinear diamagnetism, turns this system into a quantum Kerr oscillator that squeezes terahertz light. Using a non-rotating-wave theory with ultrastrong-coupling-consistent input--output, an ab initio cavity bath, and a self-consistent model of electron heating, we predict output squeezing of 1.8--2.4\\,dB with present GaAs samples in weakly confined cavities with quality factors of order $10^2$, and up to $\\approx9$\\,dB with modest improvements in mobility or cavity frequency. Carrier heating sets limits through a material figure of merit, which yields a simple design rule that the optimal cavity quality factor scales inversely with the ultrastrong-coupling strength.",
+        "authors": [
+          "Dasom Kim",
+          "Junichiro Kono",
+          "Stephen Hughes"
+        ],
+        "published": "2026-11-12T15:12:03Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.16924v1",
+        "score": 0.5766
       }
     ]
   },
   "Embedded Systems": {
-    "pulled": 21,
-    "retained": 8,
+    "pulled": 4,
+    "retained": 4,
     "papers": [
-      {
-        "arxiv_id": "2611.13931",
-        "title": "TAPCO-G: LLM-Guided Design-Adaptive Timing and Power Co-Optimization with Graph-Based Physical Priors",
-        "abstract": "Post-placement timing and power co-optimization is critical to meeting setup timing targets and reducing power within placement constraints. A cell replacement can improve timing along one path while increasing power or reducing slack on others. Conventional optimizers follow fixed rules for scheduling and accepting repairs, limiting their ability to address design-specific bottlenecks. A large language model (LLM) can propose changes to these rules, but on its own it cannot reliably estimate how a cell replacement affects endpoint slack and power. TAPCO-G combines LLM-guided optimizer adaptation with graph-based physical priors to evaluate candidate cell replacements. The outer loop tunes tool settings using physical-design feedback and revises executable repair policies when tuning stalls. The inner loop anchors delay estimates to static timing analysis snapshots, accounts for upstream driver-load changes, and propagates delay shifts to timing endpoints. It combines these estimates with coarse-to-fine power screening to prioritize candidates for physical trials. TAPCO-G produced placement-legal, logic-equivalent implementations and outscored CERBERUS on all eight ASAP7 benchmarks from the MLCAD 2026 Contest, with a mean quality score gain of 5.516 points, and scored 21.648 points higher than TAPCO on average. These results demonstrate the effectiveness of the proposed co-optimization framework.",
-        "authors": [
-          "Wuqian Tang",
-          "Zixiao Wang",
-          "Che-Chien Lin",
-          "Fong-Hua Fu",
-          "Laura Ang\u00e9lica Shion-Korsak",
-          "Xinyun Zhang",
-          "Bei Yu",
-          "Chun-Yao Wang"
-        ],
-        "published": "2026-11-10T11:19:50Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.13931v1",
-        "score": 0.6718
-      },
       {
         "arxiv_id": "2611.17042",
         "title": "Infrastructure for Verifiable AI: Where Proof Costs Go and How Hardware Can Help",
@@ -1111,88 +997,42 @@
         "score": 0.6551
       },
       {
-        "arxiv_id": "2611.16376",
-        "title": "SPEC CPU2026 Under the Microscope: Programs, Phases, and Samples",
-        "abstract": "SPEC CPU2026, the latest generation of the SPEC CPU benchmarks, is set to become the standard benchmark suite in computer architecture research, where new designs are often evaluated through sampled simulation with tools such as SimPoint. Existing characterizations of the suite focus on whole-run averages, which reveal neither how behavior changes within a run nor how well sampling captures it. We characterize CPU2026 on real hardware at three levels: programs, phases, and samples. At the program level, we report whole-run metrics and top-down bottleneck classes for all four suites and examine how they change with workload size, compiler version, and platform, across machines with three different instruction set architectures: x86, Arm, and RISC-V. Notably, changing only the compiler version can halve or nearly double the IPC of individual benchmarks. At the phase level, we track hardware counters every 10 ms over all 90 SPECrate inputs, identify recurring patterns of time-varying behavior, and divide the inputs into three groups: steady, multi-phase, and bursty. More than half of the inputs show time-varying behavior, and IPC within a single input can vary by more than an order of magnitude. At the sample level, we validate SimPoint against hardware measurements of every interval it can select. SimPoint is accurate on steady inputs, but its error reaches 43% on the others, and changing only the random seed spreads the error of one input over a range of 58 percentage points. Keeping SimPoint's clusters but choosing each representative by measured CPI brings every input within 2.6%, so the error comes from the choice of representatives, not from the clustering. We conclude with practical recommendations on sampling strategy for CPU2026, which give researchers a deeper understanding of the suite and show where additional simulation effort is needed to keep sampled results accurate.",
+        "arxiv_id": "2611.17108",
+        "title": "LazyWeights: Decode-on-Demand Edge LLMs",
+        "abstract": "Memory decides which LLMs an edge device runs, and how fast: capacity on a $4$ GB Jetson Nano, bandwidth on an $8$ GB Jetson Orin Nano Super. Deployed formats (GPTQ, AWQ, $\\texttt{llama.cpp}$'s K- and I-quants) spend equal bits on every integer code of a matrix, although the codes are far from uniform. $\\texttt{LazyWeights}$ keeps these formats but tunes GPTQ so the codes compress, Huffman-codes them losslessly in interleaved lanes, and decodes them on demand in a small unit between DRAM and L2, so GPU kernels run unchanged and DRAM moves only coded bytes. At $1\\%$ and $3.5\\%$ perplexity budgets, coded Phi-3-mini, Mistral-7B and SmolLM-1.7B are $5.7-31.4\\%$ smaller than the best $\\texttt{llama.cpp}$ format. A bit-exact $0.21$ mm$^2$ ASIC decoder unit ($1$ GHz, $7$ nm) cuts Orin latency and energy per token by up to $36\\%$ and $38\\%$ ($54\\%$ and $44\\%$ with prompt-lookup speculation). On the Nano, $\\texttt{LazyWeights}$ needs $58-64\\%$ less time and $53-57\\%$ less energy per token than CPU $\\texttt{llama.cpp}$, and runs a streamed Mistral-7B 6.6$\\times$ faster at $3.89$ bits per weight. A Huffman decoder beats an rANS decoder in rate and area at equal throughput; the ASIC decoder unit runs bit-exact on a Zynq UltraScale+ FPGA (AMD ZCU102).",
         "authors": [
-          "Peijun Li",
-          "Pei-Hung Lin",
-          "Tianming Cui",
-          "Caiwen Ding",
-          "Yang Katie Zhao",
-          "Maya Gokhale"
+          "Arnab Sanyal",
+          "Gourav Datta",
+          "Sandeep P. Chinchali"
         ],
-        "published": "2026-11-12T06:44:15Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16376v1",
-        "score": 0.6344
+        "published": "2026-11-12T17:03:40Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.17108v1",
+        "score": 0.5896
       },
       {
-        "arxiv_id": "2611.15167",
-        "title": "AMARA: Compiler-Driven Accelerator Architecture Design for Graphical Probabilistic Sampling",
-        "abstract": "Sampling methods are fundamental primitives for training and inference on probabilistic models. However, practical deployment of sampling algorithms such as Markov Chain Monte Carlo (MCMC) remains difficult on general-purpose processors. Existing hardware accelerators improve sampling efficiency, but they are typically specialized for a narrow class of models, graph topologies, or update schedules, making it difficult to support the diverse workloads used in real applications. This paper presents AMARA, an end-to-end compiler-driven accelerator framework for probabilistic sampling on arbitrary probabilistic graphical models. AMARA introduces MCMC-IR, a domain-specific intermediate representation that separates local factorized computation from global update dependencies. Based on this representation, the compiler performs architecture-aware partitioning, scheduling, and memory-access optimization to expose parallelism and reduce irregular graph communication. The optimized program is lowered to a compact ISA and executed on a programmable ASIC accelerator with specialized compute, sampling, and memory support. By co-designing the compiler and the architecture, AMARA bridges the gap between model generality and accelerator efficiency for practical MCMC-based probabilistic computing. We evaluate AMARA across representative workloads with different structures, including grid-structured and irregular energy-based models, and causal inference networks. The results show that AMARA supports a broad spectrum of discrete probabilistic models while achieving high sampling throughput and efficient hardware utilization. AMARA achieves an average of 6.1$\\times$ (up to 16.3$\\times$) higher sampling throughput than a JAX-GPU baseline on irregular workloads, and offers broader programmability than state-of-the-art accelerators.",
+        "arxiv_id": "2611.16889",
+        "title": "Control-Flow Profiling for Workload Representativeness",
+        "abstract": "Workload characterization in performance engineering often replaces expensive target executions with lower-cost proxies, including reduced datasets, miniapps, and training inputs. Such substitutions require empirical verification that the proxy faithfully exercises the target's dynamic execution behavior. This paper presents an address-keyed control-flow profiling methodology and tool suite designed to evaluate workload representativeness directly from compiled, unmodified binaries. We pair time-ordered basic-block vector (BBV) recurrence analysis with exp-branchprof, an experimental Valgrind tool that captures five orthogonal structural profile families spanning branch direction bias, four-bit global history contexts, dynamic indirect targets, function call transitions, and intraprocedural CFG edges. Our method compares weighted event distributions from two executions of the same binary. It reports support coverage, reference event-mass coverage, distribution distance, entropy-derived quantities, and phase structure, rather than claiming that a single similarity score certifies a proxy. We validate the tool with exact-oracle microbenchmarks across AArch64 and x86-64, covering conditional and inverted exits, calls, returns, direct and indirect jumps, and forked processes. We then apply the workflow to SPEC CPU2017 and CPU2026 train/reference pairs and seven refrate/refspeed pairs. The corpus contains both close matches and cases where a shorter execution reaches much of the same code but misses substantial target, callgraph, CFG, or BBV event mass. The accompanying artifact supports the same analysis for proprietary workload/proxy pairs without requiring raw PC-level profiles to leave the collection environment.",
         "authors": [
-          "Zhan Chen",
-          "Yihan Fu",
-          "Wenshuo Yue",
-          "Daijing Shi",
-          "Chenyun Yin",
-          "Mingrui Wu",
-          "Xiangyu Zhang",
-          "Yun Liang",
-          "Bonan Yan"
+          "Mahesh Madhav"
         ],
-        "published": "2026-11-11T08:03:03Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.15167v1",
-        "score": 0.6283
+        "published": "2026-11-12T14:49:16Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.16889v1",
+        "score": 0.5808
       },
       {
-        "arxiv_id": "2611.15926",
-        "title": "NVIDIA Vera: A Microarchitecture-Level Comparison with Grace, Turin, and Granite Rapids",
-        "abstract": "The majority of new HPC systems are centered around NVIDIA, AMD, or Intel CPUs. Vera is NVIDIA's latest data-center CPU, including its first custom data-center core design, Olympus. This paper investigates Vera in comparison to AMD Turin and Intel Granite Rapids, using NVIDIA Grace as a baseline. We navigate up the performance ladder, from microbenchmarks that isolate performance metrics, through NAS kernels and miniapps, to single-socket performance of a range of scientific codes. We find that Vera achieves the best performance of the architectures evaluated in most codes tested, and that this gain is primarily attributed to its high memory bandwidth, effective Spatial Multithreading implementation, and low-latency memory subsystem aided by the architecture's predictive structures. While Vera represents a major leap over its predecessor, we show that its comparatively modest floating-point performance trails Intel and AMD in a small number of compute-bound workloads reflecting NVIDIA's GPU focus for such workloads.",
+        "arxiv_id": "2611.17097",
+        "title": "Broadcast, Don't Replicate: Eliminating Weight HBM in Datacenter LLM Serving",
+        "abstract": "Large language model (LLM) inference at datacenter scale is fundamentally bottlenecked by memory capacity and bandwidth limits. Because model weights are read-only and identical across instances, conventional architectures that replicate these parameters across the local DRAM of tens of thousands of accelerators incur massive capital expenditures, significant static power dissipation, and redundant memory-fetch energy. A recent proposal to use optical fiber loops as delay-line memory alleviates these issues, but its recirculating loop must hold the whole model: loop length grows with model size, slack is fixed when the ring is built, and the layouts that serve modern Mixture of Experts (MoE) models efficiently do not fit in it. We propose Optical Broadcast Memory (OBM), an open-ended hierarchical Tap-and-Amplify fiber architecture that generalizes and replaces the optical ring paradigm. A centralized memory server continuously broadcasts weights to distributed inference nodes that passively tap the data stream using receive-only co-packaged optics, delivering parameters directly to compute units without intermediate buffering. To overcome the limitations of continuous weight streaming, we use dynamically-sized slack to accommodate large and variable context lengths. We show how removing the restrictions of the optical ring allows OBM to efficiently serve MoE models. Evaluated at a datacenter scale of 80,000 accelerators, OBM eliminates petabytes of HBM while being competitive or better in throughput and energy per token than an HBM-based system.",
         "authors": [
-          "Joseph Moore",
-          "Thomas Green",
-          "Simon McIntosh-Smith"
+          "Hannah Atmer",
+          "Yuan Yao",
+          "Thiemo Voigt",
+          "Stefanos Kaxiras"
         ],
-        "published": "2026-11-11T19:19:57Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.15926v1",
-        "score": 0.6252
-      },
-      {
-        "arxiv_id": "2611.16202",
-        "title": "An Agentic Python Framework for LLM-Driven UVM Testbench Synthesis with Closed-Loop Compiler Feedback",
-        "abstract": "Protocol bridge verification is a persistent bottleneck in SoC development: for every new bridge instance, engineers hand-craft a full UVM testbench from scratch, consuming 40--100 engineering hours of bring-up effort. We present an agentic Python framework that generates complete, protocol-aware UVM testbenches for arbitrary IP and subsystem configurations from a structured Verification Manifest---a JSON specification encoding interface topology, protocol semantics, and coverage intent. The framework employs a dual closed-loop architecture: an inner compiler feedback loop that injects categorised UVM diagnostics rather than raw tool output, and an outer coverage loop driven by intent-gap analysis against the Manifest. Validated on the AMBA AHB-to-APB bridge---a representative production protocol bridge with a 7-state control FSM, two-phase APB handshake, and non-trivial burst serialisation logic---the framework achieves 96.8% functional coverage, a $4.7\\times$ bring-up speedup, and a Protocol Verification Completeness score of 0.87, with only 2.1% of the generated 4,623-line testbench requiring human correction. The generated scoreboard independently identified a critical RTL functional fault that the manual baseline missed entirely. Generalisation across four protocol families confirms that speedup increases with protocol complexity, ranging from $3.1\\times$ (APB Subordinate) to $6.1\\times$ (CHI Subordinate).",
-        "authors": [
-          "Vikash Kumar"
-        ],
-        "published": "2026-11-12T02:48:32Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.16202v1",
-        "score": 0.6144
-      },
-      {
-        "arxiv_id": "2611.14495",
-        "title": "SkipLane: Write-Once, Conflict-Free Accumulation for Zero-Skipping CNN Engines on FPGAs",
-        "abstract": "Skipping zero activations saves multiplications in CNN accelerators, but it complicates accumulation: the products in a compressed input window belong to different output columns and must be merged. In our earlier engine, this merging was done by read-modify-write (RMW) of a row buffer, which made sparse inputs slower than dense ones even at 87% sparsity. Existing designs either merge kernel rows through RMW or reduce bank conflicts with extra hardware, without eliminating them. SkipLane makes the entire accumulation path write-once. Each kernel row is processed in its own lane, which holds partial sums in three registers and retires up to three finished columns per cycle into memory banks that cannot conflict. Lanes and input channels are summed only at readout, so no partial sum is ever read back. Multipliers left idle by zero weights compute a second filter in the same pass. In RTL simulation, the engine stays within 0.5% of its frontend bound up to 70% sparsity and is 1.10-1.26$\\times$ faster than an SCNN-style scatter accumulator with 18 banks and ideal RMW at 50-80% sparsity. Six engines meet 140 MHz on a PYNQ-Z2 using 21.1k LUTs and run LeNet-5 bit-exact on the board. For conv1, the engine needs 1.94$\\times$ fewer cycles than a dense engine (1.26$\\times$ faster end to end); for conv2, whose rows are only 13 pixels wide, it reaches 0.87$\\times$ the dense speed.",
-        "authors": [
-          "Aditya Saboo",
-          "Pratibha Verma"
-        ],
-        "published": "2026-11-10T18:50:51Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.14495v1",
-        "score": 0.6099
-      },
-      {
-        "arxiv_id": "2611.15951",
-        "title": "Starscream: Reimagining LLM Sharding on AMD Instinct GPUs with GPU Partitioning",
-        "abstract": "As GPU accelerators grow larger to meet rising compute demands, they exhibit increasingly pronounced non-uniform memory access (NUMA) characteristics that challenge existing LLM frameworks. Chiplet-based architectures provide a practical path to larger GPUs while mitigating manufacturing yield constraints. Modern GPUs such as AMD Instinct MI300X employs such a multi-die design, and further offer GPU partitioning capabilities, partitioning a single physical GPU into multiple logical devices with NUMA-aware memory domains, promising faster kernel launches, and reduced memory access latencies with improved locality. However, current parallelization strategies, designed for homogeneous GPU topologies, when applied under partitioning, extend its unidimensional sharding causing significant performance degradation. Three bottlenecks emerge: (1) memory redundancy; (2) arithmetic intensity collapse; (3) communication overhead from flat collectives. We present Starscream, a rethinking of LLM sharding for the chiplet era. Rather than stretching inter-GPU sharding thinner, Starscream adds intra-GPU sharding along an orthogonal dimension, grounded in three foundational principles: kernel shape preservation, memory redundancy elimination, and communication overhead minimization. These principles form the basis for extending any sharding strategy into the partitioning regime. We demonstrate their effectiveness using tensor parallelism as a case study. On AMD MI300X and MI355X, exploiting partitioning capabilities yields up to 4x speedup for attention and 1.43x for fused GEMMs compared to chiplet-oblivious baselines, demonstrating the effectiveness of chiplet-aware designs. Starscream's principles generalize across sharding strategies and future architectures.",
-        "authors": [
-          "Sumanth Gudaparthi",
-          "Smeet Chheda",
-          "Ganesh Dasika"
-        ],
-        "published": "2026-11-11T19:44:22Z",
-        "pdf_url": "https://arxiv.org/pdf/2611.15951v1",
-        "score": 0.6054
+        "published": "2026-11-12T16:58:07Z",
+        "pdf_url": "https://arxiv.org/pdf/2611.17097v1",
+        "score": 0.571
       }
     ]
   }
